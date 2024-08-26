@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: gameserver.proto
+//  source: core.proto
 //
 // @dart = 2.12
 

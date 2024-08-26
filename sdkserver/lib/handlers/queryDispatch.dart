@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:shelf/shelf.dart';
 import 'package:protobuf/protobuf.dart';
-import '../proto/sdkserver.pb.dart';
+import 'package:protocol/core.pb.dart';
 
 Response queryDispatch(Request request) {
   final regionEntry = [

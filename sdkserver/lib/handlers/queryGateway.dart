@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:shelf/shelf.dart';
 import 'package:protobuf/protobuf.dart';
-import '../proto/sdkserver.pb.dart';
+import 'package:protocol/core.pb.dart';
 
 const mdkResVerBase64 = 'NzgxMDM4MA==';
 const luaUrlBase64 = 'aHR0cHM6Ly9hdXRvcGF0Y2hvcy5zdGFycmFpbHMuY29tL2x1YS9WMi40TGl2ZS9vdXRwdXRfNzgxMDM4MF80NDkxNzVhOWY0OGQ=';

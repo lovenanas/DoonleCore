@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: gameserver.proto
+//  source: core.proto
 //
 // @dart = 2.12
 
@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'gameserver.pbenum.dart';
+import 'core.pbenum.dart';
 
-export 'gameserver.pbenum.dart';
+export 'core.pbenum.dart';
 
 class ActivateFarmElementCsReq extends $pb.GeneratedMessage {
   factory ActivateFarmElementCsReq({
@@ -12713,21 +12713,29 @@ class Gateserver extends $pb.GeneratedMessage {
   factory Gateserver({
     $core.String? ip,
     $core.String? luaUrl,
-    $core.bool? unk1,
+    $core.bool? mCANJEHAEKO,
     $core.String? regionName,
     $core.int? port,
-    $core.bool? unk2,
+    $core.bool? pGMFEHFKLBG,
     $core.String? exResourceUrl,
     $core.String? assetBundleUrl,
-    $core.bool? unk3,
+    $core.bool? nNPPEAAIHAK,
+    $core.bool? dMBNKOFDBNL,
     $core.String? msg,
-    $core.bool? unk4,
-    $core.bool? unk5,
+    $core.bool? pAIINFFIDLH,
+    $core.bool? lGPAAPCPBMD,
+    $core.bool? mFFMCCGBHBJ,
+    $core.bool? gEBNKMIPOMM,
+    $core.bool? gOELMBPGOFC,
+    $core.bool? gNFPFKJHIDJ,
     $core.String? ifixVersion,
-    $core.bool? unk6,
+    $core.bool? useTcp,
+    $core.bool? cDHOIAAONHD,
+    $core.bool? fKFKCDJNHFL,
+    $core.bool? mFENPHLEGHJ,
     $core.String? clientSecretKey,
     $core.String? mdkResVersion,
-    $core.bool? unk7,
+    $core.bool? aOEKIKFKMGA,
     $core.String? ifixUrl,
   }) {
     final $result = create();
@@ -12737,8 +12745,8 @@ class Gateserver extends $pb.GeneratedMessage {
     if (luaUrl != null) {
       $result.luaUrl = luaUrl;
     }
-    if (unk1 != null) {
-      $result.unk1 = unk1;
+    if (mCANJEHAEKO != null) {
+      $result.mCANJEHAEKO = mCANJEHAEKO;
     }
     if (regionName != null) {
       $result.regionName = regionName;
@@ -12746,8 +12754,8 @@ class Gateserver extends $pb.GeneratedMessage {
     if (port != null) {
       $result.port = port;
     }
-    if (unk2 != null) {
-      $result.unk2 = unk2;
+    if (pGMFEHFKLBG != null) {
+      $result.pGMFEHFKLBG = pGMFEHFKLBG;
     }
     if (exResourceUrl != null) {
       $result.exResourceUrl = exResourceUrl;
@@ -12755,23 +12763,47 @@ class Gateserver extends $pb.GeneratedMessage {
     if (assetBundleUrl != null) {
       $result.assetBundleUrl = assetBundleUrl;
     }
-    if (unk3 != null) {
-      $result.unk3 = unk3;
+    if (nNPPEAAIHAK != null) {
+      $result.nNPPEAAIHAK = nNPPEAAIHAK;
+    }
+    if (dMBNKOFDBNL != null) {
+      $result.dMBNKOFDBNL = dMBNKOFDBNL;
     }
     if (msg != null) {
       $result.msg = msg;
     }
-    if (unk4 != null) {
-      $result.unk4 = unk4;
+    if (pAIINFFIDLH != null) {
+      $result.pAIINFFIDLH = pAIINFFIDLH;
     }
-    if (unk5 != null) {
-      $result.unk5 = unk5;
+    if (lGPAAPCPBMD != null) {
+      $result.lGPAAPCPBMD = lGPAAPCPBMD;
+    }
+    if (mFFMCCGBHBJ != null) {
+      $result.mFFMCCGBHBJ = mFFMCCGBHBJ;
+    }
+    if (gEBNKMIPOMM != null) {
+      $result.gEBNKMIPOMM = gEBNKMIPOMM;
+    }
+    if (gOELMBPGOFC != null) {
+      $result.gOELMBPGOFC = gOELMBPGOFC;
+    }
+    if (gNFPFKJHIDJ != null) {
+      $result.gNFPFKJHIDJ = gNFPFKJHIDJ;
     }
     if (ifixVersion != null) {
       $result.ifixVersion = ifixVersion;
     }
-    if (unk6 != null) {
-      $result.unk6 = unk6;
+    if (useTcp != null) {
+      $result.useTcp = useTcp;
+    }
+    if (cDHOIAAONHD != null) {
+      $result.cDHOIAAONHD = cDHOIAAONHD;
+    }
+    if (fKFKCDJNHFL != null) {
+      $result.fKFKCDJNHFL = fKFKCDJNHFL;
+    }
+    if (mFENPHLEGHJ != null) {
+      $result.mFENPHLEGHJ = mFENPHLEGHJ;
     }
     if (clientSecretKey != null) {
       $result.clientSecretKey = clientSecretKey;
@@ -12779,8 +12811,8 @@ class Gateserver extends $pb.GeneratedMessage {
     if (mdkResVersion != null) {
       $result.mdkResVersion = mdkResVersion;
     }
-    if (unk7 != null) {
-      $result.unk7 = unk7;
+    if (aOEKIKFKMGA != null) {
+      $result.aOEKIKFKMGA = aOEKIKFKMGA;
     }
     if (ifixUrl != null) {
       $result.ifixUrl = ifixUrl;
@@ -12794,21 +12826,29 @@ class Gateserver extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Gateserver', createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'ip')
     ..aOS(2, _omitFieldNames ? '' : 'luaUrl')
-    ..aOB(6, _omitFieldNames ? '' : 'unk1')
+    ..aOB(6, _omitFieldNames ? '' : 'MCANJEHAEKO', protoName: 'MCANJEHAEKO')
     ..aOS(10, _omitFieldNames ? '' : 'regionName')
     ..a<$core.int>(12, _omitFieldNames ? '' : 'port', $pb.PbFieldType.OU3)
-    ..aOB(13, _omitFieldNames ? '' : 'unk2')
+    ..aOB(13, _omitFieldNames ? '' : 'PGMFEHFKLBG', protoName: 'PGMFEHFKLBG')
     ..aOS(14, _omitFieldNames ? '' : 'exResourceUrl')
     ..aOS(15, _omitFieldNames ? '' : 'assetBundleUrl')
-    ..aOB(82, _omitFieldNames ? '' : 'unk3')
+    ..aOB(82, _omitFieldNames ? '' : 'NNPPEAAIHAK', protoName: 'NNPPEAAIHAK')
+    ..aOB(210, _omitFieldNames ? '' : 'DMBNKOFDBNL', protoName: 'DMBNKOFDBNL')
     ..aOS(383, _omitFieldNames ? '' : 'msg')
-    ..aOB(737, _omitFieldNames ? '' : 'unk4')
-    ..aOB(1037, _omitFieldNames ? '' : 'unk5')
+    ..aOB(452, _omitFieldNames ? '' : 'PAIINFFIDLH', protoName: 'PAIINFFIDLH')
+    ..aOB(737, _omitFieldNames ? '' : 'LGPAAPCPBMD', protoName: 'LGPAAPCPBMD')
+    ..aOB(889, _omitFieldNames ? '' : 'MFFMCCGBHBJ', protoName: 'MFFMCCGBHBJ')
+    ..aOB(989, _omitFieldNames ? '' : 'GEBNKMIPOMM', protoName: 'GEBNKMIPOMM')
+    ..aOB(1006, _omitFieldNames ? '' : 'GOELMBPGOFC', protoName: 'GOELMBPGOFC')
+    ..aOB(1037, _omitFieldNames ? '' : 'GNFPFKJHIDJ', protoName: 'GNFPFKJHIDJ')
     ..aOS(1209, _omitFieldNames ? '' : 'ifixVersion')
-    ..aOB(1401, _omitFieldNames ? '' : 'unk6')
+    ..aOB(1359, _omitFieldNames ? '' : 'useTcp')
+    ..aOB(1386, _omitFieldNames ? '' : 'CDHOIAAONHD', protoName: 'CDHOIAAONHD')
+    ..aOB(1401, _omitFieldNames ? '' : 'FKFKCDJNHFL', protoName: 'FKFKCDJNHFL')
+    ..aOB(1537, _omitFieldNames ? '' : 'MFENPHLEGHJ', protoName: 'MFENPHLEGHJ')
     ..aOS(1597, _omitFieldNames ? '' : 'clientSecretKey')
     ..aOS(1798, _omitFieldNames ? '' : 'mdkResVersion')
-    ..aOB(1851, _omitFieldNames ? '' : 'unk7')
+    ..aOB(1851, _omitFieldNames ? '' : 'AOEKIKFKMGA', protoName: 'AOEKIKFKMGA')
     ..aOS(1895, _omitFieldNames ? '' : 'ifixUrl')
     ..hasRequiredFields = false
   ;
@@ -12853,13 +12893,13 @@ class Gateserver extends $pb.GeneratedMessage {
   void clearLuaUrl() => clearField(2);
 
   @$pb.TagNumber(6)
-  $core.bool get unk1 => $_getBF(2);
+  $core.bool get mCANJEHAEKO => $_getBF(2);
   @$pb.TagNumber(6)
-  set unk1($core.bool v) { $_setBool(2, v); }
+  set mCANJEHAEKO($core.bool v) { $_setBool(2, v); }
   @$pb.TagNumber(6)
-  $core.bool hasUnk1() => $_has(2);
+  $core.bool hasMCANJEHAEKO() => $_has(2);
   @$pb.TagNumber(6)
-  void clearUnk1() => clearField(6);
+  void clearMCANJEHAEKO() => clearField(6);
 
   @$pb.TagNumber(10)
   $core.String get regionName => $_getSZ(3);
@@ -12880,13 +12920,13 @@ class Gateserver extends $pb.GeneratedMessage {
   void clearPort() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.bool get unk2 => $_getBF(5);
+  $core.bool get pGMFEHFKLBG => $_getBF(5);
   @$pb.TagNumber(13)
-  set unk2($core.bool v) { $_setBool(5, v); }
+  set pGMFEHFKLBG($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(13)
-  $core.bool hasUnk2() => $_has(5);
+  $core.bool hasPGMFEHFKLBG() => $_has(5);
   @$pb.TagNumber(13)
-  void clearUnk2() => clearField(13);
+  void clearPGMFEHFKLBG() => clearField(13);
 
   @$pb.TagNumber(14)
   $core.String get exResourceUrl => $_getSZ(6);
@@ -12907,92 +12947,164 @@ class Gateserver extends $pb.GeneratedMessage {
   void clearAssetBundleUrl() => clearField(15);
 
   @$pb.TagNumber(82)
-  $core.bool get unk3 => $_getBF(8);
+  $core.bool get nNPPEAAIHAK => $_getBF(8);
   @$pb.TagNumber(82)
-  set unk3($core.bool v) { $_setBool(8, v); }
+  set nNPPEAAIHAK($core.bool v) { $_setBool(8, v); }
   @$pb.TagNumber(82)
-  $core.bool hasUnk3() => $_has(8);
+  $core.bool hasNNPPEAAIHAK() => $_has(8);
   @$pb.TagNumber(82)
-  void clearUnk3() => clearField(82);
+  void clearNNPPEAAIHAK() => clearField(82);
+
+  @$pb.TagNumber(210)
+  $core.bool get dMBNKOFDBNL => $_getBF(9);
+  @$pb.TagNumber(210)
+  set dMBNKOFDBNL($core.bool v) { $_setBool(9, v); }
+  @$pb.TagNumber(210)
+  $core.bool hasDMBNKOFDBNL() => $_has(9);
+  @$pb.TagNumber(210)
+  void clearDMBNKOFDBNL() => clearField(210);
 
   @$pb.TagNumber(383)
-  $core.String get msg => $_getSZ(9);
+  $core.String get msg => $_getSZ(10);
   @$pb.TagNumber(383)
-  set msg($core.String v) { $_setString(9, v); }
+  set msg($core.String v) { $_setString(10, v); }
   @$pb.TagNumber(383)
-  $core.bool hasMsg() => $_has(9);
+  $core.bool hasMsg() => $_has(10);
   @$pb.TagNumber(383)
   void clearMsg() => clearField(383);
 
+  @$pb.TagNumber(452)
+  $core.bool get pAIINFFIDLH => $_getBF(11);
+  @$pb.TagNumber(452)
+  set pAIINFFIDLH($core.bool v) { $_setBool(11, v); }
+  @$pb.TagNumber(452)
+  $core.bool hasPAIINFFIDLH() => $_has(11);
+  @$pb.TagNumber(452)
+  void clearPAIINFFIDLH() => clearField(452);
+
   @$pb.TagNumber(737)
-  $core.bool get unk4 => $_getBF(10);
+  $core.bool get lGPAAPCPBMD => $_getBF(12);
   @$pb.TagNumber(737)
-  set unk4($core.bool v) { $_setBool(10, v); }
+  set lGPAAPCPBMD($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(737)
-  $core.bool hasUnk4() => $_has(10);
+  $core.bool hasLGPAAPCPBMD() => $_has(12);
   @$pb.TagNumber(737)
-  void clearUnk4() => clearField(737);
+  void clearLGPAAPCPBMD() => clearField(737);
+
+  @$pb.TagNumber(889)
+  $core.bool get mFFMCCGBHBJ => $_getBF(13);
+  @$pb.TagNumber(889)
+  set mFFMCCGBHBJ($core.bool v) { $_setBool(13, v); }
+  @$pb.TagNumber(889)
+  $core.bool hasMFFMCCGBHBJ() => $_has(13);
+  @$pb.TagNumber(889)
+  void clearMFFMCCGBHBJ() => clearField(889);
+
+  @$pb.TagNumber(989)
+  $core.bool get gEBNKMIPOMM => $_getBF(14);
+  @$pb.TagNumber(989)
+  set gEBNKMIPOMM($core.bool v) { $_setBool(14, v); }
+  @$pb.TagNumber(989)
+  $core.bool hasGEBNKMIPOMM() => $_has(14);
+  @$pb.TagNumber(989)
+  void clearGEBNKMIPOMM() => clearField(989);
+
+  @$pb.TagNumber(1006)
+  $core.bool get gOELMBPGOFC => $_getBF(15);
+  @$pb.TagNumber(1006)
+  set gOELMBPGOFC($core.bool v) { $_setBool(15, v); }
+  @$pb.TagNumber(1006)
+  $core.bool hasGOELMBPGOFC() => $_has(15);
+  @$pb.TagNumber(1006)
+  void clearGOELMBPGOFC() => clearField(1006);
 
   @$pb.TagNumber(1037)
-  $core.bool get unk5 => $_getBF(11);
+  $core.bool get gNFPFKJHIDJ => $_getBF(16);
   @$pb.TagNumber(1037)
-  set unk5($core.bool v) { $_setBool(11, v); }
+  set gNFPFKJHIDJ($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(1037)
-  $core.bool hasUnk5() => $_has(11);
+  $core.bool hasGNFPFKJHIDJ() => $_has(16);
   @$pb.TagNumber(1037)
-  void clearUnk5() => clearField(1037);
+  void clearGNFPFKJHIDJ() => clearField(1037);
 
   @$pb.TagNumber(1209)
-  $core.String get ifixVersion => $_getSZ(12);
+  $core.String get ifixVersion => $_getSZ(17);
   @$pb.TagNumber(1209)
-  set ifixVersion($core.String v) { $_setString(12, v); }
+  set ifixVersion($core.String v) { $_setString(17, v); }
   @$pb.TagNumber(1209)
-  $core.bool hasIfixVersion() => $_has(12);
+  $core.bool hasIfixVersion() => $_has(17);
   @$pb.TagNumber(1209)
   void clearIfixVersion() => clearField(1209);
 
+  @$pb.TagNumber(1359)
+  $core.bool get useTcp => $_getBF(18);
+  @$pb.TagNumber(1359)
+  set useTcp($core.bool v) { $_setBool(18, v); }
+  @$pb.TagNumber(1359)
+  $core.bool hasUseTcp() => $_has(18);
+  @$pb.TagNumber(1359)
+  void clearUseTcp() => clearField(1359);
+
+  @$pb.TagNumber(1386)
+  $core.bool get cDHOIAAONHD => $_getBF(19);
+  @$pb.TagNumber(1386)
+  set cDHOIAAONHD($core.bool v) { $_setBool(19, v); }
+  @$pb.TagNumber(1386)
+  $core.bool hasCDHOIAAONHD() => $_has(19);
+  @$pb.TagNumber(1386)
+  void clearCDHOIAAONHD() => clearField(1386);
+
   @$pb.TagNumber(1401)
-  $core.bool get unk6 => $_getBF(13);
+  $core.bool get fKFKCDJNHFL => $_getBF(20);
   @$pb.TagNumber(1401)
-  set unk6($core.bool v) { $_setBool(13, v); }
+  set fKFKCDJNHFL($core.bool v) { $_setBool(20, v); }
   @$pb.TagNumber(1401)
-  $core.bool hasUnk6() => $_has(13);
+  $core.bool hasFKFKCDJNHFL() => $_has(20);
   @$pb.TagNumber(1401)
-  void clearUnk6() => clearField(1401);
+  void clearFKFKCDJNHFL() => clearField(1401);
+
+  @$pb.TagNumber(1537)
+  $core.bool get mFENPHLEGHJ => $_getBF(21);
+  @$pb.TagNumber(1537)
+  set mFENPHLEGHJ($core.bool v) { $_setBool(21, v); }
+  @$pb.TagNumber(1537)
+  $core.bool hasMFENPHLEGHJ() => $_has(21);
+  @$pb.TagNumber(1537)
+  void clearMFENPHLEGHJ() => clearField(1537);
 
   @$pb.TagNumber(1597)
-  $core.String get clientSecretKey => $_getSZ(14);
+  $core.String get clientSecretKey => $_getSZ(22);
   @$pb.TagNumber(1597)
-  set clientSecretKey($core.String v) { $_setString(14, v); }
+  set clientSecretKey($core.String v) { $_setString(22, v); }
   @$pb.TagNumber(1597)
-  $core.bool hasClientSecretKey() => $_has(14);
+  $core.bool hasClientSecretKey() => $_has(22);
   @$pb.TagNumber(1597)
   void clearClientSecretKey() => clearField(1597);
 
   @$pb.TagNumber(1798)
-  $core.String get mdkResVersion => $_getSZ(15);
+  $core.String get mdkResVersion => $_getSZ(23);
   @$pb.TagNumber(1798)
-  set mdkResVersion($core.String v) { $_setString(15, v); }
+  set mdkResVersion($core.String v) { $_setString(23, v); }
   @$pb.TagNumber(1798)
-  $core.bool hasMdkResVersion() => $_has(15);
+  $core.bool hasMdkResVersion() => $_has(23);
   @$pb.TagNumber(1798)
   void clearMdkResVersion() => clearField(1798);
 
   @$pb.TagNumber(1851)
-  $core.bool get unk7 => $_getBF(16);
+  $core.bool get aOEKIKFKMGA => $_getBF(24);
   @$pb.TagNumber(1851)
-  set unk7($core.bool v) { $_setBool(16, v); }
+  set aOEKIKFKMGA($core.bool v) { $_setBool(24, v); }
   @$pb.TagNumber(1851)
-  $core.bool hasUnk7() => $_has(16);
+  $core.bool hasAOEKIKFKMGA() => $_has(24);
   @$pb.TagNumber(1851)
-  void clearUnk7() => clearField(1851);
+  void clearAOEKIKFKMGA() => clearField(1851);
 
   @$pb.TagNumber(1895)
-  $core.String get ifixUrl => $_getSZ(17);
+  $core.String get ifixUrl => $_getSZ(25);
   @$pb.TagNumber(1895)
-  set ifixUrl($core.String v) { $_setString(17, v); }
+  set ifixUrl($core.String v) { $_setString(25, v); }
   @$pb.TagNumber(1895)
-  $core.bool hasIfixUrl() => $_has(17);
+  $core.bool hasIfixUrl() => $_has(25);
   @$pb.TagNumber(1895)
   void clearIfixUrl() => clearField(1895);
 }

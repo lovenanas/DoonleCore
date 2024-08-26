@@ -1,5 +1,5 @@
-name: sdkserver
-description: A sample command-line application.
+name: protocol
+description: A starting point for Dart libraries or applications.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
@@ -8,11 +8,7 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  shelf: ^1.4.2
-  shelf_router: ^1.1.4
   protobuf: ^3.1.0
-  protocol:
-    path: ../protocol
   # path: ^1.8.0
 
 dev_dependencies:

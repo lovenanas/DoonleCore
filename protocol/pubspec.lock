@@ -86,14 +86,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.0"
-  fixnum:
-    dependency: transitive
-    description:
-      name: fixnum
-      sha256: "25517a4deb0c03aa0f32fd12db525856438902d9c16536311e76cdc57b31d7d1"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   frontend_server_client:
     dependency: transitive
     description:
@@ -110,14 +102,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
-  http_methods:
-    dependency: transitive
-    description:
-      name: http_methods
-      sha256: "6bccce8f1ec7b5d701e7921dca35e202d425b57e317ba1a37f2638590e29e566"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.1"
   http_multi_server:
     dependency: transitive
     description:
@@ -194,10 +178,10 @@ packages:
     dependency: transitive
     description:
       name: mime
-      sha256: "2e123074287cc9fd6c09de8336dae606d1ddb88d9ac47358826db698c176a1f2"
+      sha256: "801fd0b26f14a4a58ccb09d5892c3fbdeff209594300a542492cf13fba9d247a"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.5"
+    version: "1.0.6"
   node_preamble:
     dependency: transitive
     description:
@@ -230,21 +214,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.5.1"
-  protobuf:
-    dependency: "direct main"
-    description:
-      name: protobuf
-      sha256: "68645b24e0716782e58948f8467fd42a880f255096a821f9e7d0ec625b00c84d"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.0"
-  protocol:
-    dependency: "direct main"
-    description:
-      path: "../protocol"
-      relative: true
-    source: path
-    version: "1.0.0"
   pub_semver:
     dependency: transitive
     description:
@@ -254,7 +223,7 @@ packages:
     source: hosted
     version: "2.1.4"
   shelf:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: shelf
       sha256: e7dd780a7ffb623c57850b33f43309312fc863fb6aa3d276a754bb299839ef12
@@ -269,14 +238,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.2"
-  shelf_router:
-    dependency: "direct main"
-    description:
-      name: shelf_router
-      sha256: f5e5d492440a7fb165fe1e2e1a623f31f734d3370900070b2b1e0d0428d59864
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.4"
   shelf_static:
     dependency: transitive
     description:

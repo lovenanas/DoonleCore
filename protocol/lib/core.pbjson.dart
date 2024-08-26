@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: gameserver.proto
+//  source: core.proto
 //
 // @dart = 2.12
 
@@ -3360,13 +3360,21 @@ const Gateserver$json = {
     {'1': 'ifix_version', '3': 1209, '4': 1, '5': 9, '10': 'ifixVersion'},
     {'1': 'mdk_res_version', '3': 1798, '4': 1, '5': 9, '10': 'mdkResVersion'},
     {'1': 'client_secret_key', '3': 1597, '4': 1, '5': 9, '10': 'clientSecretKey'},
-    {'1': 'unk1', '3': 6, '4': 1, '5': 8, '10': 'unk1'},
-    {'1': 'unk2', '3': 13, '4': 1, '5': 8, '10': 'unk2'},
-    {'1': 'unk3', '3': 82, '4': 1, '5': 8, '10': 'unk3'},
-    {'1': 'unk4', '3': 737, '4': 1, '5': 8, '10': 'unk4'},
-    {'1': 'unk5', '3': 1037, '4': 1, '5': 8, '10': 'unk5'},
-    {'1': 'unk6', '3': 1401, '4': 1, '5': 8, '10': 'unk6'},
-    {'1': 'unk7', '3': 1851, '4': 1, '5': 8, '10': 'unk7'},
+    {'1': 'LGPAAPCPBMD', '3': 737, '4': 1, '5': 8, '10': 'LGPAAPCPBMD'},
+    {'1': 'AOEKIKFKMGA', '3': 1851, '4': 1, '5': 8, '10': 'AOEKIKFKMGA'},
+    {'1': 'DMBNKOFDBNL', '3': 210, '4': 1, '5': 8, '10': 'DMBNKOFDBNL'},
+    {'1': 'CDHOIAAONHD', '3': 1386, '4': 1, '5': 8, '10': 'CDHOIAAONHD'},
+    {'1': 'GOELMBPGOFC', '3': 1006, '4': 1, '5': 8, '10': 'GOELMBPGOFC'},
+    {'1': 'MCANJEHAEKO', '3': 6, '4': 1, '5': 8, '10': 'MCANJEHAEKO'},
+    {'1': 'GEBNKMIPOMM', '3': 989, '4': 1, '5': 8, '10': 'GEBNKMIPOMM'},
+    {'1': 'use_tcp', '3': 1359, '4': 1, '5': 8, '10': 'useTcp'},
+    {'1': 'FKFKCDJNHFL', '3': 1401, '4': 1, '5': 8, '10': 'FKFKCDJNHFL'},
+    {'1': 'MFENPHLEGHJ', '3': 1537, '4': 1, '5': 8, '10': 'MFENPHLEGHJ'},
+    {'1': 'MFFMCCGBHBJ', '3': 889, '4': 1, '5': 8, '10': 'MFFMCCGBHBJ'},
+    {'1': 'GNFPFKJHIDJ', '3': 1037, '4': 1, '5': 8, '10': 'GNFPFKJHIDJ'},
+    {'1': 'NNPPEAAIHAK', '3': 82, '4': 1, '5': 8, '10': 'NNPPEAAIHAK'},
+    {'1': 'PAIINFFIDLH', '3': 452, '4': 1, '5': 8, '10': 'PAIINFFIDLH'},
+    {'1': 'PGMFEHFKLBG', '3': 13, '4': 1, '5': 8, '10': 'PGMFEHFKLBG'},
   ],
 };
 
@@ -3378,10 +3386,16 @@ final $typed_data.Uint8List gateserverDescriptor = $convert.base64Decode(
     'gJUgpyZWdpb25OYW1lEg4KAmlwGAEgASgJUgJpcBISCgRwb3J0GAwgASgNUgRwb3J0EhEKA21z'
     'Zxj/AiABKAlSA21zZxIiCgxpZml4X3ZlcnNpb24YuQkgASgJUgtpZml4VmVyc2lvbhInCg9tZG'
     'tfcmVzX3ZlcnNpb24Yhg4gASgJUg1tZGtSZXNWZXJzaW9uEisKEWNsaWVudF9zZWNyZXRfa2V5'
-    'GL0MIAEoCVIPY2xpZW50U2VjcmV0S2V5EhIKBHVuazEYBiABKAhSBHVuazESEgoEdW5rMhgNIA'
-    'EoCFIEdW5rMhISCgR1bmszGFIgASgIUgR1bmszEhMKBHVuazQY4QUgASgIUgR1bms0EhMKBHVu'
-    'azUYjQggASgIUgR1bms1EhMKBHVuazYY+QogASgIUgR1bms2EhMKBHVuazcYuw4gASgIUgR1bm'
-    's3');
+    'GL0MIAEoCVIPY2xpZW50U2VjcmV0S2V5EiEKC0xHUEFBUENQQk1EGOEFIAEoCFILTEdQQUFQQ1'
+    'BCTUQSIQoLQU9FS0lLRktNR0EYuw4gASgIUgtBT0VLSUtGS01HQRIhCgtETUJOS09GREJOTBjS'
+    'ASABKAhSC0RNQk5LT0ZEQk5MEiEKC0NESE9JQUFPTkhEGOoKIAEoCFILQ0RIT0lBQU9OSEQSIQ'
+    'oLR09FTE1CUEdPRkMY7gcgASgIUgtHT0VMTUJQR09GQxIgCgtNQ0FOSkVIQUVLTxgGIAEoCFIL'
+    'TUNBTkpFSEFFS08SIQoLR0VCTktNSVBPTU0Y3QcgASgIUgtHRUJOS01JUE9NTRIYCgd1c2VfdG'
+    'NwGM8KIAEoCFIGdXNlVGNwEiEKC0ZLRktDREpOSEZMGPkKIAEoCFILRktGS0NESk5IRkwSIQoL'
+    'TUZFTlBITEVHSEoYgQwgASgIUgtNRkVOUEhMRUdIShIhCgtNRkZNQ0NHQkhCShj5BiABKAhSC0'
+    '1GRk1DQ0dCSEJKEiEKC0dORlBGS0pISURKGI0IIAEoCFILR05GUEZLSkhJREoSIAoLTk5QUEVB'
+    'QUlIQUsYUiABKAhSC05OUFBFQUFJSEFLEiEKC1BBSUlORkZJRExIGMQDIAEoCFILUEFJSU5GRk'
+    'lETEgSIAoLUEdNRkVIRktMQkcYDSABKAhSC1BHTUZFSEZLTEJH');
 
 @$core.Deprecated('Use getActivityScheduleConfigScRspDescriptor instead')
 const GetActivityScheduleConfigScRsp$json = {
