@@ -1,6 +1,6 @@
 import 'package:shelf/shelf.dart';
 
-const granterLoginV2Response = {
+const granterLoginV2Response = r'''{
   "data": {
     "account_type": 1,
     "combo_id": "1010",
@@ -11,7 +11,7 @@ const granterLoginV2Response = {
   },
   "message": "OK",
   "retcode": 0
-};
+}''';
 
 Response granterLoginV2(Request request) {
   return Response.ok(granterLoginV2Response, headers: {'Content-Type': 'application/json'});

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: https://raw.githubusercontent.com/Melledy/LunarCore/development/src/main/java/emu/lunarcore/server/packet/CmdId.java
 //
-// @dart = 2.12
+// @dart': 2.12
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names
@@ -10,1558 +10,1575 @@
 // ignore_for_file: non_constant_identifier_names, prefer_final_fields
 // ignore_for_file: unnecessary_import, unnecessary_this, unused_import
 
-class Cmd {
-    static const int NONE = 0;
-    static const int SpringRecoverCsReq = 1488;
-    static const int FinishEmotionDialoguePerformanceScRsp = 6341;
-    static const int GetEnhanceCommonRogueBuffInfoCsReq = 5673;
-    static const int SubmitMonsterResearchActivityMaterialCsReq = 2640;
-    static const int EnterAetherDivideSceneCsReq = 4818;
-    static const int CommonRogueQueryScRsp = 5668;
-    static const int GetRogueShopMiracleInfoCsReq = 5637;
-    static const int ApplyFriendCsReq = 2928;
-    static const int GetHeartDialInfoScRsp = 6374;
-    static const int ComposeLimitNumUpdateNotify = 538;
-    static const int GetCurAssistCsReq = 2902;
-    static const int ChangeLineupLeaderCsReq = 798;
-    static const int FinishQuestCsReq = 964;
-    static const int GetAuthkeyScRsp = 91;
-    static const int StartAetherDivideChallengeBattleScRsp = 4841;
-    static const int FightEnterScRsp = 30074;
-    static const int FinishRogueCommonDialogueCsReq = 5694;
-    static const int MarkAvatarCsReq = 392;
-    static const int StartRogueScRsp = 1837;
-    static const int UnlockAvatarSkinScNotify = 324;
-    static const int SellItemCsReq = 540;
-    static const int RelicAvatarRecommendScRsp = 542;
-    static const int SwapLineupScRsp = 764;
-    static const int GetChallengeGroupStatisticsCsReq = 1791;
-    static const int FinishPerformSectionIdScRsp = 2764;
-    static const int SyncLineupNotify = 789;
-    static const int UseTreasureDungeonItemScRsp = 4408;
-    static const int AcceptMainMissionCsReq = 1282;
-    static const int GetWolfBroGameDataCsReq = 6519;
-    static const int RogueTournDifficultyCompNotify = 6100;
-    static const int JoinLineupCsReq = 758;
-    static const int DelSaveRaidScNotify = 2240;
-    static const int EvolveBuildReRandomStageCsReq = 7105;
-    static const int CurTrialActivityScNotify = 2694;
-    static const int SubmitEmotionItemScRsp = 6349;
-    static const int UpdateRogueAdventureRoomScoreScRsp = 5642;
-    static const int LobbyInviteScRsp = 7353;
-    static const int SharePunkLordMonsterCsReq = 3258;
-    static const int RogueTournGetArchiveRepositoryCsReq = 6043;
-    static const int RogueTournRenameArchiveCsReq = 6048;
-    static const int TakeRogueEventHandbookRewardCsReq = 5639;
-    static const int GetPlayerReturnMultiDropInfoScRsp = 4658;
-    static const int MuseumTakeCollectRewardCsReq = 4347;
-    static const int MonopolyGameCreateScNotify = 7080;
-    static const int MonopolyGetRafflePoolInfoScRsp = 7065;
-    static const int GetActivityScheduleConfigCsReq = 2658;
-    static const int DeleteSummonUnitCsReq = 1450;
-    static const int RefreshAlleyOrderScRsp = 4762;
-    static const int GetCurSceneInfoScRsp = 1441;
-    static const int StartCocoonStageScRsp = 1406;
-    static const int TreasureDungeonFinishScNotify = 4474;
-    static const int StrongChallengeActivityBattleEndScNotify = 6658;
-    static const int StartAlleyEventCsReq = 4728;
-    static const int ChessRogueCellUpdateNotify = 5412;
-    static const int BuyRogueShopMiracleCsReq = 5641;
-    static const int EnterRogueEndlessActivityStageScRsp = 6010;
-    static const int StartAetherDivideStageBattleCsReq = 4873;
-    static const int GetLoginActivityCsReq = 2618;
-    static const int StartBoxingClubBattleScRsp = 4249;
-    static const int GetWaypointCsReq = 418;
-    static const int LeaveRogueScRsp = 1841;
-    static const int TravelBrochureSetPageDescStatusScRsp = 6462;
-    static const int GetAllSaveRaidScRsp = 2262;
-    static const int WolfBroGamePickupBulletScRsp = 6583;
-    static const int ClockParkUnlockTalentScRsp = 7249;
-    static const int ExchangeStaminaScRsp = 83;
-    static const int GetPunkLordBattleRecordScRsp = 3202;
-    static const int GetShopListScRsp = 1574;
-    static const int LogisticsScoreRewardSyncInfoScNotify = 4780;
-    static const int GetStageLineupScRsp = 774;
-    static const int UpdateRotaterScNotify = 6848;
-    static const int LockRelicCsReq = 591;
-    static const int BattlePassInfoNotify = 3018;
-    static const int MonopolyMoveCsReq = 7041;
-    static const int ReserveStaminaExchangeScRsp = 95;
-    static const int MarkItemCsReq = 509;
-    static const int MonopolyGameRaiseRatioCsReq = 7038;
-    static const int UpdateFloorSavedValueNotify = 1465;
-    static const int ExpUpRelicScRsp = 522;
-    static const int AlleyShipUnlockScNotify = 4777;
-    static const int ChessRogueEnterNextLayerScRsp = 5582;
-    static const int SyncRogueFinishScNotify = 1883;
-    static const int ChessRogueNousEditDiceCsReq = 5445;
-    static const int MonopolyTakePhaseRewardScRsp = 7085;
-    static const int EvolveBuildUnlockInfoNotify = 7123;
-    static const int GetLevelRewardTakenListCsReq = 8;
-    static const int InteractTreasureDungeonGridScRsp = 4448;
-    static const int GetRndOptionCsReq = 3418;
-    static const int SwordTrainingRestoreGameScRsp = 7468;
-    static const int ChessRogueNousDiceUpdateNotify = 5542;
-    static const int TakeQuestRewardCsReq = 929;
-    static const int SwordTrainingExamResultConfirmCsReq = 7488;
-    static const int ChessRoguePickAvatarScRsp = 5441;
-    static const int LeaveAetherDivideSceneScRsp = 4837;
-    static const int MuseumRandomEventStartScNotify = 4340;
-    static const int RemoveStuffFromAreaScRsp = 4341;
-    static const int MonopolyScrachRaffleTicketCsReq = 7081;
-    static const int SyncRogueCommonVirtualItemInfoScNotify = 5645;
-    static const int AetherDivideSpiritExpUpCsReq = 4811;
-    static const int GetFirstTalkByPerformanceNpcScRsp = 2157;
-    static const int ChooseBoxingClubStageOptionalBuffScRsp = 4222;
-    static const int ReviveRogueAvatarCsReq = 1840;
-    static const int SetTurnFoodSwitchScRsp = 523;
-    static const int TakeTrialActivityRewardScRsp = 2633;
-    static const int ClientObjDownloadDataScNotify = 99;
-    static const int TakeChallengeRaidRewardScRsp = 2219;
-    static const int DoGachaInRollShopCsReq = 6913;
-    static const int WolfBroGameUseBulletCsReq = 6557;
-    static const int GetMapRotationDataCsReq = 6889;
-    static const int LobbyCreateCsReq = 7369;
-    static const int AlleyEventEffectNotify = 4764;
-    static const int GetCurBattleInfoScRsp = 149;
-    static const int GiveUpBoxingClubChallengeScRsp = 4241;
-    static const int FightKickOutScNotify = 30037;
-    static const int AcceptedPamMissionExpireScRsp = 4074;
-    static const int WolfBroGameExplodeMonsterCsReq = 6562;
-    static const int TakeRogueEndlessActivityPointRewardScRsp = 6003;
-    static const int GetChessRogueStoryAeonTalkInfoCsReq = 5456;
-    static const int GetMonopolyDailyReportScRsp = 7052;
-    static const int BuyNpcStuffScRsp = 4337;
-    static const int GetMissionDataCsReq = 1218;
-    static const int ChessRogueFinishCurRoomNotify = 5439;
-    static const int TextJoinQueryCsReq = 3829;
-    static const int RotateMapScRsp = 6841;
-    static const int LeaveChallengeScRsp = 1749;
-    static const int TakeRogueAeonLevelRewardCsReq = 1881;
-    static const int MonopolyGuessDrawScNotify = 7075;
-    static const int MonopolyGameGachaCsReq = 7002;
-    static const int SummonPunkLordMonsterScRsp = 3241;
-    static const int FinishItemIdCsReq = 2758;
-    static const int MuseumRandomEventSelectCsReq = 4308;
-    static const int RefreshTriggerByClientCsReq = 1497;
-    static const int EnterTreasureDungeonScRsp = 4498;
-    static const int CommonRogueUpdateScNotify = 5633;
-    static const int MissionGroupWarnScNotify = 1257;
-    static const int GetEnteredSceneScRsp = 1444;
-    static const int ArchiveWolfBroGameScRsp = 6537;
-    static const int SyncTaskScRsp = 1228;
-    static const int RogueWorkbenchSelectFuncScRsp = 5660;
-    static const int EvolveBuildLeaveScRsp = 7150;
-    static const int PickRogueAvatarScRsp = 1891;
-    static const int SetFriendMarkCsReq = 2942;
-    static const int EnterChallengeNextPhaseScRsp = 1777;
-    static const int RogueWorkbenchSelectFuncCsReq = 5644;
-    static const int EvolveBuildShopAbilityUpCsReq = 7113;
-    static const int MatchThreeSetBirdPosScRsp = 7412;
-    static const int RogueModifierSelectCellScRsp = 5358;
-    static const int HeliobusUpgradeLevelScRsp = 5898;
-    static const int TakeMultipleExpeditionRewardScRsp = 2540;
-    static const int MonopolyGuessChooseScRsp = 7087;
-    static const int QuitBattleScNotify = 119;
-    static const int StartRaidScRsp = 2274;
-    static const int RogueModifierStageStartNotify = 5364;
-    static const int EnterChallengeNextPhaseCsReq = 1721;
-    static const int MonopolyGetRegionProgressCsReq = 7095;
-    static const int GetFriendBattleRecordDetailScRsp = 2933;
-    static const int ComposeSelectedRelicCsReq = 521;
-    static const int GetFriendAssistListScRsp = 2936;
-    static const int GetTreasureDungeonActivityDataScRsp = 4457;
-    static const int GetPlayerBoardDataScRsp = 2874;
-    static const int GetMonopolyDailyReportCsReq = 7030;
-    static const int TakeMailAttachmentScRsp = 841;
-    static const int SetDisplayAvatarCsReq = 2858;
-    static const int ChessRogueQueryAeonDimensionsScRsp = 5576;
-    static const int HeliobusSnsLikeCsReq = 5828;
-    static const int MatchBoxingClubOpponentScRsp = 4237;
-    static const int ArchiveWolfBroGameCsReq = 6529;
-    static const int AceAntiCheaterScRsp = 10;
-    static const int SyncRogueCommonDialogueDataScNotify = 5684;
-    static const int GetAllLineupDataCsReq = 748;
-    static const int GetMonopolyMbtiReportRewardScRsp = 7086;
-    static const int GetPunkLordDataCsReq = 3222;
-    static const int UnlockTutorialGuideScRsp = 1641;
-    static const int EnterSceneByServerScNotify = 1434;
-    static const int DeleteFriendScRsp = 2998;
-    static const int EnterSummonActivityStageScRsp = 7570;
-    static const int RogueTournReviveAvatarScRsp = 6071;
-    static const int GetTutorialScRsp = 1674;
-    static const int TravelBrochureGetDataScRsp = 6474;
-    static const int GiveUpBoxingClubChallengeCsReq = 4228;
-    static const int FinishCurTurnCsReq = 4389;
-    static const int EnterFeverTimeActivityStageScRsp = 7155;
-    static const int GetFriendLoginInfoCsReq = 2914;
-    static const int GetFriendListInfoScRsp = 2974;
-    static const int RogueTournEnterScRsp = 6028;
-    static const int GetQuestDataCsReq = 918;
-    static const int PlayerReturnInfoQueryScRsp = 4564;
-    static const int PlayerReturnStartScNotify = 4518;
-    static const int ExchangeRogueBuffWithMiracleScRsp = 5648;
-    static const int UpdateMechanismBarScNotify = 1433;
-    static const int UpdatePlayerSettingCsReq = 31;
-    static const int RogueTournEnablePermanentTalentCsReq = 6057;
-    static const int GetGunPlayDataCsReq = 4177;
-    static const int SceneReviveAfterRebattleCsReq = 1477;
-    static const int LeaveAetherDivideSceneCsReq = 4829;
-    static const int MarkReadMailScRsp = 837;
-    static const int GetServerPrefsDataCsReq = 6129;
-    static const int GetTrainVisitorBehaviorScRsp = 3737;
-    static const int SelectInclinationTextScRsp = 2164;
-    static const int SetIsDisplayAvatarInfoScRsp = 2841;
-    static const int GetRogueInitialScoreCsReq = 1887;
-    static const int LeaveChallengeCsReq = 1758;
-    static const int StartTimedCocoonStageCsReq = 1415;
-    static const int MonopolyMoveScRsp = 7019;
-    static const int MultiplayerGetFightGateScRsp = 1037;
-    static const int ChessRogueUpdateBoardScNotify = 5515;
-    static const int GetQuestDataScRsp = 974;
-    static const int BuyNpcStuffCsReq = 4329;
-    static const int CancelActivityExpeditionCsReq = 2557;
-    static const int GetLevelRewardTakenListScRsp = 11;
-    static const int MatchThreeGetDataScRsp = 7429;
-    static const int MultiplayerFightGameStateScRsp = 1074;
-    static const int HandleRogueCommonPendingActionCsReq = 5700;
-    static const int GetTrackPhotoActivityDataCsReq = 7552;
-    static const int ChessRogueQuestFinishNotify = 5578;
-    static const int MonopolyLikeScNotify = 7068;
-    static const int SetCurWaypointCsReq = 429;
-    static const int ChessRogueCheatRollScRsp = 5567;
-    static const int SetFriendRemarkNameScRsp = 2908;
-    static const int GetFriendListInfoCsReq = 2918;
-    static const int HeliobusLineupUpdateScNotify = 5877;
-    static const int SwordTrainingFinishEndingHintCsReq = 7493;
-    static const int TakeChapterRewardCsReq = 441;
-    static const int SelectPhoneThemeScRsp = 5128;
-    static const int DoGachaInRollShopScRsp = 6905;
-    static const int EnterFeverTimeActivityStageCsReq = 7152;
-    static const int StartChallengeScRsp = 1737;
-    static const int LobbyGetInfoScRsp = 7374;
-    static const int BuyGoodsScRsp = 1537;
-    static const int BuyRogueShopBuffCsReq = 5664;
-    static const int UpdateMovieRacingDataScRsp = 4121;
-    static const int OfferingInfoScNotify = 6929;
-    static const int FinishTutorialCsReq = 1619;
-    static const int WolfBroGameDataChangeScNotify = 6589;
-    static const int MatchThreeSetBirdPosCsReq = 7420;
-    static const int HeliobusUpgradeLevelCsReq = 5846;
-    static const int HeliobusSelectSkillCsReq = 5822;
-    static const int FinishFirstTalkByPerformanceNpcScRsp = 2198;
-    static const int SceneUpdatePositionVersionNotify = 1457;
-    static const int EnterTelevisionActivityStageScRsp = 6963;
-    static const int EndDrinkMakerSequenceScRsp = 6984;
-    static const int ChessRogueSkipTeachingLevelScRsp = 5489;
-    static const int GetMultipleDropInfoCsReq = 4618;
-    static const int GetPhoneDataCsReq = 5118;
-    static const int SetAvatarPathCsReq = 52;
-    static const int LobbyJoinCsReq = 7356;
-    static const int PlayerHeartBeatScRsp = 90;
-    static const int RaidCollectionDataScRsp = 6957;
-    static const int GetDrinkMakerDataScRsp = 6997;
-    static const int MonopolyGetRegionProgressScRsp = 7054;
-    static const int GetSingleRedDotParamGroupScRsp = 5949;
-    static const int ChessRogueGoAheadScRsp = 5529;
-    static const int MonopolyReRollRandomScRsp = 7062;
-    static const int MarkAvatarScRsp = 347;
-    static const int RogueTournHandBookNotify = 6020;
-    static const int GetTutorialCsReq = 1618;
-    static const int GetArchiveDataScRsp = 2374;
-    static const int SyncAddBlacklistScNotify = 2962;
-    static const int GetSwordTrainingDataCsReq = 7479;
-    static const int ExchangeRogueRewardKeyCsReq = 1833;
-    static const int ChessRogueGiveUpCsReq = 5524;
-    static const int StartTimedFarmElementScRsp = 1443;
-    static const int ReplaceLineupCsReq = 711;
-    static const int RogueTournLeaveRogueCocoonSceneCsReq = 6050;
-    static const int SetBoxingClubResonanceLineupCsReq = 4246;
-    static const int GetFriendBattleRecordDetailCsReq = 2968;
-    static const int GetAllRedDotDataCsReq = 5918;
-    static const int RogueTournStartCsReq = 6031;
-    static const int StartTrialActivityCsReq = 2690;
-    static const int MonopolyGetRaffleTicketScRsp = 7034;
-    static const int GetPlayerBoardDataCsReq = 2818;
-    static const int StarFightDataChangeNotify = 7166;
-    static const int TakeAllRewardCsReq = 3041;
-    static const int ChessRogueQueryAeonDimensionsCsReq = 5510;
-    static const int PunkLordMonsterInfoScNotify = 3283;
-    static const int ChessRogueStartScRsp = 5570;
-    static const int GetRogueInfoScRsp = 1874;
-    static const int RogueModifierSelectCellCsReq = 5337;
-    static const int LogisticsGameScRsp = 4737;
-    static const int GetAssistListCsReq = 2961;
-    static const int EnterAdventureCsReq = 1318;
-    static const int GetAetherDivideInfoScRsp = 4857;
-    static const int GetCurAssistScRsp = 2913;
-    static const int GetEnhanceCommonRogueBuffInfoScRsp = 5608;
-    static const int RankUpEquipmentScRsp = 564;
-    static const int RogueTournExpNotify = 6030;
-    static const int SellItemScRsp = 548;
-    static const int ChallengeBossPhaseSettleNotify = 1724;
-    static const int FinishChessRogueNousSubStoryScRsp = 5560;
-    static const int StartStarFightLevelScRsp = 7170;
-    static const int SelectChessRogueSubStoryScRsp = 5517;
-    static const int FinishQuestScRsp = 989;
-    static const int MarkRelicFilterPlanCsReq = 533;
-    static const int RogueTournTakeExpRewardScRsp = 6081;
-    static const int ChangeLineupLeaderScRsp = 783;
-    static const int TakePictureCsReq = 4158;
-    static const int GetBagScRsp = 574;
-    static const int GetPunkLordMonsterDataScRsp = 3274;
-    static const int SavePointsInfoNotify = 1409;
-    static const int DeleteBlacklistCsReq = 2977;
-    static const int SubmitEmotionItemCsReq = 6358;
-    static const int StartWolfBroGameScRsp = 6574;
-    static const int GetChallengeRaidInfoScRsp = 2228;
-    static const int GetSocialEventServerCacheCsReq = 7094;
-    static const int GetRogueScoreRewardInfoScRsp = 1885;
-    static const int GetLoginChatInfoCsReq = 3983;
-    static const int QuitLineupCsReq = 728;
-    static const int GetAvatarDataCsReq = 318;
-    static const int GetBoxingClubInfoScRsp = 4274;
-    static const int StartAetherDivideSceneBattleCsReq = 4858;
-    static const int SyncRogueCommonDialogueOptionFinishScNotify = 5676;
-    static const int MonopolyEventLoadUpdateScNotify = 7093;
-    static const int ChooseBoxingClubResonanceScRsp = 4257;
-    static const int GetAetherDivideChallengeInfoCsReq = 4824;
-    static const int GetMissionEventDataCsReq = 1283;
-    static const int StopRogueAdventureRoomScRsp = 5624;
-    static const int RelicAvatarRecommendCsReq = 512;
-    static const int GetFriendChallengeDetailCsReq = 2910;
-    static const int TakePrestigeRewardScRsp = 4757;
-    static const int HeliobusChallengeUpdateScNotify = 5821;
-    static const int EvolveBuildShopAbilityResetCsReq = 7117;
-    static const int GetCurLineupDataScRsp = 737;
-    static const int PrestigeLevelUpCsReq = 4773;
-    static const int GetCurChallengeCsReq = 1764;
-    static const int TakeOfferingRewardCsReq = 6923;
-    static const int GetRaidInfoScRsp = 2257;
-    static const int TravelBrochurePageUnlockScNotify = 6429;
-    static const int SpaceZooDataScRsp = 6774;
-    static const int PromoteAvatarScRsp = 341;
-    static const int ChessRogueGiveUpRollScRsp = 5455;
-    static const int MonopolyLikeScRsp = 7020;
-    static const int SyncAcceptedPamMissionNotify = 4029;
-    static const int TakeExpeditionRewardCsReq = 2528;
-    static const int TakeMonsterResearchActivityRewardCsReq = 2673;
-    static const int GetRogueAeonInfoScRsp = 1869;
-    static const int StartPartialChallengeCsReq = 1740;
-    static const int QuitTreasureDungeonScRsp = 4421;
-    static const int EvolveBuildReRandomStageScRsp = 7103;
-    static const int MonopolyGetDailyInitItemScRsp = 7060;
-    static const int RogueModifierDelNotify = 5319;
-    static const int LevelUpSpecialSkillTreeScRsp = 338;
-    static const int GetRollShopInfoCsReq = 6914;
-    static const int BatchGetQuestDataCsReq = 983;
-    static const int MuseumRandomEventQueryScRsp = 4373;
-    static const int SearchPlayerScRsp = 2947;
-    static const int TeleportToMissionResetPointScRsp = 1247;
-    static const int GetCurSceneInfoCsReq = 1428;
-    static const int RogueWorkbenchHandleFuncScRsp = 5651;
-    static const int GetAllServerPrefsDataCsReq = 6118;
-    static const int SyncRogueVirtualItemInfoScNotify = 1863;
-    static const int GetRogueTalentInfoScRsp = 1866;
-    static const int QuitWolfBroGameScRsp = 6541;
-    static const int GetWolfBroGameDataScRsp = 6564;
-    static const int ChessRogueUpdateDiceInfoScNotify = 5447;
-    static const int MonopolyRollRandomCsReq = 7083;
-    static const int ChangeStoryLineFinishScNotify = 6249;
-    static const int LobbyBeginScRsp = 7370;
-    static const int GetChallengeGroupStatisticsScRsp = 1762;
-    static const int ChessRogueEnterCellCsReq = 5493;
-    static const int GetSaveRaidCsReq = 2283;
-    static const int RogueGetGambleInfoCsReq = 5630;
-    static const int ChallengeSettleNotify = 1728;
-    static const int ClockParkQuitScriptScRsp = 7298;
-    static const int ReviveRogueAvatarScRsp = 1848;
-    static const int RemoveStuffFromAreaCsReq = 4328;
-    static const int SetAssistCsReq = 2982;
-    static const int ContentPackageGetDataCsReq = 7519;
-    static const int EvolveBuildStartStageScRsp = 7120;
-    static const int SpaceZooOpCatteryScRsp = 6741;
-    static const int SetPlayerInfoCsReq = 23;
-    static const int WolfBroGameUseBulletScRsp = 6546;
-    static const int FightSessionStopScNotify = 30028;
-    static const int ShowNewSupplementVisitorScRsp = 3757;
-    static const int ChessRogueConfirmRollCsReq = 5415;
-    static const int PickRogueAvatarCsReq = 1822;
-    static const int GetRogueInfoCsReq = 1818;
-    static const int RestoreWolfBroGameArchiveScRsp = 6549;
-    static const int ChooseBoxingClubStageOptionalBuffCsReq = 4283;
-    static const int EvolveBuildShopAbilityDownScRsp = 7116;
-    static const int SetGroupCustomSaveDataCsReq = 1490;
-    static const int GetUpdatedArchiveDataScRsp = 2337;
-    static const int HeliobusInfoChangedScNotify = 5857;
-    static const int MonopolyReRollRandomCsReq = 7091;
-    static const int GetStuffScNotify = 4319;
-    static const int TakePromotionRewardScRsp = 373;
-    static const int GetFirstTalkNpcScRsp = 2149;
-    static const int SwordTrainingRestoreGameCsReq = 7476;
-    static const int GameplayCounterRecoverCsReq = 1426;
-    static const int StartWolfBroGameCsReq = 6518;
-    static const int PromoteEquipmentCsReq = 529;
-    static const int EnterSectionScRsp = 1447;
-    static const int GetChessRogueStoryInfoCsReq = 5482;
-    static const int MonopolyGetDailyInitItemCsReq = 7044;
-    static const int RogueGetGambleInfoScRsp = 5652;
-    static const int RogueTournBattleFailSettleInfoScNotify = 6027;
-    static const int QuitRogueScRsp = 1802;
-    static const int UnlockTutorialGuideCsReq = 1628;
-    static const int MonopolyContentUpdateScNotify = 7061;
-    static const int SwordTrainingRefreshPartnerAbilityScRsp = 7451;
-    static const int PlayerLoginFinishCsReq = 76;
-    static const int ChessRogueEnterNextLayerCsReq = 5473;
-    static const int BatchMarkChatEmojiCsReq = 3946;
-    static const int SceneGroupRefreshScNotify = 1405;
-    static const int ReBattleAfterBattleLoseCsNotify = 146;
-    static const int RogueDoGambleScRsp = 5669;
-    static const int TakeCityShopRewardCsReq = 1558;
-    static const int LobbyKickOutCsReq = 7359;
-    static const int MatchResultScNotify = 7337;
-    static const int FinishCurTurnScRsp = 4357;
-    static const int GetRogueCollectionScRsp = 5671;
-    static const int RogueWorkbenchGetInfoCsReq = 5601;
-    static const int GetFeverTimeActivityDataCsReq = 7160;
-    static const int MonopolyGiveUpCurContentCsReq = 7077;
-    static const int SceneCastSkillCostMpCsReq = 1498;
-    static const int TakeOffAvatarSkinScRsp = 377;
-    static const int AlleyShipmentEventEffectsScNotify = 4761;
-    static const int ClockParkUnlockTalentCsReq = 7258;
-    static const int GetChallengeScRsp = 1774;
-    static const int MuseumDispatchFinishedScNotify = 4321;
-    static const int GetGachaInfoScRsp = 1974;
-    static const int TextJoinSaveScRsp = 3874;
-    static const int InteractChargerScRsp = 6837;
-    static const int ChessRogueEnterCsReq = 5521;
-    static const int MultiplayerFightGameStartScNotify = 1028;
-    static const int ExchangeRogueBuffWithMiracleCsReq = 5640;
-    static const int HeliobusSnsCommentScRsp = 5864;
-    static const int SelectPhoneThemeCsReq = 5149;
-    static const int SetCurInteractEntityScRsp = 1459;
-    static const int LobbySyncInfoScNotify = 7351;
-    static const int MakeDrinkScRsp = 6985;
-    static const int TakeApRewardCsReq = 3318;
-    static const int MonopolyCellUpdateNotify = 7037;
-    static const int StartMatchScRsp = 7329;
-    static const int GetMissionDataScRsp = 1274;
-    static const int StartAetherDivideSceneBattleScRsp = 4849;
-    static const int QuitWolfBroGameCsReq = 6528;
-    static const int AcceptMultipleExpeditionCsReq = 2522;
-    static const int GetMainMissionCustomValueScRsp = 1213;
-    static const int TextJoinQueryScRsp = 3837;
-    static const int SpringRecoverSingleAvatarScRsp = 1468;
-    static const int BatchGetQuestDataScRsp = 922;
-    static const int SyncEntityBuffChangeListScNotify = 1446;
-    static const int FinishFirstTalkNpcCsReq = 2128;
-    static const int ClockParkStartScriptScRsp = 7241;
-    static const int HeliobusSnsLikeScRsp = 5841;
-    static const int EnterRogueMapRoomCsReq = 1880;
-    static const int MatchBoxingClubOpponentCsReq = 4229;
-    static const int GetFantasticStoryActivityDataCsReq = 4918;
-    static const int SpaceZooDataCsReq = 6718;
-    static const int TriggerVoiceScRsp = 4198;
-    static const int PrepareRogueAdventureRoomCsReq = 5674;
-    static const int AceAntiCheaterCsReq = 100;
-    static const int GetRogueShopBuffInfoCsReq = 5649;
-    static const int SetForbidOtherApplyFriendScRsp = 2912;
-    static const int ExpUpEquipmentScRsp = 557;
-    static const int SetDisplayAvatarScRsp = 2849;
-    static const int ChessRogueRollDiceCsReq = 5450;
-    static const int GetTutorialGuideCsReq = 1629;
-    static const int MultipleDropInfoScNotify = 4629;
-    static const int TakeMultipleExpeditionRewardCsReq = 2562;
-    static const int ChessRogueMoveCellNotify = 5536;
-    static const int EvolveBuildGiveupCsReq = 7112;
-    static const int DelMailCsReq = 858;
-    static const int GetServerPrefsDataScRsp = 6137;
-    static const int TakePunkLordPointRewardCsReq = 3246;
-    static const int QuitBattleScRsp = 137;
-    static const int EnterMapRotationRegionCsReq = 6818;
-    static const int TakeTrainVisitorUntakenBehaviorRewardCsReq = 3719;
-    static const int SwordTrainingFinishEndingHintScRsp = 7492;
-    static const int MuseumTakeCollectRewardScRsp = 4361;
-    static const int PlayerLoginCsReq = 18;
-    static const int GetFriendLoginInfoScRsp = 2975;
-    static const int GetChapterCsReq = 458;
-    static const int LobbyQuitCsReq = 7391;
-    static const int RogueTournResetPermanentTalentCsReq = 6066;
-    static const int GetTrialActivityDataCsReq = 2636;
-    static const int GetTrainVisitorBehaviorCsReq = 3729;
-    static const int FinishRogueCommonDialogueScRsp = 5678;
-    static const int GetSpringRecoverDataCsReq = 1442;
-    static const int GetActivityScheduleConfigScRsp = 2649;
-    static const int CommonRogueComponentUpdateScNotify = 5625;
-    static const int GetHeartDialInfoCsReq = 6318;
-    static const int GetRogueHandbookDataScRsp = 5670;
-    static const int GetRelicFilterPlanScRsp = 516;
-    static const int HandleRogueCommonPendingActionScRsp = 5610;
-    static const int ClockParkHandleWaitOperationCsReq = 7289;
-    static const int ChessRogueNousGetRogueTalentInfoScRsp = 5571;
-    static const int DiscardRelicScRsp = 514;
-    static const int FeatureSwitchClosedScNotify = 3;
-    static const int TakeQuestRewardScRsp = 937;
-    static const int MultiplayerGetFightGateCsReq = 1029;
-    static const int TakeKilledPunkLordMonsterScoreCsReq = 3261;
-    static const int AetherDivideSpiritInfoScNotify = 4877;
-    static const int GetRndOptionScRsp = 3474;
-    static const int FightLeaveScNotify = 30029;
-    static const int RevcMsgScNotify = 3929;
-    static const int WolfBroGamePickupBulletCsReq = 6598;
-    static const int GetMissionStatusScRsp = 1273;
-    static const int SetAetherDivideLineUpScRsp = 4898;
-    static const int GetPunkLordBattleRecordCsReq = 3259;
-    static const int SelectRogueCommonDialogueOptionScRsp = 5632;
-    static const int ChessRogueQuitScRsp = 5588;
-    static const int SwordTrainingTurnActionScRsp = 7487;
-    static const int FinishPerformSectionIdCsReq = 2719;
-    static const int GetSingleRedDotParamGroupCsReq = 5958;
-    static const int GetSummonActivityDataScRsp = 7565;
-    static const int PlayerReturnSignScRsp = 4529;
-    static const int ActivateFarmElementScRsp = 1412;
-    static const int ReturnLastTownCsReq = 1473;
-    static const int StartAlleyEventScRsp = 4741;
-    static const int PlayerLogoutScRsp = 37;
-    static const int GetEnteredSceneCsReq = 1469;
-    static const int LobbyJoinScRsp = 7395;
-    static const int MonopolyUpgradeAssetCsReq = 7011;
-    static const int SetSpringRecoverConfigCsReq = 1416;
-    static const int GetAllLineupDataScRsp = 773;
-    static const int CancelMarkItemNotify = 506;
-    static const int DestroyItemCsReq = 582;
-    static const int MultiplayerFightGiveUpScRsp = 1049;
-    static const int GetChessRogueNousStoryInfoScRsp = 5466;
-    static const int GetDrinkMakerDataCsReq = 6994;
-    static const int TakeFightActivityRewardScRsp = 3628;
-    static const int SwordTrainingGiveUpGameCsReq = 7467;
-    static const int GetRecyleTimeScRsp = 547;
-    static const int FinishChessRogueSubStoryCsReq = 5411;
-    static const int SwordTrainingStoryConfirmCsReq = 7498;
-    static const int DailyFirstEnterMonopolyActivityScRsp = 7098;
-    static const int AddEquipmentScNotify = 524;
-    static const int GetNpcMessageGroupScRsp = 2774;
-    static const int MonopolySelectOptionCsReq = 7064;
-    static const int GetKilledPunkLordMonsterDataCsReq = 3221;
-    static const int GetVideoVersionKeyCsReq = 1;
-    static const int AddBlacklistScRsp = 2991;
-    static const int MonopolyCheatDiceScRsp = 7047;
-    static const int EndDrinkMakerSequenceCsReq = 6983;
-    static const int TakeLoginActivityRewardCsReq = 2629;
-    static const int DestroyItemScRsp = 559;
-    static const int SyncRogueAeonLevelUpRewardScNotify = 1865;
-    static const int EvolveBuildQueryInfoCsReq = 7119;
-    static const int TakeRogueEndlessActivityAllBonusRewardScRsp = 6009;
-    static const int MuseumRandomEventSelectScRsp = 4311;
-    static const int RogueTournEnterRogueCocoonSceneCsReq = 6024;
-    static const int ExpUpRelicCsReq = 583;
-    static const int GetSceneMapInfoCsReq = 1451;
-    static const int ComposeItemScRsp = 598;
-    static const int RogueTournGetSettleInfoCsReq = 6044;
-    static const int GetMapRotationDataScRsp = 6857;
-    static const int GameplayCounterCountDownCsReq = 1499;
-    static const int DrinkMakerUpdateTipsNotify = 6990;
-    static const int FightHeartBeatCsReq = 30058;
-    static const int GetChapterScRsp = 449;
-    static const int MuseumFundsChangedScNotify = 4362;
-    static const int ReEnterLastElementStageCsReq = 1494;
-    static const int UnlockTutorialCsReq = 1658;
-    static const int GetLevelRewardScRsp = 77;
-    static const int AvatarExpUpScRsp = 337;
-    static const int MuseumTargetStartNotify = 4377;
-    static const int GetReplayTokenScRsp = 3574;
-    static const int GetRogueCommonDialogueDataScRsp = 5667;
-    static const int ClockParkGetInfoScRsp = 7274;
-    static const int GetChatFriendHistoryScRsp = 3941;
-    static const int MonopolyBuyGoodsScRsp = 7008;
-    static const int GetMuseumInfoCsReq = 4318;
-    static const int SetTurnFoodSwitchCsReq = 580;
-    static const int BattleCollegeDataChangeScNotify = 5729;
-    static const int SetAssistAvatarCsReq = 2857;
-    static const int EnterAdventureScRsp = 1374;
-    static const int RogueTournTakeExpRewardCsReq = 6016;
-    static const int LogisticsGameCsReq = 4729;
-    static const int GetChatEmojiListCsReq = 3919;
-    static const int ClockParkGetOngoingScriptInfoScRsp = 7264;
-    static const int DressAvatarSkinScRsp = 311;
-    static const int GetAssistListScRsp = 2938;
-    static const int AetherDivideTakeChallengeRewardScRsp = 4806;
-    static const int SetClientRaidTargetCountCsReq = 2246;
-    static const int StartStarFightLevelCsReq = 7167;
-    static const int GetMovieRacingDataCsReq = 4173;
-    static const int MonopolyClickMbtiReportCsReq = 7066;
-    static const int GetTrainVisitorRegisterScRsp = 3741;
-    static const int ChessRoguePickAvatarCsReq = 5495;
-    static const int ChessRogueNousEnableRogueTalentCsReq = 5531;
-    static const int GetBattleCollegeDataCsReq = 5718;
-    static const int InteractTreasureDungeonGridCsReq = 4440;
-    static const int SetSignatureScRsp = 2889;
-    static const int EquipAetherDividePassiveSkillScRsp = 4822;
-    static const int GetChallengeRaidInfoCsReq = 2249;
-    static const int SetForbidOtherApplyFriendCsReq = 2953;
-    static const int GetStarFightDataScRsp = 7165;
-    static const int RogueTournGetCurRogueCocoonInfoScRsp = 6061;
-    static const int InterruptMissionEventScRsp = 1211;
-    static const int GetPlatformPlayerInfoCsReq = 2987;
-    static const int RefreshTriggerByClientScRsp = 1466;
-    static const int RemoveRotaterScRsp = 6840;
-    static const int ClientObjUploadScRsp = 93;
-    static const int GetArchiveDataCsReq = 2318;
-    static const int RogueTournReviveAvatarCsReq = 6083;
-    static const int GetPlayerDetailInfoCsReq = 2929;
-    static const int GetShopListCsReq = 1518;
-    static const int SwordTrainingExamResultConfirmScRsp = 7480;
-    static const int EvolveBuildCoinNotify = 7139;
-    static const int SaveLogisticsScRsp = 4792;
-    static const int EvolveBuildStartLevelScRsp = 7145;
-    static const int MuseumTargetMissionFinishNotify = 4324;
-    static const int TakePictureScRsp = 4149;
-    static const int SetRedPointStatusScNotify = 17;
-    static const int FightMatch3TurnStartScNotify = 30137;
-    static const int LobbyCreateScRsp = 7379;
-    static const int GetLoginActivityScRsp = 2674;
-    static const int DressAvatarScRsp = 364;
-    static const int UpgradeAreaCsReq = 4346;
-    static const int DailyActiveInfoNotify = 3358;
-    static const int FightMatch3ChatScNotify = 30189;
-    static const int ExchangeGachaCeilingCsReq = 1928;
-    static const int ChessRogueSkipTeachingLevelCsReq = 5519;
-    static const int RogueTournReviveCostUpdateScNotify = 6011;
-    static const int SubmitOrigamiItemScRsp = 4122;
-    static const int ContentPackageUnlockCsReq = 7545;
-    static const int GetGachaCeilingCsReq = 1958;
-    static const int SyncClientResVersionScRsp = 141;
-    static const int RogueDoGambleCsReq = 5635;
-    static const int PlayBackGroundMusicScRsp = 3137;
-    static const int ResetMapRotationRegionCsReq = 6846;
-    static const int RogueTournGetMiscRealTimeDataCsReq = 6084;
-    static const int EvolveBuildShopAbilityUpScRsp = 7131;
-    static const int MuseumInfoChangedScNotify = 4391;
-    static const int StartBattleCollegeCsReq = 5737;
-    static const int GetCurChallengeScRsp = 1789;
-    static const int GetTreasureDungeonActivityDataCsReq = 4489;
-    static const int GetMainMissionCustomValueCsReq = 1202;
-    static const int FinishCosumeItemMissionScRsp = 1298;
-    static const int GetPhoneDataScRsp = 5174;
-    static const int FightMatch3StartCountDownScNotify = 30129;
-    static const int UpgradeAreaStatCsReq = 4383;
-    static const int EnhanceRogueBuffCsReq = 1877;
-    static const int GetNpcTakenRewardScRsp = 2174;
-    static const int MonopolyGameSettleScNotify = 7059;
-    static const int HandleFriendScRsp = 2989;
-    static const int SearchPlayerCsReq = 2992;
-    static const int SwordTrainingLearnSkillCsReq = 7463;
-    static const int EnterChessRogueAeonRoomCsReq = 5452;
-    static const int EvolveBuildLeaveCsReq = 7109;
-    static const int QuitLineupScRsp = 741;
-    static const int EnterFightActivityStageCsReq = 3637;
-    static const int MultiplayerMatch3FinishScNotify = 1019;
-    static const int SpaceZooBornCsReq = 6729;
-    static const int SwordTrainingResumeGameCsReq = 7452;
-    static const int GetJukeboxDataScRsp = 3174;
-    static const int TakeRogueMiracleHandbookRewardCsReq = 5623;
-    static const int RogueTournDeleteArchiveCsReq = 6099;
-    static const int EvolveBuildFinishScNotify = 7101;
-    static const int AddRelicFilterPlanCsReq = 536;
-    static const int SwordTrainingGetSkillInfoCsReq = 7461;
-    static const int FinishTalkMissionCsReq = 1229;
-    static const int PlayerReturnTakePointRewardScRsp = 4549;
-    static const int FinishSectionIdScRsp = 2741;
-    static const int ModifyRelicFilterPlanScRsp = 510;
-    static const int RogueTournSettleScRsp = 6069;
-    static const int JoinLineupScRsp = 749;
-    static const int GetCurBattleInfoCsReq = 158;
-    static const int EnterSummonActivityStageCsReq = 7567;
-    static const int ChooseBoxingClubResonanceCsReq = 4289;
-    static const int AcceptExpeditionScRsp = 2537;
-    static const int FightActivityDataChangeScNotify = 3629;
-    static const int SwordTrainingUpdateRankCsReq = 7458;
-    static const int TrialBackGroundMusicScRsp = 3141;
-    static const int OpenRogueChestCsReq = 1820;
-    static const int QuitRogueCsReq = 1859;
-    static const int ComposeSelectedRelicScRsp = 577;
-    static const int MonopolyConfirmRandomCsReq = 7040;
-    static const int ChessRogueSelectCellCsReq = 5513;
-    static const int AcceptMissionEventCsReq = 1262;
-    static const int EnableRogueTalentScRsp = 1850;
-    static const int GetSocialEventServerCacheScRsp = 7078;
-    static const int SpaceZooOpCatteryCsReq = 6728;
-    static const int AlleyGuaranteedFundsScRsp = 4713;
-    static const int GetRogueBuffEnhanceInfoCsReq = 1811;
-    static const int ContentPackageGetDataScRsp = 7529;
-    static const int BuyBpLevelCsReq = 3049;
-    static const int TravelBrochureApplyPasterListScRsp = 6408;
-    static const int SetIsDisplayAvatarInfoCsReq = 2828;
-    static const int EvolveBuildShopAbilityDownCsReq = 7124;
-    static const int SwapLineupCsReq = 719;
-    static const int PlayerReturnForceFinishScNotify = 4589;
-    static const int DoGachaCsReq = 1929;
-    static const int LobbyBeginCsReq = 7387;
-    static const int TravelBrochurePageResetScRsp = 6448;
-    static const int GetFriendChallengeLineupCsReq = 2988;
-    static const int DeleteSummonUnitScRsp = 1404;
-    static const int RogueTournGetPermanentTalentInfoScRsp = 6092;
-    static const int GetFightActivityDataCsReq = 3618;
-    static const int MonopolyGetRaffleTicketCsReq = 7001;
-    static const int MuseumRandomEventQueryCsReq = 4348;
-    static const int EnterRogueCsReq = 1858;
-    static const int AetherDivideLineupScNotify = 4859;
-    static const int AcceptActivityExpeditionCsReq = 2564;
-    static const int GetAuthkeyCsReq = 22;
-    static const int RogueTournRenameArchiveScRsp = 6056;
-    static const int GetRogueInitialScoreScRsp = 1839;
-    static const int GetSecretKeyInfoScRsp = 84;
-    static const int StartPartialChallengeScRsp = 1748;
-    static const int MarkChatEmojiCsReq = 3989;
-    static const int ShareCsReq = 4118;
-    static const int SwordTrainingStoryBattleCsReq = 7478;
-    static const int OpenTreasureDungeonGridCsReq = 4483;
-    static const int MissionAcceptScNotify = 1209;
-    static const int SwordTrainingDialogueSelectOptionCsReq = 7471;
-    static const int GetMultiPathAvatarInfoScRsp = 44;
-    static const int SceneEntityTeleportScRsp = 1476;
-    static const int UnlockSkilltreeScRsp = 349;
-    static const int GetAllRedDotDataScRsp = 5974;
-    static const int InteractPropCsReq = 1429;
-    static const int LobbyInviteCsReq = 7355;
-    static const int ChessRogueGiveUpRollCsReq = 5448;
-    static const int ChessRogueGiveUpScRsp = 5481;
-    static const int SendMsgScRsp = 3974;
-    static const int PromoteAvatarCsReq = 328;
-    static const int EnterTrialActivityStageCsReq = 2610;
-    static const int SyncRogueStatusScNotify = 1843;
-    static const int GetMonopolyInfoScRsp = 7074;
-    static const int StartTimedCocoonStageScRsp = 1496;
-    static const int CancelMatchScRsp = 7345;
-    static const int GetDailyActiveInfoScRsp = 3337;
-    static const int TakeAllRewardScRsp = 3019;
-    static const int TravelBrochureSetPageDescStatusCsReq = 6491;
-    static const int EnterRogueEndlessActivityStageCsReq = 6007;
-    static const int ExchangeStaminaCsReq = 98;
-    static const int MonopolyDailySettleScNotify = 7036;
-    static const int FinishPlotScRsp = 1174;
-    static const int PrestigeLevelUpScRsp = 4708;
-    static const int ChessRogueReviveAvatarScRsp = 5470;
-    static const int UpdateGunPlayDataCsReq = 4192;
-    static const int SyncRogueAeonScNotify = 1834;
-    static const int SetStuffToAreaScRsp = 4349;
-    static const int LobbyModifyPlayerInfoCsReq = 7362;
-    static const int SetAvatarPathScRsp = 35;
-    static const int GetRogueScoreRewardInfoCsReq = 1899;
-    static const int AlleyOrderChangedScNotify = 4740;
-    static const int SceneEnterStageCsReq = 1411;
-    static const int EvolveBuildTakeExpRewardScRsp = 7144;
-    static const int TakeChallengeRewardCsReq = 1783;
-    static const int UpdateRedDotDataScRsp = 5937;
-    static const int GetAetherDivideChallengeInfoScRsp = 4892;
-    static const int TelevisionActivityDataChangeScNotify = 6973;
-    static const int GetLoginChatInfoScRsp = 3922;
-    static const int FightMatch3OpponentDataScNotify = 30141;
-    static const int MakeMissionDrinkScRsp = 6986;
-    static const int GetPlayerReplayInfoCsReq = 3529;
-    static const int GetRogueAdventureRoomInfoScRsp = 5683;
-    static const int ReserveStaminaExchangeCsReq = 71;
-    static const int FinishAeonDialogueGroupScRsp = 1860;
-    static const int TakeOffEquipmentScRsp = 357;
-    static const int CancelActivityExpeditionScRsp = 2546;
-    static const int SetRogueExhibitionCsReq = 5699;
-    static const int LeaveRaidScRsp = 2237;
-    static const int SetCurWaypointScRsp = 437;
-    static const int EnterFantasticStoryActivityStageCsReq = 4937;
-    static const int GetMissionEventDataScRsp = 1222;
-    static const int DailyRefreshNotify = 16;
-    static const int UseTreasureDungeonItemCsReq = 4473;
-    static const int SelectChessRogueNousSubStoryCsReq = 5566;
-    static const int LeaveRogueCsReq = 1828;
-    static const int GetRogueEndlessActivityDataCsReq = 6002;
-    static const int AetherDivideRefreshEndlessCsReq = 4802;
-    static const int SpaceZooTakeScRsp = 6783;
-    static const int BuyRogueShopMiracleScRsp = 5619;
-    static const int MatchThreeGetDataCsReq = 7419;
-    static const int SwordTrainingUnlockSyncScNotify = 7484;
-    static const int RogueTournEnterRoomCsReq = 6033;
-    static const int GetAvatarDataScRsp = 374;
-    static const int AntiAddictScNotify = 40;
-    static const int StartAetherDivideChallengeBattleCsReq = 4828;
-    static const int TakeTrainVisitorUntakenBehaviorRewardScRsp = 3764;
-    static const int FightMatch3SwapScRsp = 30128;
-    static const int SelectChatBubbleScRsp = 5137;
-    static const int HeliobusActivityDataCsReq = 5818;
-    static const int TakeRollShopRewardCsReq = 6903;
-    static const int RelicRecommendScRsp = 553;
-    static const int TrialActivityDataChangeScNotify = 2700;
-    static const int DrinkMakerChallengeCsReq = 6999;
-    static const int GetMbtiReportCsReq = 7033;
-    static const int AlleyGuaranteedFundsCsReq = 4702;
-    static const int UpdateFeatureSwitchScNotify = 12;
-    static const int ChessRogueRollDiceScRsp = 5471;
-    static const int GetCrossInfoScRsp = 7312;
-    static const int ActivateFarmElementCsReq = 1453;
-    static const int SetAetherDivideLineUpCsReq = 4846;
-    static const int LobbyQuitScRsp = 7360;
-    static const int TakeAllApRewardCsReq = 3349;
-    static const int RetcodeNotify = 68;
-    static const int RestartChallengePhaseCsReq = 1708;
-    static const int AetherDivideFinishChallengeScNotify = 4847;
-    static const int UseItemScRsp = 541;
-    static const int GetFarmStageGachaInfoCsReq = 1329;
-    static const int SwordTrainingDialogueSelectOptionScRsp = 7459;
-    static const int InteractPropScRsp = 1437;
-    static const int DeleteSocialEventServerCacheScRsp = 7076;
-    static const int EnableRogueTalentCsReq = 1855;
-    static const int UnlockPhoneThemeScNotify = 5141;
-    static const int RogueTournGetSettleInfoScRsp = 6013;
-    static const int ClockParkStartScriptCsReq = 7228;
-    static const int NewAssistHistoryNotify = 2906;
-    static const int AlleyShipUsedCountScNotify = 4759;
-    static const int RecoverAllLineupCsReq = 1402;
-    static const int GetRelicFilterPlanCsReq = 545;
-    static const int HeliobusSnsPostScRsp = 5849;
-    static const int SetNicknameCsReq = 48;
-    static const int GetChessRogueBuffEnhanceInfoScRsp = 5421;
-    static const int AlleyPlacingGameCsReq = 4746;
-    static const int DailyFirstEnterMonopolyActivityCsReq = 7046;
-    static const int FinishChessRogueSubStoryScRsp = 5407;
-    static const int SwordTrainingStoryConfirmScRsp = 7494;
-    static const int GetFightActivityDataScRsp = 3674;
-    static const int QuitBattleCsReq = 129;
-    static const int FinishFirstTalkNpcScRsp = 2141;
-    static const int EvolveBuildQueryInfoScRsp = 7129;
-    static const int BattleLogReportScRsp = 189;
-    static const int ChessRogueEnterScRsp = 5590;
-    static const int SetMissionEventProgressCsReq = 1221;
-    static const int TreasureDungeonDataScNotify = 4418;
-    static const int QuestRecordScNotify = 919;
-    static const int MonopolyCheatDiceCsReq = 7092;
-    static const int UpdateServerPrefsDataCsReq = 6158;
-    static const int ClockParkGetInfoCsReq = 7218;
-    static const int GetFeverTimeActivityDataScRsp = 7156;
-    static const int GetStoryLineInfoCsReq = 6218;
-    static const int ChessRogueUpdateReviveInfoScNotify = 5420;
-    static const int ReturnLastTownScRsp = 1408;
-    static const int SubmitOfferingItemCsReq = 6933;
-    static const int FinishTutorialGuideCsReq = 1689;
-    static const int SpaceZooExchangeItemScRsp = 6746;
-    static const int MonopolyAcceptQuizCsReq = 7006;
-    static const int MonopolySocialEventEffectScNotify = 7032;
-    static const int SetSpringRecoverConfigScRsp = 1436;
-    static const int GetAlleyInfoCsReq = 4718;
-    static const int RogueTournClearArchiveNameScNotify = 6023;
-    static const int FightTreasureDungeonMonsterScRsp = 4462;
-    static const int FinishCosumeItemMissionCsReq = 1246;
-    static const int ChessRogueNousDiceSurfaceUnlockNotify = 5426;
-    static const int FinishChapterScNotify = 4929;
-    static const int GetTelevisionActivityDataCsReq = 6974;
-    static const int EnterSceneCsReq = 1425;
-    static const int SetClientPausedCsReq = 1423;
-    static const int PlayerLogoutCsReq = 29;
-    static const int SpaceZooMutateCsReq = 6758;
-    static const int ContentPackageSyncDataScNotify = 7506;
-    static const int StartFinishMainMissionScNotify = 1238;
-    static const int CancelMatchCsReq = 7306;
-    static const int FinishAeonDialogueGroupCsReq = 1844;
-    static const int HeliobusSnsUpdateScNotify = 5889;
-    static const int FightMatch3DataCsReq = 30118;
-    static const int MonopolyRollDiceScRsp = 7028;
-    static const int WolfBroGameActivateBulletScRsp = 6591;
-    static const int TrainVisitorBehaviorFinishScRsp = 3774;
-    static const int LockEquipmentCsReq = 558;
-    static const int MultiplayerFightGameFinishScNotify = 1041;
-    static const int AetherDivideTainerInfoScNotify = 4861;
-    static const int TextJoinBatchSaveCsReq = 3858;
-    static const int DeactivateFarmElementScRsp = 1475;
-    static const int HeliobusSnsReadCsReq = 5829;
-    static const int SwordTrainingGameSyncChangeScNotify = 7469;
-    static const int LeaveTrialActivityScRsp = 2632;
-    static const int SetGameplayBirthdayScRsp = 88;
-    static const int GroupStateChangeScNotify = 1435;
-    static const int SetSignatureCsReq = 2864;
-    static const int EquipAetherDividePassiveSkillCsReq = 4883;
-    static const int SetLanguageScRsp = 61;
-    static const int TravelBrochureSelectMessageCsReq = 6458;
-    static const int UpdateTrackMainMissionIdCsReq = 1206;
-    static const int SetGenderScRsp = 80;
-    static const int BoxingClubChallengeUpdateScNotify = 4264;
-    static const int GetBasicInfoScRsp = 45;
-    static const int TrainRefreshTimeNotify = 3758;
-    static const int GetFriendDevelopmentInfoScRsp = 2967;
-    static const int TakeCityShopRewardScRsp = 1549;
-    static const int ChessRogueUpdateUnlockLevelScNotify = 5472;
-    static const int SceneEntityMoveScNotify = 1489;
-    static const int LeaveMapRotationRegionCsReq = 6819;
-    static const int ExchangeHcoinScRsp = 511;
-    static const int DressAvatarSkinCsReq = 308;
-    static const int EvolveBuildGiveupScRsp = 7121;
-    static const int QueryProductInfoCsReq = 14;
-    static const int GetReplayTokenCsReq = 3518;
-    static const int ChessRogueNousEnableRogueTalentScRsp = 5449;
-    static const int EnhanceCommonRogueBuffCsReq = 5611;
-    static const int EnterStrongChallengeActivityStageScRsp = 6637;
-    static const int PromoteEquipmentScRsp = 537;
-    static const int RaidCollectionDataScNotify = 6953;
-    static const int RankUpAvatarScRsp = 383;
-    static const int GetMovieRacingDataScRsp = 4108;
-    static const int SceneEntityMoveScRsp = 1474;
-    static const int TriggerVoiceCsReq = 4146;
-    static const int GameplayCounterUpdateScNotify = 1493;
-    static const int ChessRogueUpdateDicePassiveAccumulateValueScNotify = 5548;
-    static const int RegionStopScNotify = 62;
-    static const int ClockParkFinishScriptScNotify = 7273;
-    static const int DailyTaskDataScNotify = 1241;
-    static const int GetMonopolyFriendRankingListScRsp = 7100;
-    static const int GetFriendApplyListInfoCsReq = 2958;
-    static const int GetUnlockTeleportCsReq = 1495;
-    static const int SwordTrainingUpdateRankScRsp = 7496;
-    static const int LeaveMapRotationRegionScNotify = 6883;
-    static const int SetGroupCustomSaveDataScRsp = 1467;
-    static const int SwitchLineupIndexCsReq = 722;
-    static const int PlayerGetTokenScRsp = 49;
-    static const int GetQuestRecordScRsp = 941;
-    static const int RogueModifierUpdateNotify = 5341;
-    static const int RestoreWolfBroGameArchiveCsReq = 6558;
-    static const int UnlockSpecialSkillTreeScNotify = 382;
-    static const int MultiplayerFightGiveUpCsReq = 1058;
-    static const int UnlockAvatarPathCsReq = 97;
-    static const int PlayerReturnTakeRewardScRsp = 4541;
-    static const int ComposeItemCsReq = 546;
-    static const int SyncRogueRewardInfoScNotify = 1827;
-    static const int RebattleByClientCsNotify = 198;
-    static const int UnlockHeadIconScNotify = 2819;
-    static const int SwordTrainingMarkEndingViewedScRsp = 7486;
-    static const int SyncHandleFriendScNotify = 2957;
-    static const int GetGachaInfoCsReq = 1918;
-    static const int TakeLoginActivityRewardScRsp = 2637;
-    static const int PVEBattleResultCsReq = 118;
-    static const int MonopolyGiveUpCurContentScRsp = 7024;
-    static const int TakeOffRelicCsReq = 362;
-    static const int GetTutorialGuideScRsp = 1637;
-    static const int SceneCastSkillCostMpScRsp = 1483;
-    static const int InteractChargerCsReq = 6829;
-    static const int EntityBindPropScRsp = 1480;
-    static const int GetExpeditionDataCsReq = 2518;
-    static const int MonopolyConfirmRandomScRsp = 7048;
-    static const int AlleyTakeEventRewardScRsp = 4756;
-    static const int QuitTrackPhotoStageCsReq = 7553;
-    static const int TravelBrochureSetCustomValueScRsp = 6422;
-    static const int ScenePlaneEventScNotify = 1417;
-    static const int CurAssistChangedNotify = 2923;
-    static const int PlayerReturnTakePointRewardCsReq = 4558;
-    static const int RogueTournEnterLayerCsReq = 6072;
-    static const int ChessRogueSelectBpCsReq = 5406;
-    static const int DeployRotaterCsReq = 6858;
-    static const int LobbyKickOutScRsp = 7400;
-    static const int TakeFightActivityRewardCsReq = 3649;
-    static const int MultipleDropInfoNotify = 4649;
-    static const int WaypointShowNewCsNotify = 428;
-    static const int AlleyShopLevelScNotify = 4721;
-    static const int RogueTournGetAllArchiveCsReq = 6058;
-    static const int GeneralVirtualItemDataNotify = 587;
-    static const int SetRogueCollectionCsReq = 5695;
-    static const int PlayerGetTokenCsReq = 58;
-    static const int SwitchAetherDivideLineUpSlotScRsp = 4848;
-    static const int HeliobusEnterBattleCsReq = 5848;
-    static const int TakeRogueScoreRewardScRsp = 1808;
-    static const int ClockParkHandleWaitOperationScRsp = 7257;
-    static const int GetFriendRecommendListInfoScRsp = 2948;
-    static const int PlayerReturnSignCsReq = 4574;
-    static const int RogueTournLevelInfoUpdateScNotify = 6055;
-    static const int SwordTrainingSetSkillTraceScRsp = 7472;
-    static const int BoxingClubRewardScNotify = 4219;
-    static const int RemoveRotaterCsReq = 6862;
-    static const int ChallengeLineupNotify = 1757;
-    static const int UpdateTrackMainMissionIdScRsp = 1270;
-    static const int GetAssistHistoryScRsp = 2956;
-    static const int PlayBackGroundMusicCsReq = 3129;
-    static const int SyncRogueExploreWinScNotify = 1809;
-    static const int GetMonopolyFriendRankingListCsReq = 7088;
-    static const int MonopolyGameBingoFlipCardCsReq = 7009;
-    static const int StartBattleCollegeScRsp = 5758;
-    static const int ChangeScriptEmotionScRsp = 6337;
-    static const int SyncRogueCommonPendingActionScNotify = 5653;
-    static const int MarkChatEmojiScRsp = 3957;
-    static const int GetSecretKeyInfoCsReq = 78;
-    static const int ChessRogueSelectCellScRsp = 5442;
-    static const int RogueTournGetPermanentTalentInfoCsReq = 6088;
-    static const int BuyBpLevelScRsp = 3028;
-    static const int AcceptMissionEventScRsp = 1240;
-    static const int GetMonopolyInfoCsReq = 7018;
-    static const int GetQuestRecordCsReq = 928;
-    static const int EnterRogueScRsp = 1849;
-    static const int LastSpringRefreshTimeNotify = 1448;
-    static const int LogisticsDetonateStarSkiffScRsp = 4770;
-    static const int AvatarPathChangedNotify = 60;
-    static const int DrinkMakerDayEndScNotify = 6992;
-    static const int TakeOffEquipmentCsReq = 389;
-    static const int GetRogueBuffEnhanceInfoScRsp = 1821;
-    static const int EnhanceChessRogueBuffCsReq = 5404;
-    static const int CancelCacheNotifyScRsp = 4164;
-    static const int SendMsgCsReq = 3918;
-    static const int SwitchLineupIndexScRsp = 791;
-    static const int SetRogueExhibitionScRsp = 5685;
-    static const int StoryLineInfoScNotify = 6229;
-    static const int TakeRogueScoreRewardCsReq = 1873;
-    static const int HeliobusEnterBattleScRsp = 5873;
-    static const int SetHeadIconScRsp = 2837;
-    static const int AcceptExpeditionCsReq = 2529;
-    static const int LogisticsInfoScNotify = 4747;
-    static const int DailyFirstMeetPamScRsp = 3437;
-    static const int RogueTournEnterRogueCocoonSceneScRsp = 6035;
-    static const int RechargeSuccNotify = 573;
-    static const int SyncRogueMapRoomScNotify = 1814;
-    static const int ChessRogueUpdateAllowedSelectCellScNotify = 5464;
-    static const int SwordTrainingStoryBattleScRsp = 7475;
-    static const int SceneEntityTeleportCsReq = 1484;
-    static const int TravelBrochureUpdatePasterPosScRsp = 6457;
-    static const int UnlockTutorialScRsp = 1649;
-    static const int UnlockTeleportNotify = 1427;
-    static const int SummonActivityBattleEndScNotify = 7566;
-    static const int MonopolyTakeRaffleTicketRewardScRsp = 7051;
-    static const int HeartDialScriptChangeScNotify = 6319;
-    static const int ExchangeHcoinCsReq = 508;
-    static const int ChessRogueQueryBpCsReq = 5564;
-    static const int SyncRoguePickAvatarInfoScNotify = 1872;
-    static const int FightMatch3DataScRsp = 30174;
-    static const int TakeRogueMiracleHandbookRewardScRsp = 5687;
-    static const int GetSaveLogisticsMapCsReq = 4738;
-    static const int GetRogueExhibitionScRsp = 5665;
-    static const int PVEBattleResultScRsp = 174;
-    static const int UpdateRedDotDataCsReq = 5929;
-    static const int SwordTrainingMarkEndingViewedCsReq = 7464;
-    static const int FinishPlotCsReq = 1118;
-    static const int SubmitOrigamiItemCsReq = 4183;
-    static const int RogueWorkbenchGetInfoScRsp = 5634;
-    static const int LobbyModifyPlayerInfoScRsp = 7371;
-    static const int MonopolyGameBingoFlipCardScRsp = 7056;
-    static const int ExpeditionDataChangeScNotify = 2519;
-    static const int GetTelevisionActivityDataScRsp = 6977;
-    static const int GroupStateChangeScRsp = 1452;
-    static const int SyncRogueReviveInfoScNotify = 1882;
-    static const int PlayerKickOutScNotify = 19;
-    static const int SyncClientResVersionCsReq = 128;
-    static const int TrainVisitorRewardSendNotify = 3749;
-    static const int RogueTournGetMiscRealTimeDataScRsp = 6042;
-    static const int GetMarkItemListCsReq = 502;
-    static const int AetherDivideRefreshEndlessScRsp = 4813;
-    static const int ServerSimulateBattleFinishScNotify = 157;
-    static const int EnterTrialActivityStageScRsp = 2620;
-    static const int GetSummonActivityDataCsReq = 7562;
-    static const int EntityBindPropCsReq = 1470;
-    static const int GetDailyActiveInfoCsReq = 3329;
-    static const int UpdateGunPlayDataScRsp = 4147;
-    static const int SpaceZooExchangeItemCsReq = 6757;
-    static const int RogueTournReEnterRogueCocoonStageCsReq = 6026;
-    static const int ChessRogueReRollDiceCsReq = 5424;
-    static const int SecurityReportScRsp = 4157;
-    static const int ExtraLineupDestroyNotify = 777;
-    static const int FightMatch3ForceUpdateNotify = 30157;
-    static const int GetPrivateChatHistoryCsReq = 3958;
-    static const int PlayerReturnTakeRewardCsReq = 4528;
-    static const int RankUpAvatarCsReq = 398;
-    static const int DeleteRelicFilterPlanCsReq = 520;
-    static const int GameplayCounterCountDownScRsp = 1485;
-    static const int GetRogueHandbookDataCsReq = 5606;
-    static const int SceneCastSkillScRsp = 1449;
-    static const int ChessRogueChangeyAeonDimensionNotify = 5512;
-    static const int ChessRogueNousGetRogueTalentInfoCsReq = 5539;
-    static const int AlleyTakeEventRewardCsReq = 4709;
-    static const int ChessRogueQuitCsReq = 5549;
-    static const int QueryProductInfoScRsp = 75;
-    static const int GetTrainVisitorRegisterCsReq = 3728;
-    static const int UseItemCsReq = 528;
-    static const int ShareScRsp = 4174;
-    static const int GetStrongChallengeActivityDataCsReq = 6618;
-    static const int TakeAllApRewardScRsp = 3328;
-    static const int GetTrialActivityDataScRsp = 2688;
-    static const int GetChessRogueBuffEnhanceInfoCsReq = 5534;
-    static const int GetFriendApplyListInfoScRsp = 2949;
-    static const int EvolveBuildTakeExpRewardCsReq = 7148;
-    static const int FightMatch3TurnEndScNotify = 30158;
-    static const int EvolveBuildStartLevelCsReq = 7106;
-    static const int UnlockSkilltreeCsReq = 358;
-    static const int NewMailScNotify = 819;
-    static const int TakePromotionRewardCsReq = 348;
-    static const int ShowNewSupplementVisitorCsReq = 3789;
-    static const int TravelBrochureSelectMessageScRsp = 6449;
-    static const int GetNpcStatusScRsp = 2737;
-    static const int RogueNpcDisappearScRsp = 5646;
-    static const int GetMonsterResearchActivityDataScRsp = 2662;
-    static const int ClockParkGetOngoingScriptInfoCsReq = 7219;
-    static const int RestartChallengePhaseScRsp = 1711;
-    static const int MatchThreeLevelEndCsReq = 7406;
-    static const int GetPlatformPlayerInfoScRsp = 2939;
-    static const int GetStarFightDataCsReq = 7162;
-    static const int SpaceZooTakeCsReq = 6798;
-    static const int AddAvatarScNotify = 346;
-    static const int SyncChessRogueNousValueScNotify = 5437;
-    static const int RelicRecommendCsReq = 575;
-    static const int GetChatFriendHistoryCsReq = 3928;
-    static const int ClockParkUseBuffScRsp = 7248;
-    static const int WolfBroGameActivateBulletCsReq = 6522;
-    static const int SettleTrackPhotoStageCsReq = 7557;
-    static const int PrivateMsgOfflineUsersScNotify = 3937;
-    static const int TakeActivityExpeditionRewardCsReq = 2598;
-    static const int UnlockBackGroundMusicCsReq = 3158;
-    static const int GetPlayerReplayInfoScRsp = 3537;
-    static const int ClientObjUploadCsReq = 85;
-    static const int SwordTrainingTakeEndingRewardScRsp = 7483;
-    static const int GetFirstTalkNpcCsReq = 2158;
-    static const int RogueTournDeleteArchiveScRsp = 6063;
-    static const int TakeChallengeRewardScRsp = 1722;
-    static const int DressRelicAvatarCsReq = 322;
-    static const int FightTreasureDungeonMonsterCsReq = 4491;
-    static const int GetFantasticStoryActivityDataScRsp = 4974;
-    static const int GetRogueEndlessActivityDataScRsp = 6005;
-    static const int SwordTrainingGetSkillInfoScRsp = 7465;
-    static const int TravelBrochureRemovePasterScRsp = 6464;
-    static const int GetBattleCollegeDataScRsp = 5774;
-    static const int SyncRogueAdventureRoomInfoScNotify = 5618;
-    static const int SwordTrainingStartGameScRsp = 7466;
-    static const int LockEquipmentScRsp = 549;
-    static const int SetLineupNameScRsp = 740;
-    static const int HeliobusStartRaidScRsp = 5811;
-    static const int ResetMapRotationRegionScRsp = 6898;
-    static const int HeliobusActivityDataScRsp = 5874;
-    static const int GetShareDataScRsp = 4137;
-    static const int SpringRefreshScRsp = 1440;
-    static const int HeliobusSnsCommentCsReq = 5819;
-    static const int RogueTournQueryCsReq = 6059;
-    static const int TelevisionActivityBattleEndScNotify = 6964;
-    static const int SetStuffToAreaCsReq = 4358;
-    static const int SubmitOfferingItemScRsp = 6925;
-    static const int SetMissionEventProgressScRsp = 1277;
-    static const int SubMissionRewardScNotify = 1224;
-    static const int TravelBrochureApplyPasterScRsp = 6441;
-    static const int MakeMissionDrinkCsReq = 6989;
-    static const int StartFinishSubMissionScNotify = 1261;
-    static const int TakeTalkRewardCsReq = 2129;
-    static const int ChessRogueUpdateMoneyInfoScNotify = 5594;
-    static const int TakeBpRewardScRsp = 3058;
-    static const int SwordTrainingDailyPhaseConfirmCsReq = 7470;
-    static const int MonopolyAcceptQuizScRsp = 7070;
-    static const int CityShopInfoScNotify = 1528;
-    static const int GetStoryLineInfoScRsp = 6274;
-    static const int HeartDialTraceScriptCsReq = 6364;
-    static const int SetLanguageCsReq = 47;
-    static const int DeactivateFarmElementCsReq = 1414;
-    static const int ReportPlayerCsReq = 2911;
-    static const int RogueTournLeaveCsReq = 6068;
-    static const int EnterSwordTrainingExamScRsp = 7460;
-    static const int DressAvatarCsReq = 319;
-    static const int TrainVisitorBehaviorFinishCsReq = 3718;
-    static const int SpaceZooDeleteCatScRsp = 6764;
-    static const int OpenTreasureDungeonGridScRsp = 4422;
-    static const int ModifyRelicFilterPlanCsReq = 600;
-    static const int GetMultiPathAvatarInfoCsReq = 69;
-    static const int SwordTrainingResumeGameScRsp = 7490;
-    static const int EnterFightActivityStageScRsp = 3658;
-    static const int MonopolyClickCellScRsp = 7069;
-    static const int SwordTrainingLearnSkillScRsp = 7481;
-    static const int RaidInfoNotify = 2258;
-    static const int UpgradeAreaScRsp = 4398;
-    static const int ChessRogueQueryScRsp = 5484;
-    static const int SwordTrainingSelectEndingCsReq = 7457;
-    static const int GmTalkScRsp = 89;
-    static const int CancelExpeditionCsReq = 2558;
-    static const int SyncApplyFriendScNotify = 2919;
-    static const int EnteredSceneChangeScNotify = 1460;
-    static const int TravelBrochurePageResetCsReq = 6440;
-    static const int MonopolySttUpdateScNotify = 7005;
-    static const int EnhanceRogueBuffScRsp = 1824;
-    static const int RogueTournConfirmSettleScRsp = 6094;
-    static const int SpaceZooCatUpdateNotify = 6789;
-    static const int RogueTournGetCurRogueCocoonInfoCsReq = 6090;
-    static const int HeliobusSnsPostCsReq = 5858;
-    static const int RogueModifierAddNotify = 5329;
-    static const int AcceptActivityExpeditionScRsp = 2589;
-    static const int PunkLordDataChangeNotify = 3282;
-    static const int SetClientRaidTargetCountScRsp = 2298;
-    static const int StartPunkLordRaidCsReq = 3229;
-    static const int RecoverAllLineupScRsp = 1413;
-    static const int DoGachaScRsp = 1937;
-    static const int RefreshTriggerByClientScNotify = 1455;
-    static const int ChessRogueLeaveScRsp = 5587;
-    static const int GetFirstTalkByPerformanceNpcCsReq = 2189;
-    static const int TravelBrochureApplyPasterListCsReq = 6473;
-    static const int GetFriendDevelopmentInfoCsReq = 2990;
-    static const int GetOfferingInfoCsReq = 6934;
-    static const int GetFriendChallengeLineupScRsp = 3000;
-    static const int LeaveMapRotationRegionScRsp = 6864;
-    static const int MarkRelicFilterPlanScRsp = 590;
-    static const int SyncRogueHandbookDataUpdateScNotify = 5680;
-    static const int StartTrackPhotoStageScRsp = 7558;
-    static const int StoryLineTrialAvatarChangeScNotify = 6228;
-    static const int GetAssistHistoryCsReq = 2909;
-    static const int TakeRogueAeonLevelRewardScRsp = 1871;
-    static const int GetSwordTrainingDataScRsp = 7456;
-    static const int RogueTournEnterCsReq = 6047;
-    static const int AetherDivideSpiritExpUpScRsp = 4821;
-    static const int MonopolyTakePhaseRewardCsReq = 7099;
-    static const int MissionEventRewardScNotify = 1291;
-    static const int RogueTournLeaveRogueCocoonSceneScRsp = 6022;
-    static const int UpdateMapRotationDataScNotify = 6891;
-    static const int FantasticStoryActivityBattleEndScNotify = 4949;
-    static const int SwordTrainingActionTurnSettleScNotify = 7485;
-    static const int RelicFilterPlanClearNameScNotify = 567;
-    static const int GetRogueTalentInfoCsReq = 1897;
-    static const int MonopolyScrachRaffleTicketScRsp = 7071;
-    static const int MonopolyGuessBuyInformationScRsp = 7014;
-    static const int ChangeScriptEmotionCsReq = 6329;
-    static const int GetRogueAdventureRoomInfoCsReq = 5698;
-    static const int TakeAssistRewardCsReq = 2970;
-    static const int GetLineupAvatarDataCsReq = 757;
-    static const int WolfBroGameExplodeMonsterScRsp = 6540;
-    static const int RogueTournEnterRoomScRsp = 6029;
-    static const int HeliobusUnlockSkillScNotify = 5883;
-    static const int TakeTrialActivityRewardCsReq = 2668;
-    static const int TakeRogueEndlessActivityPointRewardCsReq = 6008;
-    static const int GetGunPlayDataScRsp = 4124;
-    static const int SwitchAetherDivideLineUpSlotCsReq = 4840;
-    static const int RogueTournLeaveScRsp = 6098;
-    static const int GateServerScNotify = 67;
-    static const int MuseumTargetRewardNotify = 4392;
-    static const int StartRaidCsReq = 2218;
-    static const int GetPunkLordMonsterDataCsReq = 3218;
-    static const int EnterSceneScRsp = 1401;
-    static const int GetBasicInfoCsReq = 42;
-    static const int ClockParkBattleEndScNotify = 7291;
-    static const int EnterFantasticStoryActivityStageScRsp = 4958;
-    static const int SceneEnterStageScRsp = 1421;
-    static const int RogueEndlessActivityBattleEndScNotify = 6006;
-    static const int RogueTournQueryScRsp = 6018;
-    static const int UnlockAvatarPathScRsp = 66;
-    static const int GetExpeditionDataScRsp = 2574;
-    static const int SelectChessRogueNousSubStoryScRsp = 5535;
-    static const int UpdateMovieRacingDataCsReq = 4111;
-    static const int MonthCardRewardNotify = 20;
-    static const int FinishTutorialGuideScRsp = 1657;
-    static const int MonopolyTakeRaffleTicketRewardCsReq = 7017;
-    static const int PunkLordMonsterKilledNotify = 3247;
-    static const int TakeOffRelicScRsp = 340;
-    static const int RogueTournEnablePermanentTalentScRsp = 6012;
-    static const int GetMultipleDropInfoScRsp = 4674;
-    static const int QuitTrackPhotoStageScRsp = 7554;
-    static const int GetUnlockTeleportScRsp = 1454;
-    static const int SwordTrainingSetSkillTraceCsReq = 7482;
-    static const int ChessRogueReviveAvatarCsReq = 5518;
-    static const int LobbyGetInfoCsReq = 7381;
-    static const int DressRelicAvatarScRsp = 391;
-    static const int LeaveRaidCsReq = 2229;
-    static const int HeliobusStartRaidCsReq = 5808;
-    static const int MultiplayerFightGameStateCsReq = 1018;
-    static const int DailyFirstMeetPamCsReq = 3429;
-    static const int TakeMonsterResearchActivityRewardScRsp = 2608;
-    static const int SetFriendMarkScRsp = 2945;
-    static const int FeverTimeActivityBattleEndScNotify = 7157;
-    static const int MonopolyConditionUpdateScNotify = 7097;
-    static const int SetFriendRemarkNameCsReq = 2973;
-    static const int DeleteSocialEventServerCacheCsReq = 7084;
-    static const int EnterTreasureDungeonCsReq = 4446;
-    static const int EnterSwordTrainingExamCsReq = 7491;
-    static const int TravelBrochureGetPasterScNotify = 6446;
-    static const int RotateMapCsReq = 6828;
-    static const int MonopolyEventSelectFriendCsReq = 7067;
-    static const int HeartDialTraceScriptScRsp = 6389;
-    static const int SettleTrackPhotoStageScRsp = 7560;
-    static const int ChessRogueUpdateAeonModifierValueScNotify = 5475;
-    static const int ContentPackageTransferScNotify = 7520;
-    static const int MonopolyBuyGoodsCsReq = 7073;
-    static const int GetChatEmojiListScRsp = 3964;
-    static const int SetAssistAvatarScRsp = 2846;
-    static const int MonopolyClickMbtiReportScRsp = 7055;
-    static const int FightMatch3ChatScRsp = 30164;
-    static const int FinishEmotionDialoguePerformanceCsReq = 6328;
-    static const int SelectChatBubbleCsReq = 5129;
-    static const int MissionRewardScNotify = 1258;
-    static const int MatchThreeSyncDataScNotify = 7437;
-    static const int SyncRogueSeasonFinishScNotify = 1856;
-    static const int UnlockedAreaMapScNotify = 1479;
-    static const int CancelCacheNotifyCsReq = 4119;
-    static const int GetMuseumInfoScRsp = 4374;
-    static const int ChessRogueUpdateLevelBaseInfoScNotify = 5546;
-    static const int GetSaveLogisticsMapScRsp = 4782;
-    static const int SharePunkLordMonsterScRsp = 3249;
-    static const int RogueTournWeekChallengeUpdateScNotify = 6078;
-    static const int GetFriendRecommendListInfoCsReq = 2940;
-    static const int UpdatePsnSettingsInfoCsReq = 5;
-    static const int GetSceneMapInfoScRsp = 1481;
-    static const int UpdatePlayerSettingScRsp = 65;
-    static const int GetMailCsReq = 818;
-    static const int SaveLogisticsCsReq = 4724;
-    static const int SpaceZooBornScRsp = 6737;
-    static const int HandleFriendCsReq = 2964;
-    static const int RogueTournStartScRsp = 6093;
-    static const int GetPlayerDetailInfoScRsp = 2937;
-    static const int InterruptMissionEventCsReq = 1208;
-    static const int TakeQuestOptionalRewardScRsp = 946;
-    static const int LeaveTrialActivityCsReq = 2603;
-    static const int StaminaInfoScNotify = 54;
-    static const int RogueTournEnterLayerScRsp = 6038;
-    static const int ClearAetherDividePassiveSkillCsReq = 4891;
-    static const int FinishTalkMissionScRsp = 1237;
-    static const int RogueTournGetAllArchiveScRsp = 6034;
-    static const int SetClientPausedScRsp = 1487;
-    static const int AetherDivideTakeChallengeRewardCsReq = 4856;
-    static const int FinishSectionIdCsReq = 2728;
-    static const int TravelBrochureGetDataCsReq = 6418;
-    static const int VirtualLineupDestroyNotify = 708;
-    static const int TakeRollShopRewardScRsp = 6904;
-    static const int MonopolyRollDiceCsReq = 7049;
-    static const int MarkItemScRsp = 556;
-    static const int FinishTutorialScRsp = 1664;
-    static const int StartChallengeCsReq = 1729;
-    static const int GetMarkItemListScRsp = 513;
-    static const int SetGameplayBirthdayCsReq = 36;
-    static const int SyncRogueAreaUnlockScNotify = 1817;
-    static const int GetPunkLordDataScRsp = 3291;
-    static const int ContentPackageUnlockScRsp = 7537;
-    static const int SummonPunkLordMonsterCsReq = 3228;
-    static const int StartAetherDivideStageBattleScRsp = 4808;
-    static const int GetMonopolyMbtiReportRewardCsReq = 7026;
-    static const int RogueTournSettleCsReq = 6039;
-    static const int GetNpcTakenRewardCsReq = 2118;
-    static const int ExchangeGachaCeilingScRsp = 1941;
-    static const int GetGachaCeilingScRsp = 1949;
-    static const int TrialBackGroundMusicCsReq = 3128;
-    static const int GetRecyleTimeCsReq = 592;
-    static const int ChessRogueSelectBpScRsp = 5526;
-    static const int OpenRogueChestScRsp = 1868;
-    static const int GetPlayerReturnMultiDropInfoCsReq = 4637;
-    static const int GetAlleyInfoScRsp = 4774;
-    static const int TextJoinBatchSaveScRsp = 3849;
-    static const int ClearAetherDividePassiveSkillScRsp = 4862;
-    static const int GetStrongChallengeActivityDataScRsp = 6674;
-    static const int GetJukeboxDataCsReq = 3118;
-    static const int SyncTaskCsReq = 1249;
-    static const int SyncChessRogueNousMainStoryScNotify = 5419;
-    static const int UpdateRogueAdventureRoomScoreCsReq = 5612;
-    static const int FinishItemIdScRsp = 2749;
-    static const int RogueTournGetArchiveRepositoryScRsp = 6052;
-    static const int AddRelicFilterPlanScRsp = 588;
-    static const int UpdatePsnSettingsInfoScRsp = 26;
-    static const int SpaceZooMutateScRsp = 6749;
-    static const int EnterChessRogueAeonRoomScRsp = 5435;
-    static const int PlayerLoginScRsp = 74;
-    static const int MonopolyGameGachaScRsp = 7013;
-    static const int ChessRogueLayerAccountInfoNotify = 5565;
-    static const int GetStageLineupCsReq = 718;
-    static const int AlleyFundsScNotify = 4711;
-    static const int EnterStrongChallengeActivityStageCsReq = 6629;
-    static const int EnhanceCommonRogueBuffScRsp = 5621;
-    static const int TakeRogueEventHandbookRewardScRsp = 5614;
-    static const int ChessRogueUpdateActionPointScNotify = 5425;
-    static const int UpgradeAreaStatScRsp = 4322;
-    static const int AlleyEventChangeNotify = 4719;
-    static const int TakeQuestOptionalRewardCsReq = 957;
-    static const int GetWaypointScRsp = 474;
-    static const int GetMailScRsp = 874;
-    static const int StartBoxingClubBattleCsReq = 4258;
-    static const int UpdateServerPrefsDataScRsp = 6149;
-    static const int TakeChallengeRaidRewardCsReq = 2241;
-    static const int SceneEntityMoveCsReq = 1418;
-    static const int TakePunkLordPointRewardScRsp = 3298;
-    static const int ClockParkUseBuffCsReq = 7240;
-    static const int GetMonsterResearchActivityDataCsReq = 2691;
-    static const int SetGenderCsReq = 70;
-    static const int FightMatch3ChatCsReq = 30119;
-    static const int EnterMapRotationRegionScRsp = 6874;
-    static const int SwordTrainingTurnActionCsReq = 7495;
-    static const int GetMissionStatusCsReq = 1248;
-    static const int RogueNpcDisappearCsReq = 5657;
-    static const int GetNpcStatusCsReq = 2729;
-    static const int SyncServerSceneChangeNotify = 1471;
-    static const int SelectChessRogueSubStoryCsReq = 5427;
-    static const int UnlockChatBubbleScNotify = 5158;
-    static const int HealPoolInfoNotify = 1410;
-    static const int ReEnterLastElementStageScRsp = 1478;
-    static const int MatchThreeLevelEndScRsp = 7445;
-    static const int GetAetherDivideInfoCsReq = 4889;
-    static const int AvatarExpUpCsReq = 329;
-    static const int CancelExpeditionScRsp = 2549;
-    static const int LockRelicScRsp = 562;
-    static const int GetPrivateChatHistoryScRsp = 3949;
-    static const int MonopolyEventSelectFriendScRsp = 7003;
-    static const int StartPunkLordRaidScRsp = 3237;
-    static const int SceneCastSkillCsReq = 1458;
-    static const int ChessRogueStartCsReq = 5511;
-    static const int EnterRogueMapRoomScRsp = 1823;
-    static const int SyncRogueCommonActionResultScNotify = 5675;
-    static const int DiscardRelicCsReq = 539;
-    static const int AcceptedPamMissionExpireCsReq = 4018;
-    static const int StartMatchCsReq = 7319;
-    static const int GetNpcMessageGroupCsReq = 2718;
-    static const int HeliobusSnsReadScRsp = 5837;
-    static const int SpringRecoverSingleAvatarCsReq = 1420;
-    static const int RogueTournResetPermanentTalentScRsp = 6087;
-    static const int QuitTreasureDungeonCsReq = 4411;
-    static const int GetBagCsReq = 518;
-    static const int FinishChessRogueNousSubStoryCsReq = 5579;
-    static const int RaidCollectionDataCsReq = 6954;
-    static const int ChessRogueQueryCsReq = 5458;
-    static const int TeleportToMissionResetPointCsReq = 1292;
-    static const int ChessRogueNousEditDiceScRsp = 5463;
-    static const int FightHeartBeatScRsp = 30049;
-    static const int SceneCastSkillMpUpdateScNotify = 1422;
-    static const int SwordTrainingGiveUpGameScRsp = 7499;
-    static const int GetRollShopInfoScRsp = 6917;
-    static const int AetherDivideSkillItemScNotify = 4838;
-    static const int RaidKickByServerScNotify = 2248;
-    static const int GetFriendAssistListCsReq = 2916;
-    static const int TravelBrochureSetCustomValueCsReq = 6483;
-    static const int DelMailScRsp = 849;
-    static const int MonopolyUpgradeAssetScRsp = 7021;
-    static const int GetRogueCollectionCsReq = 5681;
-    static const int FinishFirstTalkByPerformanceNpcCsReq = 2146;
-    static const int StartCocoonStageCsReq = 1456;
-    static const int DeleteFriendCsReq = 2946;
-    static const int GetRogueExhibitionCsReq = 5631;
-    static const int ChessRogueEnterCellScRsp = 5516;
-    static const int MakeDrinkCsReq = 6993;
-    static const int TravelBrochureApplyPasterCsReq = 6428;
-    static const int MonopolyGuessChooseCsReq = 7023;
-    static const int AcceptMultipleExpeditionScRsp = 2591;
-    static const int MonopolySelectOptionScRsp = 7089;
-    static const int PlayerReturnInfoQueryCsReq = 4519;
-    static const int GetLevelRewardCsReq = 21;
-    static const int SwordTrainingDailyPhaseConfirmScRsp = 7462;
-    static const int GetChessRogueStoryAeonTalkInfoScRsp = 5500;
-    static const int TakeApRewardScRsp = 3374;
-    static const int GetRogueCommonDialogueDataCsReq = 5690;
-    static const int ChessRogueQueryBpScRsp = 5479;
-    static const int RogueWorkbenchHandleFuncCsReq = 5617;
-    static const int GetShareDataCsReq = 4129;
-    static const int SelectRogueCommonDialogueOptionCsReq = 5603;
-    static const int TakeMailAttachmentCsReq = 828;
-    static const int EnterTelevisionActivityStageCsReq = 6965;
-    static const int AetherDivideRefreshEndlessScNotify = 4809;
-    static const int MonopolyActionResultScNotify = 7029;
-    static const int HeliobusSelectSkillScRsp = 5891;
-    static const int MonopolyGuessBuyInformationCsReq = 7039;
-    static const int EnterSectionCsReq = 1492;
-    static const int DeleteBlacklistScRsp = 2924;
-    static const int TakeKilledPunkLordMonsterScoreScRsp = 3238;
-    static const int SwordTrainingSelectEndingScRsp = 7477;
-    static const int LevelUpSpecialSkillTreeCsReq = 361;
-    static const int ComposeLimitNumCompleteNotify = 561;
-    static const int SetNicknameScRsp = 73;
-    static const int GameplayCounterRecoverScRsp = 1486;
-    static const int GetSpringRecoverDataScRsp = 1445;
-    static const int TakeExpeditionRewardScRsp = 2541;
-    static const int GetVideoVersionKeyScRsp = 34;
-    static const int TakeRogueEndlessActivityAllBonusRewardCsReq = 6004;
-    static const int SyncTurnFoodNotify = 570;
-    static const int RefreshAlleyOrderCsReq = 4791;
-    static const int SetRogueCollectionScRsp = 5654;
-    static const int FightEnterCsReq = 30018;
-    static const int SpaceZooDeleteCatCsReq = 6719;
-    static const int GetFarmStageGachaInfoScRsp = 1337;
-    static const int DeployRotaterScRsp = 6849;
-    static const int GetKilledPunkLordMonsterDataScRsp = 3277;
-    static const int ChallengeRaidNotify = 2264;
-    static const int AddBlacklistCsReq = 2922;
-    static const int GetRogueAeonInfoCsReq = 1835;
-    static const int GetLineupAvatarDataScRsp = 746;
-    static const int PunkLordRaidTimeOutScNotify = 3240;
-    static const int TakeAssistRewardScRsp = 2980;
-    static const int GetChessRogueNousStoryInfoCsReq = 5480;
-    static const int DrinkMakerChallengeScRsp = 6981;
-    static const int MarkReadMailCsReq = 829;
-    static const int GetRogueShopMiracleInfoScRsp = 5658;
-    static const int SelectInclinationTextCsReq = 2119;
-    static const int GetOfferingInfoScRsp = 6937;
-    static const int PunkLordBattleResultScNotify = 3211;
-    static const int SetAssistScRsp = 2959;
-    static const int PlayerReturnPointChangeScNotify = 4537;
-    static const int FightMatch3SwapCsReq = 30149;
-    static const int UpdateEnergyScNotify = 6822;
-    static const int SetPlayerInfoScRsp = 87;
-    static const int StartTrackPhotoStageCsReq = 7556;
-    static const int EnterAetherDivideSceneScRsp = 4874;
-    static const int CommonRogueQueryCsReq = 5620;
-    static const int ChessRogueLeaveCsReq = 5507;
-    static const int SpringRecoverScRsp = 1500;
-    static const int ChessRogueConfirmRollScRsp = 5428;
-    static const int ReplaceLineupScRsp = 721;
-    static const int SubmitMonsterResearchActivityMaterialScRsp = 2648;
-    static const int BatchMarkChatEmojiScRsp = 3998;
-    static const int LogisticsDetonateStarSkiffCsReq = 4706;
-    static const int GetSaveRaidScRsp = 2222;
-    static const int RogueTournConfirmSettleCsReq = 6091;
-    static const int EvolveBuildStartStageCsReq = 7137;
-    static const int SyncChessRogueNousSubStoryScNotify = 5402;
-    static const int ClockParkQuitScriptCsReq = 7246;
-    static const int PlayerLoginFinishScRsp = 25;
-    static const int MonopolyGameRaiseRatioScRsp = 7082;
-    static const int SyncChessRogueMainStoryFinishScNotify = 5438;
-    static const int ExpUpEquipmentCsReq = 589;
-    static const int MonopolyRollRandomScRsp = 7022;
-    static const int TravelBrochureUpdatePasterPosCsReq = 6489;
-    static const int ChessRogueCheatRollCsReq = 5444;
-    static const int SwordTrainingGameSettleScNotify = 7473;
-    static const int SyncRogueGetItemScNotify = 1851;
-    static const int MonopolyClickCellCsReq = 7035;
-    static const int ChessRogueGoAheadCsReq = 5504;
-    static const int GetChessRogueStoryInfoScRsp = 5575;
-    static const int GmTalkCsReq = 64;
-    static const int MonopolyLikeCsReq = 7010;
-    static const int PlayerSyncScNotify = 618;
-    static const int SetBoxingClubResonanceLineupScRsp = 4298;
-    static const int LobbyInviteScNotify = 7363;
-    static const int SetHeadIconCsReq = 2829;
-    static const int GetTrackPhotoActivityDataScRsp = 7555;
-    static const int EnhanceChessRogueBuffScRsp = 5505;
-    static const int StartTrialActivityScRsp = 2667;
-    static const int ReportPlayerScRsp = 2921;
-    static const int MonopolyQuizDurationChangeScNotify = 7053;
-    static const int TakeTalkRewardScRsp = 2137;
-    static const int GetAllServerPrefsDataScRsp = 6174;
-    static const int GetMbtiReportScRsp = 7090;
-    static const int ApplyFriendScRsp = 2941;
-    static const int DeleteRelicFilterPlanScRsp = 568;
-    static const int SceneReviveAfterRebattleScRsp = 1424;
-    static const int StartRogueCsReq = 1829;
-    static const int GetAllSaveRaidCsReq = 2291;
-    static const int GetChallengeCsReq = 1718;
-    static const int TakeOfferingRewardScRsp = 6924;
-    static const int SyncDeleteFriendScNotify = 2983;
-    static const int GetCurLineupDataCsReq = 729;
-    static const int BattleLogReportCsReq = 164;
-    static const int BuyGoodsCsReq = 1529;
-    static const int BuyRogueShopBuffScRsp = 5689;
-    static const int StopRogueAdventureRoomCsReq = 5677;
-    static const int GetRaidInfoCsReq = 2289;
-    static const int TakeOffAvatarSkinCsReq = 321;
-    static const int MonopolyGetRafflePoolInfoCsReq = 7031;
-    static const int TakePrestigeRewardCsReq = 4789;
-    static const int PrepareRogueAdventureRoomScRsp = 5629;
-    static const int SwordTrainingStartGameCsReq = 7474;
-    static const int TakeBpRewardCsReq = 3037;
-    static const int AlleyPlacingGameScRsp = 4798;
-    static const int StartTimedFarmElementCsReq = 1463;
-    static const int GetExhibitScNotify = 4364;
-    static const int GetRogueShopBuffInfoScRsp = 5628;
-    static const int GroupStateChangeCsReq = 1430;
-    static const int UnlockBackGroundMusicScRsp = 3149;
-    static const int ExchangeRogueRewardKeyScRsp = 1890;
-    static const int TakeActivityExpeditionRewardScRsp = 2583;
-    static const int GetBoxingClubInfoCsReq = 4218;
-    static const int GetUpdatedArchiveDataCsReq = 2329;
-    static const int GetFriendChallengeDetailScRsp = 2920;
-    static const int EvolveBuildShopAbilityResetScRsp = 7149;
-    static const int AcceptMainMissionScRsp = 1259;
-    static const int TakeChapterRewardScRsp = 419;
-    static const int SetLineupNameCsReq = 762;
-    static const int SpringRefreshCsReq = 1462;
-    static const int TravelBrochureRemovePasterCsReq = 6419;
-    static const int GmTalkScNotify = 41;
-    static const int PlayerHeartBeatCsReq = 33;
-    static const int RogueTournAreaUpdateScNotify = 6021;
-    static const int SetCurInteractEntityCsReq = 1482;
-    static const int SwordTrainingRefreshPartnerAbilityCsReq = 7500;
-    static const int ChessRogueReRollDiceScRsp = 5555;
-    static const int SecurityReportCsReq = 4189;
-    static const int RogueTournReEnterRogueCocoonStageScRsp = 6074;
-    static const int RankUpEquipmentCsReq = 519;
-    static const int GetCrossInfoCsReq = 7320;
-    static const int SwordTrainingTakeEndingRewardCsReq = 7497;
-    static const int TextJoinSaveCsReq = 3818;
+import 'core.pb.dart';
+
+class CmdId {
+    static const Map<String, int> CMD_ID = {
+        'NONE': 0,
+        'SpringRecoverCsReq': 1488,
+        'FinishEmotionDialoguePerformanceScRsp': 6341,
+        'GetEnhanceCommonRogueBuffInfoCsReq': 5673,
+        'SubmitMonsterResearchActivityMaterialCsReq': 2640,
+        'EnterAetherDivideSceneCsReq': 4818,
+        'CommonRogueQueryScRsp': 5668,
+        'GetRogueShopMiracleInfoCsReq': 5637,
+        'ApplyFriendCsReq': 2928,
+        'GetHeartDialInfoScRsp': 6374,
+        'ComposeLimitNumUpdateNotify': 538,
+        'GetCurAssistCsReq': 2902,
+        'ChangeLineupLeaderCsReq': 798,
+        'FinishQuestCsReq': 964,
+        'GetAuthkeyScRsp': 91,
+        'StartAetherDivideChallengeBattleScRsp': 4841,
+        'FightEnterScRsp': 30074,
+        'FinishRogueCommonDialogueCsReq': 5694,
+        'MarkAvatarCsReq': 392,
+        'StartRogueScRsp': 1837,
+        'UnlockAvatarSkinScNotify': 324,
+        'SellItemCsReq': 540,
+        'RelicAvatarRecommendScRsp': 542,
+        'SwapLineupScRsp': 764,
+        'GetChallengeGroupStatisticsCsReq': 1791,
+        'FinishPerformSectionIdScRsp': 2764,
+        'SyncLineupNotify': 789,
+        'UseTreasureDungeonItemScRsp': 4408,
+        'AcceptMainMissionCsReq': 1282,
+        'GetWolfBroGameDataCsReq': 6519,
+        'RogueTournDifficultyCompNotify': 6100,
+        'JoinLineupCsReq': 758,
+        'DelSaveRaidScNotify': 2240,
+        'EvolveBuildReRandomStageCsReq': 7105,
+        'CurTrialActivityScNotify': 2694,
+        'SubmitEmotionItemScRsp': 6349,
+        'UpdateRogueAdventureRoomScoreScRsp': 5642,
+        'LobbyInviteScRsp': 7353,
+        'SharePunkLordMonsterCsReq': 3258,
+        'RogueTournGetArchiveRepositoryCsReq': 6043,
+        'RogueTournRenameArchiveCsReq': 6048,
+        'TakeRogueEventHandbookRewardCsReq': 5639,
+        'GetPlayerReturnMultiDropInfoScRsp': 4658,
+        'MuseumTakeCollectRewardCsReq': 4347,
+        'MonopolyGameCreateScNotify': 7080,
+        'MonopolyGetRafflePoolInfoScRsp': 7065,
+        'GetActivityScheduleConfigCsReq': 2658,
+        'DeleteSummonUnitCsReq': 1450,
+        'RefreshAlleyOrderScRsp': 4762,
+        'GetCurSceneInfoScRsp': 1441,
+        'StartCocoonStageScRsp': 1406,
+        'TreasureDungeonFinishScNotify': 4474,
+        'StrongChallengeActivityBattleEndScNotify': 6658,
+        'StartAlleyEventCsReq': 4728,
+        'ChessRogueCellUpdateNotify': 5412,
+        'BuyRogueShopMiracleCsReq': 5641,
+        'EnterRogueEndlessActivityStageScRsp': 6010,
+        'StartAetherDivideStageBattleCsReq': 4873,
+        'GetLoginActivityCsReq': 2618,
+        'StartBoxingClubBattleScRsp': 4249,
+        'GetWaypointCsReq': 418,
+        'LeaveRogueScRsp': 1841,
+        'TravelBrochureSetPageDescStatusScRsp': 6462,
+        'GetAllSaveRaidScRsp': 2262,
+        'WolfBroGamePickupBulletScRsp': 6583,
+        'ClockParkUnlockTalentScRsp': 7249,
+        'ExchangeStaminaScRsp': 83,
+        'GetPunkLordBattleRecordScRsp': 3202,
+        'GetShopListScRsp': 1574,
+        'LogisticsScoreRewardSyncInfoScNotify': 4780,
+        'GetStageLineupScRsp': 774,
+        'UpdateRotaterScNotify': 6848,
+        'LockRelicCsReq': 591,
+        'BattlePassInfoNotify': 3018,
+        'MonopolyMoveCsReq': 7041,
+        'ReserveStaminaExchangeScRsp': 95,
+        'MarkItemCsReq': 509,
+        'MonopolyGameRaiseRatioCsReq': 7038,
+        'UpdateFloorSavedValueNotify': 1465,
+        'ExpUpRelicScRsp': 522,
+        'AlleyShipUnlockScNotify': 4777,
+        'ChessRogueEnterNextLayerScRsp': 5582,
+        'SyncRogueFinishScNotify': 1883,
+        'ChessRogueNousEditDiceCsReq': 5445,
+        'MonopolyTakePhaseRewardScRsp': 7085,
+        'EvolveBuildUnlockInfoNotify': 7123,
+        'GetLevelRewardTakenListCsReq': 8,
+        'InteractTreasureDungeonGridScRsp': 4448,
+        'GetRndOptionCsReq': 3418,
+        'SwordTrainingRestoreGameScRsp': 7468,
+        'ChessRogueNousDiceUpdateNotify': 5542,
+        'TakeQuestRewardCsReq': 929,
+        'SwordTrainingExamResultConfirmCsReq': 7488,
+        'ChessRoguePickAvatarScRsp': 5441,
+        'LeaveAetherDivideSceneScRsp': 4837,
+        'MuseumRandomEventStartScNotify': 4340,
+        'RemoveStuffFromAreaScRsp': 4341,
+        'MonopolyScrachRaffleTicketCsReq': 7081,
+        'SyncRogueCommonVirtualItemInfoScNotify': 5645,
+        'AetherDivideSpiritExpUpCsReq': 4811,
+        'GetFirstTalkByPerformanceNpcScRsp': 2157,
+        'ChooseBoxingClubStageOptionalBuffScRsp': 4222,
+        'ReviveRogueAvatarCsReq': 1840,
+        'SetTurnFoodSwitchScRsp': 523,
+        'TakeTrialActivityRewardScRsp': 2633,
+        'ClientObjDownloadDataScNotify': 99,
+        'TakeChallengeRaidRewardScRsp': 2219,
+        'DoGachaInRollShopCsReq': 6913,
+        'WolfBroGameUseBulletCsReq': 6557,
+        'GetMapRotationDataCsReq': 6889,
+        'LobbyCreateCsReq': 7369,
+        'AlleyEventEffectNotify': 4764,
+        'GetCurBattleInfoScRsp': 149,
+        'GiveUpBoxingClubChallengeScRsp': 4241,
+        'FightKickOutScNotify': 30037,
+        'AcceptedPamMissionExpireScRsp': 4074,
+        'WolfBroGameExplodeMonsterCsReq': 6562,
+        'TakeRogueEndlessActivityPointRewardScRsp': 6003,
+        'GetChessRogueStoryAeonTalkInfoCsReq': 5456,
+        'GetMonopolyDailyReportScRsp': 7052,
+        'BuyNpcStuffScRsp': 4337,
+        'GetMissionDataCsReq': 1218,
+        'ChessRogueFinishCurRoomNotify': 5439,
+        'TextJoinQueryCsReq': 3829,
+        'RotateMapScRsp': 6841,
+        'LeaveChallengeScRsp': 1749,
+        'TakeRogueAeonLevelRewardCsReq': 1881,
+        'MonopolyGuessDrawScNotify': 7075,
+        'MonopolyGameGachaCsReq': 7002,
+        'SummonPunkLordMonsterScRsp': 3241,
+        'FinishItemIdCsReq': 2758,
+        'MuseumRandomEventSelectCsReq': 4308,
+        'RefreshTriggerByClientCsReq': 1497,
+        'EnterTreasureDungeonScRsp': 4498,
+        'CommonRogueUpdateScNotify': 5633,
+        'MissionGroupWarnScNotify': 1257,
+        'GetEnteredSceneScRsp': 1444,
+        'ArchiveWolfBroGameScRsp': 6537,
+        'SyncTaskScRsp': 1228,
+        'RogueWorkbenchSelectFuncScRsp': 5660,
+        'EvolveBuildLeaveScRsp': 7150,
+        'PickRogueAvatarScRsp': 1891,
+        'SetFriendMarkCsReq': 2942,
+        'EnterChallengeNextPhaseScRsp': 1777,
+        'RogueWorkbenchSelectFuncCsReq': 5644,
+        'EvolveBuildShopAbilityUpCsReq': 7113,
+        'MatchThreeSetBirdPosScRsp': 7412,
+        'RogueModifierSelectCellScRsp': 5358,
+        'HeliobusUpgradeLevelScRsp': 5898,
+        'TakeMultipleExpeditionRewardScRsp': 2540,
+        'MonopolyGuessChooseScRsp': 7087,
+        'QuitBattleScNotify': 119,
+        'StartRaidScRsp': 2274,
+        'RogueModifierStageStartNotify': 5364,
+        'EnterChallengeNextPhaseCsReq': 1721,
+        'MonopolyGetRegionProgressCsReq': 7095,
+        'GetFriendBattleRecordDetailScRsp': 2933,
+        'ComposeSelectedRelicCsReq': 521,
+        'GetFriendAssistListScRsp': 2936,
+        'GetTreasureDungeonActivityDataScRsp': 4457,
+        'GetPlayerBoardDataScRsp': 2874,
+        'GetMonopolyDailyReportCsReq': 7030,
+        'TakeMailAttachmentScRsp': 841,
+        'SetDisplayAvatarCsReq': 2858,
+        'ChessRogueQueryAeonDimensionsScRsp': 5576,
+        'HeliobusSnsLikeCsReq': 5828,
+        'MatchBoxingClubOpponentScRsp': 4237,
+        'ArchiveWolfBroGameCsReq': 6529,
+        'AceAntiCheaterScRsp': 10,
+        'SyncRogueCommonDialogueDataScNotify': 5684,
+        'GetAllLineupDataCsReq': 748,
+        'GetMonopolyMbtiReportRewardScRsp': 7086,
+        'GetPunkLordDataCsReq': 3222,
+        'UnlockTutorialGuideScRsp': 1641,
+        'EnterSceneByServerScNotify': 1434,
+        'DeleteFriendScRsp': 2998,
+        'EnterSummonActivityStageScRsp': 7570,
+        'RogueTournReviveAvatarScRsp': 6071,
+        'GetTutorialScRsp': 1674,
+        'TravelBrochureGetDataScRsp': 6474,
+        'GiveUpBoxingClubChallengeCsReq': 4228,
+        'FinishCurTurnCsReq': 4389,
+        'EnterFeverTimeActivityStageScRsp': 7155,
+        'GetFriendLoginInfoCsReq': 2914,
+        'GetFriendListInfoScRsp': 2974,
+        'RogueTournEnterScRsp': 6028,
+        'GetQuestDataCsReq': 918,
+        'PlayerReturnInfoQueryScRsp': 4564,
+        'PlayerReturnStartScNotify': 4518,
+        'ExchangeRogueBuffWithMiracleScRsp': 5648,
+        'UpdateMechanismBarScNotify': 1433,
+        'UpdatePlayerSettingCsReq': 31,
+        'RogueTournEnablePermanentTalentCsReq': 6057,
+        'GetGunPlayDataCsReq': 4177,
+        'SceneReviveAfterRebattleCsReq': 1477,
+        'LeaveAetherDivideSceneCsReq': 4829,
+        'MarkReadMailScRsp': 837,
+        'GetServerPrefsDataCsReq': 6129,
+        'GetTrainVisitorBehaviorScRsp': 3737,
+        'SelectInclinationTextScRsp': 2164,
+        'SetIsDisplayAvatarInfoScRsp': 2841,
+        'GetRogueInitialScoreCsReq': 1887,
+        'LeaveChallengeCsReq': 1758,
+        'StartTimedCocoonStageCsReq': 1415,
+        'MonopolyMoveScRsp': 7019,
+        'MultiplayerGetFightGateScRsp': 1037,
+        'ChessRogueUpdateBoardScNotify': 5515,
+        'GetQuestDataScRsp': 974,
+        'BuyNpcStuffCsReq': 4329,
+        'CancelActivityExpeditionCsReq': 2557,
+        'GetLevelRewardTakenListScRsp': 11,
+        'MatchThreeGetDataScRsp': 7429,
+        'MultiplayerFightGameStateScRsp': 1074,
+        'HandleRogueCommonPendingActionCsReq': 5700,
+        'GetTrackPhotoActivityDataCsReq': 7552,
+        'ChessRogueQuestFinishNotify': 5578,
+        'MonopolyLikeScNotify': 7068,
+        'SetCurWaypointCsReq': 429,
+        'ChessRogueCheatRollScRsp': 5567,
+        'SetFriendRemarkNameScRsp': 2908,
+        'GetFriendListInfoCsReq': 2918,
+        'HeliobusLineupUpdateScNotify': 5877,
+        'SwordTrainingFinishEndingHintCsReq': 7493,
+        'TakeChapterRewardCsReq': 441,
+        'SelectPhoneThemeScRsp': 5128,
+        'DoGachaInRollShopScRsp': 6905,
+        'EnterFeverTimeActivityStageCsReq': 7152,
+        'StartChallengeScRsp': 1737,
+        'LobbyGetInfoScRsp': 7374,
+        'BuyGoodsScRsp': 1537,
+        'BuyRogueShopBuffCsReq': 5664,
+        'UpdateMovieRacingDataScRsp': 4121,
+        'OfferingInfoScNotify': 6929,
+        'FinishTutorialCsReq': 1619,
+        'WolfBroGameDataChangeScNotify': 6589,
+        'MatchThreeSetBirdPosCsReq': 7420,
+        'HeliobusUpgradeLevelCsReq': 5846,
+        'HeliobusSelectSkillCsReq': 5822,
+        'FinishFirstTalkByPerformanceNpcScRsp': 2198,
+        'SceneUpdatePositionVersionNotify': 1457,
+        'EnterTelevisionActivityStageScRsp': 6963,
+        'EndDrinkMakerSequenceScRsp': 6984,
+        'ChessRogueSkipTeachingLevelScRsp': 5489,
+        'GetMultipleDropInfoCsReq': 4618,
+        'GetPhoneDataCsReq': 5118,
+        'SetAvatarPathCsReq': 52,
+        'LobbyJoinCsReq': 7356,
+        'PlayerHeartBeatScRsp': 90,
+        'RaidCollectionDataScRsp': 6957,
+        'GetDrinkMakerDataScRsp': 6997,
+        'MonopolyGetRegionProgressScRsp': 7054,
+        'GetSingleRedDotParamGroupScRsp': 5949,
+        'ChessRogueGoAheadScRsp': 5529,
+        'MonopolyReRollRandomScRsp': 7062,
+        'MarkAvatarScRsp': 347,
+        'RogueTournHandBookNotify': 6020,
+        'GetTutorialCsReq': 1618,
+        'GetArchiveDataScRsp': 2374,
+        'SyncAddBlacklistScNotify': 2962,
+        'GetSwordTrainingDataCsReq': 7479,
+        'ExchangeRogueRewardKeyCsReq': 1833,
+        'ChessRogueGiveUpCsReq': 5524,
+        'StartTimedFarmElementScRsp': 1443,
+        'ReplaceLineupCsReq': 711,
+        'RogueTournLeaveRogueCocoonSceneCsReq': 6050,
+        'SetBoxingClubResonanceLineupCsReq': 4246,
+        'GetFriendBattleRecordDetailCsReq': 2968,
+        'GetAllRedDotDataCsReq': 5918,
+        'RogueTournStartCsReq': 6031,
+        'StartTrialActivityCsReq': 2690,
+        'MonopolyGetRaffleTicketScRsp': 7034,
+        'GetPlayerBoardDataCsReq': 2818,
+        'StarFightDataChangeNotify': 7166,
+        'TakeAllRewardCsReq': 3041,
+        'ChessRogueQueryAeonDimensionsCsReq': 5510,
+        'PunkLordMonsterInfoScNotify': 3283,
+        'ChessRogueStartScRsp': 5570,
+        'GetRogueInfoScRsp': 1874,
+        'RogueModifierSelectCellCsReq': 5337,
+        'LogisticsGameScRsp': 4737,
+        'GetAssistListCsReq': 2961,
+        'EnterAdventureCsReq': 1318,
+        'GetAetherDivideInfoScRsp': 4857,
+        'GetCurAssistScRsp': 2913,
+        'GetEnhanceCommonRogueBuffInfoScRsp': 5608,
+        'RankUpEquipmentScRsp': 564,
+        'RogueTournExpNotify': 6030,
+        'SellItemScRsp': 548,
+        'ChallengeBossPhaseSettleNotify': 1724,
+        'FinishChessRogueNousSubStoryScRsp': 5560,
+        'StartStarFightLevelScRsp': 7170,
+        'SelectChessRogueSubStoryScRsp': 5517,
+        'FinishQuestScRsp': 989,
+        'MarkRelicFilterPlanCsReq': 533,
+        'RogueTournTakeExpRewardScRsp': 6081,
+        'ChangeLineupLeaderScRsp': 783,
+        'TakePictureCsReq': 4158,
+        'GetBagScRsp': 574,
+        'GetPunkLordMonsterDataScRsp': 3274,
+        'SavePointsInfoNotify': 1409,
+        'DeleteBlacklistCsReq': 2977,
+        'SubmitEmotionItemCsReq': 6358,
+        'StartWolfBroGameScRsp': 6574,
+        'GetChallengeRaidInfoScRsp': 2228,
+        'GetSocialEventServerCacheCsReq': 7094,
+        'GetRogueScoreRewardInfoScRsp': 1885,
+        'GetLoginChatInfoCsReq': 3983,
+        'QuitLineupCsReq': 728,
+        'GetAvatarDataCsReq': 318,
+        'GetBoxingClubInfoScRsp': 4274,
+        'StartAetherDivideSceneBattleCsReq': 4858,
+        'SyncRogueCommonDialogueOptionFinishScNotify': 5676,
+        'MonopolyEventLoadUpdateScNotify': 7093,
+        'ChooseBoxingClubResonanceScRsp': 4257,
+        'GetAetherDivideChallengeInfoCsReq': 4824,
+        'GetMissionEventDataCsReq': 1283,
+        'StopRogueAdventureRoomScRsp': 5624,
+        'RelicAvatarRecommendCsReq': 512,
+        'GetFriendChallengeDetailCsReq': 2910,
+        'TakePrestigeRewardScRsp': 4757,
+        'HeliobusChallengeUpdateScNotify': 5821,
+        'EvolveBuildShopAbilityResetCsReq': 7117,
+        'GetCurLineupDataScRsp': 737,
+        'PrestigeLevelUpCsReq': 4773,
+        'GetCurChallengeCsReq': 1764,
+        'TakeOfferingRewardCsReq': 6923,
+        'GetRaidInfoScRsp': 2257,
+        'TravelBrochurePageUnlockScNotify': 6429,
+        'SpaceZooDataScRsp': 6774,
+        'PromoteAvatarScRsp': 341,
+        'ChessRogueGiveUpRollScRsp': 5455,
+        'MonopolyLikeScRsp': 7020,
+        'SyncAcceptedPamMissionNotify': 4029,
+        'TakeExpeditionRewardCsReq': 2528,
+        'TakeMonsterResearchActivityRewardCsReq': 2673,
+        'GetRogueAeonInfoScRsp': 1869,
+        'StartPartialChallengeCsReq': 1740,
+        'QuitTreasureDungeonScRsp': 4421,
+        'EvolveBuildReRandomStageScRsp': 7103,
+        'MonopolyGetDailyInitItemScRsp': 7060,
+        'RogueModifierDelNotify': 5319,
+        'LevelUpSpecialSkillTreeScRsp': 338,
+        'GetRollShopInfoCsReq': 6914,
+        'BatchGetQuestDataCsReq': 983,
+        'MuseumRandomEventQueryScRsp': 4373,
+        'SearchPlayerScRsp': 2947,
+        'TeleportToMissionResetPointScRsp': 1247,
+        'GetCurSceneInfoCsReq': 1428,
+        'RogueWorkbenchHandleFuncScRsp': 5651,
+        'GetAllServerPrefsDataCsReq': 6118,
+        'SyncRogueVirtualItemInfoScNotify': 1863,
+        'GetRogueTalentInfoScRsp': 1866,
+        'QuitWolfBroGameScRsp': 6541,
+        'GetWolfBroGameDataScRsp': 6564,
+        'ChessRogueUpdateDiceInfoScNotify': 5447,
+        'MonopolyRollRandomCsReq': 7083,
+        'ChangeStoryLineFinishScNotify': 6249,
+        'LobbyBeginScRsp': 7370,
+        'GetChallengeGroupStatisticsScRsp': 1762,
+        'ChessRogueEnterCellCsReq': 5493,
+        'GetSaveRaidCsReq': 2283,
+        'RogueGetGambleInfoCsReq': 5630,
+        'ChallengeSettleNotify': 1728,
+        'ClockParkQuitScriptScRsp': 7298,
+        'ReviveRogueAvatarScRsp': 1848,
+        'RemoveStuffFromAreaCsReq': 4328,
+        'SetAssistCsReq': 2982,
+        'ContentPackageGetDataCsReq': 7519,
+        'EvolveBuildStartStageScRsp': 7120,
+        'SpaceZooOpCatteryScRsp': 6741,
+        'SetPlayerInfoCsReq': 23,
+        'WolfBroGameUseBulletScRsp': 6546,
+        'FightSessionStopScNotify': 30028,
+        'ShowNewSupplementVisitorScRsp': 3757,
+        'ChessRogueConfirmRollCsReq': 5415,
+        'PickRogueAvatarCsReq': 1822,
+        'GetRogueInfoCsReq': 1818,
+        'RestoreWolfBroGameArchiveScRsp': 6549,
+        'ChooseBoxingClubStageOptionalBuffCsReq': 4283,
+        'EvolveBuildShopAbilityDownScRsp': 7116,
+        'SetGroupCustomSaveDataCsReq': 1490,
+        'GetUpdatedArchiveDataScRsp': 2337,
+        'HeliobusInfoChangedScNotify': 5857,
+        'MonopolyReRollRandomCsReq': 7091,
+        'GetStuffScNotify': 4319,
+        'TakePromotionRewardScRsp': 373,
+        'GetFirstTalkNpcScRsp': 2149,
+        'SwordTrainingRestoreGameCsReq': 7476,
+        'GameplayCounterRecoverCsReq': 1426,
+        'StartWolfBroGameCsReq': 6518,
+        'PromoteEquipmentCsReq': 529,
+        'EnterSectionScRsp': 1447,
+        'GetChessRogueStoryInfoCsReq': 5482,
+        'MonopolyGetDailyInitItemCsReq': 7044,
+        'RogueGetGambleInfoScRsp': 5652,
+        'RogueTournBattleFailSettleInfoScNotify': 6027,
+        'QuitRogueScRsp': 1802,
+        'UnlockTutorialGuideCsReq': 1628,
+        'MonopolyContentUpdateScNotify': 7061,
+        'SwordTrainingRefreshPartnerAbilityScRsp': 7451,
+        'PlayerLoginFinishCsReq': 76,
+        'ChessRogueEnterNextLayerCsReq': 5473,
+        'BatchMarkChatEmojiCsReq': 3946,
+        'SceneGroupRefreshScNotify': 1405,
+        'ReBattleAfterBattleLoseCsNotify': 146,
+        'RogueDoGambleScRsp': 5669,
+        'TakeCityShopRewardCsReq': 1558,
+        'LobbyKickOutCsReq': 7359,
+        'MatchResultScNotify': 7337,
+        'FinishCurTurnScRsp': 4357,
+        'GetRogueCollectionScRsp': 5671,
+        'RogueWorkbenchGetInfoCsReq': 5601,
+        'GetFeverTimeActivityDataCsReq': 7160,
+        'MonopolyGiveUpCurContentCsReq': 7077,
+        'SceneCastSkillCostMpCsReq': 1498,
+        'TakeOffAvatarSkinScRsp': 377,
+        'AlleyShipmentEventEffectsScNotify': 4761,
+        'ClockParkUnlockTalentCsReq': 7258,
+        'GetChallengeScRsp': 1774,
+        'MuseumDispatchFinishedScNotify': 4321,
+        'GetGachaInfoScRsp': 1974,
+        'TextJoinSaveScRsp': 3874,
+        'InteractChargerScRsp': 6837,
+        'ChessRogueEnterCsReq': 5521,
+        'MultiplayerFightGameStartScNotify': 1028,
+        'ExchangeRogueBuffWithMiracleCsReq': 5640,
+        'HeliobusSnsCommentScRsp': 5864,
+        'SelectPhoneThemeCsReq': 5149,
+        'SetCurInteractEntityScRsp': 1459,
+        'LobbySyncInfoScNotify': 7351,
+        'MakeDrinkScRsp': 6985,
+        'TakeApRewardCsReq': 3318,
+        'MonopolyCellUpdateNotify': 7037,
+        'StartMatchScRsp': 7329,
+        'GetMissionDataScRsp': 1274,
+        'StartAetherDivideSceneBattleScRsp': 4849,
+        'QuitWolfBroGameCsReq': 6528,
+        'AcceptMultipleExpeditionCsReq': 2522,
+        'GetMainMissionCustomValueScRsp': 1213,
+        'TextJoinQueryScRsp': 3837,
+        'SpringRecoverSingleAvatarScRsp': 1468,
+        'BatchGetQuestDataScRsp': 922,
+        'SyncEntityBuffChangeListScNotify': 1446,
+        'FinishFirstTalkNpcCsReq': 2128,
+        'ClockParkStartScriptScRsp': 7241,
+        'HeliobusSnsLikeScRsp': 5841,
+        'EnterRogueMapRoomCsReq': 1880,
+        'MatchBoxingClubOpponentCsReq': 4229,
+        'GetFantasticStoryActivityDataCsReq': 4918,
+        'SpaceZooDataCsReq': 6718,
+        'TriggerVoiceScRsp': 4198,
+        'PrepareRogueAdventureRoomCsReq': 5674,
+        'AceAntiCheaterCsReq': 100,
+        'GetRogueShopBuffInfoCsReq': 5649,
+        'SetForbidOtherApplyFriendScRsp': 2912,
+        'ExpUpEquipmentScRsp': 557,
+        'SetDisplayAvatarScRsp': 2849,
+        'ChessRogueRollDiceCsReq': 5450,
+        'GetTutorialGuideCsReq': 1629,
+        'MultipleDropInfoScNotify': 4629,
+        'TakeMultipleExpeditionRewardCsReq': 2562,
+        'ChessRogueMoveCellNotify': 5536,
+        'EvolveBuildGiveupCsReq': 7112,
+        'DelMailCsReq': 858,
+        'GetServerPrefsDataScRsp': 6137,
+        'TakePunkLordPointRewardCsReq': 3246,
+        'QuitBattleScRsp': 137,
+        'EnterMapRotationRegionCsReq': 6818,
+        'TakeTrainVisitorUntakenBehaviorRewardCsReq': 3719,
+        'SwordTrainingFinishEndingHintScRsp': 7492,
+        'MuseumTakeCollectRewardScRsp': 4361,
+        'PlayerLoginCsReq': 18,
+        'GetFriendLoginInfoScRsp': 2975,
+        'GetChapterCsReq': 458,
+        'LobbyQuitCsReq': 7391,
+        'RogueTournResetPermanentTalentCsReq': 6066,
+        'GetTrialActivityDataCsReq': 2636,
+        'GetTrainVisitorBehaviorCsReq': 3729,
+        'FinishRogueCommonDialogueScRsp': 5678,
+        'GetSpringRecoverDataCsReq': 1442,
+        'GetActivityScheduleConfigScRsp': 2649,
+        'CommonRogueComponentUpdateScNotify': 5625,
+        'GetHeartDialInfoCsReq': 6318,
+        'GetRogueHandbookDataScRsp': 5670,
+        'GetRelicFilterPlanScRsp': 516,
+        'HandleRogueCommonPendingActionScRsp': 5610,
+        'ClockParkHandleWaitOperationCsReq': 7289,
+        'ChessRogueNousGetRogueTalentInfoScRsp': 5571,
+        'DiscardRelicScRsp': 514,
+        'FeatureSwitchClosedScNotify': 3,
+        'TakeQuestRewardScRsp': 937,
+        'MultiplayerGetFightGateCsReq': 1029,
+        'TakeKilledPunkLordMonsterScoreCsReq': 3261,
+        'AetherDivideSpiritInfoScNotify': 4877,
+        'GetRndOptionScRsp': 3474,
+        'FightLeaveScNotify': 30029,
+        'RevcMsgScNotify': 3929,
+        'WolfBroGamePickupBulletCsReq': 6598,
+        'GetMissionStatusScRsp': 1273,
+        'SetAetherDivideLineUpScRsp': 4898,
+        'GetPunkLordBattleRecordCsReq': 3259,
+        'SelectRogueCommonDialogueOptionScRsp': 5632,
+        'ChessRogueQuitScRsp': 5588,
+        'SwordTrainingTurnActionScRsp': 7487,
+        'FinishPerformSectionIdCsReq': 2719,
+        'GetSingleRedDotParamGroupCsReq': 5958,
+        'GetSummonActivityDataScRsp': 7565,
+        'PlayerReturnSignScRsp': 4529,
+        'ActivateFarmElementScRsp': 1412,
+        'ReturnLastTownCsReq': 1473,
+        'StartAlleyEventScRsp': 4741,
+        'PlayerLogoutScRsp': 37,
+        'GetEnteredSceneCsReq': 1469,
+        'LobbyJoinScRsp': 7395,
+        'MonopolyUpgradeAssetCsReq': 7011,
+        'SetSpringRecoverConfigCsReq': 1416,
+        'GetAllLineupDataScRsp': 773,
+        'CancelMarkItemNotify': 506,
+        'DestroyItemCsReq': 582,
+        'MultiplayerFightGiveUpScRsp': 1049,
+        'GetChessRogueNousStoryInfoScRsp': 5466,
+        'GetDrinkMakerDataCsReq': 6994,
+        'TakeFightActivityRewardScRsp': 3628,
+        'SwordTrainingGiveUpGameCsReq': 7467,
+        'GetRecyleTimeScRsp': 547,
+        'FinishChessRogueSubStoryCsReq': 5411,
+        'SwordTrainingStoryConfirmCsReq': 7498,
+        'DailyFirstEnterMonopolyActivityScRsp': 7098,
+        'AddEquipmentScNotify': 524,
+        'GetNpcMessageGroupScRsp': 2774,
+        'MonopolySelectOptionCsReq': 7064,
+        'GetKilledPunkLordMonsterDataCsReq': 3221,
+        'GetVideoVersionKeyCsReq': 1,
+        'AddBlacklistScRsp': 2991,
+        'MonopolyCheatDiceScRsp': 7047,
+        'EndDrinkMakerSequenceCsReq': 6983,
+        'TakeLoginActivityRewardCsReq': 2629,
+        'DestroyItemScRsp': 559,
+        'SyncRogueAeonLevelUpRewardScNotify': 1865,
+        'EvolveBuildQueryInfoCsReq': 7119,
+        'TakeRogueEndlessActivityAllBonusRewardScRsp': 6009,
+        'MuseumRandomEventSelectScRsp': 4311,
+        'RogueTournEnterRogueCocoonSceneCsReq': 6024,
+        'ExpUpRelicCsReq': 583,
+        'GetSceneMapInfoCsReq': 1451,
+        'ComposeItemScRsp': 598,
+        'RogueTournGetSettleInfoCsReq': 6044,
+        'GetMapRotationDataScRsp': 6857,
+        'GameplayCounterCountDownCsReq': 1499,
+        'DrinkMakerUpdateTipsNotify': 6990,
+        'FightHeartBeatCsReq': 30058,
+        'GetChapterScRsp': 449,
+        'MuseumFundsChangedScNotify': 4362,
+        'ReEnterLastElementStageCsReq': 1494,
+        'UnlockTutorialCsReq': 1658,
+        'GetLevelRewardScRsp': 77,
+        'AvatarExpUpScRsp': 337,
+        'MuseumTargetStartNotify': 4377,
+        'GetReplayTokenScRsp': 3574,
+        'GetRogueCommonDialogueDataScRsp': 5667,
+        'ClockParkGetInfoScRsp': 7274,
+        'GetChatFriendHistoryScRsp': 3941,
+        'MonopolyBuyGoodsScRsp': 7008,
+        'GetMuseumInfoCsReq': 4318,
+        'SetTurnFoodSwitchCsReq': 580,
+        'BattleCollegeDataChangeScNotify': 5729,
+        'SetAssistAvatarCsReq': 2857,
+        'EnterAdventureScRsp': 1374,
+        'RogueTournTakeExpRewardCsReq': 6016,
+        'LogisticsGameCsReq': 4729,
+        'GetChatEmojiListCsReq': 3919,
+        'ClockParkGetOngoingScriptInfoScRsp': 7264,
+        'DressAvatarSkinScRsp': 311,
+        'GetAssistListScRsp': 2938,
+        'AetherDivideTakeChallengeRewardScRsp': 4806,
+        'SetClientRaidTargetCountCsReq': 2246,
+        'StartStarFightLevelCsReq': 7167,
+        'GetMovieRacingDataCsReq': 4173,
+        'MonopolyClickMbtiReportCsReq': 7066,
+        'GetTrainVisitorRegisterScRsp': 3741,
+        'ChessRoguePickAvatarCsReq': 5495,
+        'ChessRogueNousEnableRogueTalentCsReq': 5531,
+        'GetBattleCollegeDataCsReq': 5718,
+        'InteractTreasureDungeonGridCsReq': 4440,
+        'SetSignatureScRsp': 2889,
+        'EquipAetherDividePassiveSkillScRsp': 4822,
+        'GetChallengeRaidInfoCsReq': 2249,
+        'SetForbidOtherApplyFriendCsReq': 2953,
+        'GetStarFightDataScRsp': 7165,
+        'RogueTournGetCurRogueCocoonInfoScRsp': 6061,
+        'InterruptMissionEventScRsp': 1211,
+        'GetPlatformPlayerInfoCsReq': 2987,
+        'RefreshTriggerByClientScRsp': 1466,
+        'RemoveRotaterScRsp': 6840,
+        'ClientObjUploadScRsp': 93,
+        'GetArchiveDataCsReq': 2318,
+        'RogueTournReviveAvatarCsReq': 6083,
+        'GetPlayerDetailInfoCsReq': 2929,
+        'GetShopListCsReq': 1518,
+        'SwordTrainingExamResultConfirmScRsp': 7480,
+        'EvolveBuildCoinNotify': 7139,
+        'SaveLogisticsScRsp': 4792,
+        'EvolveBuildStartLevelScRsp': 7145,
+        'MuseumTargetMissionFinishNotify': 4324,
+        'TakePictureScRsp': 4149,
+        'SetRedPointStatusScNotify': 17,
+        'FightMatch3TurnStartScNotify': 30137,
+        'LobbyCreateScRsp': 7379,
+        'GetLoginActivityScRsp': 2674,
+        'DressAvatarScRsp': 364,
+        'UpgradeAreaCsReq': 4346,
+        'DailyActiveInfoNotify': 3358,
+        'FightMatch3ChatScNotify': 30189,
+        'ExchangeGachaCeilingCsReq': 1928,
+        'ChessRogueSkipTeachingLevelCsReq': 5519,
+        'RogueTournReviveCostUpdateScNotify': 6011,
+        'SubmitOrigamiItemScRsp': 4122,
+        'ContentPackageUnlockCsReq': 7545,
+        'GetGachaCeilingCsReq': 1958,
+        'SyncClientResVersionScRsp': 141,
+        'RogueDoGambleCsReq': 5635,
+        'PlayBackGroundMusicScRsp': 3137,
+        'ResetMapRotationRegionCsReq': 6846,
+        'RogueTournGetMiscRealTimeDataCsReq': 6084,
+        'EvolveBuildShopAbilityUpScRsp': 7131,
+        'MuseumInfoChangedScNotify': 4391,
+        'StartBattleCollegeCsReq': 5737,
+        'GetCurChallengeScRsp': 1789,
+        'GetTreasureDungeonActivityDataCsReq': 4489,
+        'GetMainMissionCustomValueCsReq': 1202,
+        'FinishCosumeItemMissionScRsp': 1298,
+        'GetPhoneDataScRsp': 5174,
+        'FightMatch3StartCountDownScNotify': 30129,
+        'UpgradeAreaStatCsReq': 4383,
+        'EnhanceRogueBuffCsReq': 1877,
+        'GetNpcTakenRewardScRsp': 2174,
+        'MonopolyGameSettleScNotify': 7059,
+        'HandleFriendScRsp': 2989,
+        'SearchPlayerCsReq': 2992,
+        'SwordTrainingLearnSkillCsReq': 7463,
+        'EnterChessRogueAeonRoomCsReq': 5452,
+        'EvolveBuildLeaveCsReq': 7109,
+        'QuitLineupScRsp': 741,
+        'EnterFightActivityStageCsReq': 3637,
+        'MultiplayerMatch3FinishScNotify': 1019,
+        'SpaceZooBornCsReq': 6729,
+        'SwordTrainingResumeGameCsReq': 7452,
+        'GetJukeboxDataScRsp': 3174,
+        'TakeRogueMiracleHandbookRewardCsReq': 5623,
+        'RogueTournDeleteArchiveCsReq': 6099,
+        'EvolveBuildFinishScNotify': 7101,
+        'AddRelicFilterPlanCsReq': 536,
+        'SwordTrainingGetSkillInfoCsReq': 7461,
+        'FinishTalkMissionCsReq': 1229,
+        'PlayerReturnTakePointRewardScRsp': 4549,
+        'FinishSectionIdScRsp': 2741,
+        'ModifyRelicFilterPlanScRsp': 510,
+        'RogueTournSettleScRsp': 6069,
+        'JoinLineupScRsp': 749,
+        'GetCurBattleInfoCsReq': 158,
+        'EnterSummonActivityStageCsReq': 7567,
+        'ChooseBoxingClubResonanceCsReq': 4289,
+        'AcceptExpeditionScRsp': 2537,
+        'FightActivityDataChangeScNotify': 3629,
+        'SwordTrainingUpdateRankCsReq': 7458,
+        'TrialBackGroundMusicScRsp': 3141,
+        'OpenRogueChestCsReq': 1820,
+        'QuitRogueCsReq': 1859,
+        'ComposeSelectedRelicScRsp': 577,
+        'MonopolyConfirmRandomCsReq': 7040,
+        'ChessRogueSelectCellCsReq': 5513,
+        'AcceptMissionEventCsReq': 1262,
+        'EnableRogueTalentScRsp': 1850,
+        'GetSocialEventServerCacheScRsp': 7078,
+        'SpaceZooOpCatteryCsReq': 6728,
+        'AlleyGuaranteedFundsScRsp': 4713,
+        'GetRogueBuffEnhanceInfoCsReq': 1811,
+        'ContentPackageGetDataScRsp': 7529,
+        'BuyBpLevelCsReq': 3049,
+        'TravelBrochureApplyPasterListScRsp': 6408,
+        'SetIsDisplayAvatarInfoCsReq': 2828,
+        'EvolveBuildShopAbilityDownCsReq': 7124,
+        'SwapLineupCsReq': 719,
+        'PlayerReturnForceFinishScNotify': 4589,
+        'DoGachaCsReq': 1929,
+        'LobbyBeginCsReq': 7387,
+        'TravelBrochurePageResetScRsp': 6448,
+        'GetFriendChallengeLineupCsReq': 2988,
+        'DeleteSummonUnitScRsp': 1404,
+        'RogueTournGetPermanentTalentInfoScRsp': 6092,
+        'GetFightActivityDataCsReq': 3618,
+        'MonopolyGetRaffleTicketCsReq': 7001,
+        'MuseumRandomEventQueryCsReq': 4348,
+        'EnterRogueCsReq': 1858,
+        'AetherDivideLineupScNotify': 4859,
+        'AcceptActivityExpeditionCsReq': 2564,
+        'GetAuthkeyCsReq': 22,
+        'RogueTournRenameArchiveScRsp': 6056,
+        'GetRogueInitialScoreScRsp': 1839,
+        'GetSecretKeyInfoScRsp': 84,
+        'StartPartialChallengeScRsp': 1748,
+        'MarkChatEmojiCsReq': 3989,
+        'ShareCsReq': 4118,
+        'SwordTrainingStoryBattleCsReq': 7478,
+        'OpenTreasureDungeonGridCsReq': 4483,
+        'MissionAcceptScNotify': 1209,
+        'SwordTrainingDialogueSelectOptionCsReq': 7471,
+        'GetMultiPathAvatarInfoScRsp': 44,
+        'SceneEntityTeleportScRsp': 1476,
+        'UnlockSkilltreeScRsp': 349,
+        'GetAllRedDotDataScRsp': 5974,
+        'InteractPropCsReq': 1429,
+        'LobbyInviteCsReq': 7355,
+        'ChessRogueGiveUpRollCsReq': 5448,
+        'ChessRogueGiveUpScRsp': 5481,
+        'SendMsgScRsp': 3974,
+        'PromoteAvatarCsReq': 328,
+        'EnterTrialActivityStageCsReq': 2610,
+        'SyncRogueStatusScNotify': 1843,
+        'GetMonopolyInfoScRsp': 7074,
+        'StartTimedCocoonStageScRsp': 1496,
+        'CancelMatchScRsp': 7345,
+        'GetDailyActiveInfoScRsp': 3337,
+        'TakeAllRewardScRsp': 3019,
+        'TravelBrochureSetPageDescStatusCsReq': 6491,
+        'EnterRogueEndlessActivityStageCsReq': 6007,
+        'ExchangeStaminaCsReq': 98,
+        'MonopolyDailySettleScNotify': 7036,
+        'FinishPlotScRsp': 1174,
+        'PrestigeLevelUpScRsp': 4708,
+        'ChessRogueReviveAvatarScRsp': 5470,
+        'UpdateGunPlayDataCsReq': 4192,
+        'SyncRogueAeonScNotify': 1834,
+        'SetStuffToAreaScRsp': 4349,
+        'LobbyModifyPlayerInfoCsReq': 7362,
+        'SetAvatarPathScRsp': 35,
+        'GetRogueScoreRewardInfoCsReq': 1899,
+        'AlleyOrderChangedScNotify': 4740,
+        'SceneEnterStageCsReq': 1411,
+        'EvolveBuildTakeExpRewardScRsp': 7144,
+        'TakeChallengeRewardCsReq': 1783,
+        'UpdateRedDotDataScRsp': 5937,
+        'GetAetherDivideChallengeInfoScRsp': 4892,
+        'TelevisionActivityDataChangeScNotify': 6973,
+        'GetLoginChatInfoScRsp': 3922,
+        'FightMatch3OpponentDataScNotify': 30141,
+        'MakeMissionDrinkScRsp': 6986,
+        'GetPlayerReplayInfoCsReq': 3529,
+        'GetRogueAdventureRoomInfoScRsp': 5683,
+        'ReserveStaminaExchangeCsReq': 71,
+        'FinishAeonDialogueGroupScRsp': 1860,
+        'TakeOffEquipmentScRsp': 357,
+        'CancelActivityExpeditionScRsp': 2546,
+        'SetRogueExhibitionCsReq': 5699,
+        'LeaveRaidScRsp': 2237,
+        'SetCurWaypointScRsp': 437,
+        'EnterFantasticStoryActivityStageCsReq': 4937,
+        'GetMissionEventDataScRsp': 1222,
+        'DailyRefreshNotify': 16,
+        'UseTreasureDungeonItemCsReq': 4473,
+        'SelectChessRogueNousSubStoryCsReq': 5566,
+        'LeaveRogueCsReq': 1828,
+        'GetRogueEndlessActivityDataCsReq': 6002,
+        'AetherDivideRefreshEndlessCsReq': 4802,
+        'SpaceZooTakeScRsp': 6783,
+        'BuyRogueShopMiracleScRsp': 5619,
+        'MatchThreeGetDataCsReq': 7419,
+        'SwordTrainingUnlockSyncScNotify': 7484,
+        'RogueTournEnterRoomCsReq': 6033,
+        'GetAvatarDataScRsp': 374,
+        'AntiAddictScNotify': 40,
+        'StartAetherDivideChallengeBattleCsReq': 4828,
+        'TakeTrainVisitorUntakenBehaviorRewardScRsp': 3764,
+        'FightMatch3SwapScRsp': 30128,
+        'SelectChatBubbleScRsp': 5137,
+        'HeliobusActivityDataCsReq': 5818,
+        'TakeRollShopRewardCsReq': 6903,
+        'RelicRecommendScRsp': 553,
+        'TrialActivityDataChangeScNotify': 2700,
+        'DrinkMakerChallengeCsReq': 6999,
+        'GetMbtiReportCsReq': 7033,
+        'AlleyGuaranteedFundsCsReq': 4702,
+        'UpdateFeatureSwitchScNotify': 12,
+        'ChessRogueRollDiceScRsp': 5471,
+        'GetCrossInfoScRsp': 7312,
+        'ActivateFarmElementCsReq': 1453,
+        'SetAetherDivideLineUpCsReq': 4846,
+        'LobbyQuitScRsp': 7360,
+        'TakeAllApRewardCsReq': 3349,
+        'RetcodeNotify': 68,
+        'RestartChallengePhaseCsReq': 1708,
+        'AetherDivideFinishChallengeScNotify': 4847,
+        'UseItemScRsp': 541,
+        'GetFarmStageGachaInfoCsReq': 1329,
+        'SwordTrainingDialogueSelectOptionScRsp': 7459,
+        'InteractPropScRsp': 1437,
+        'DeleteSocialEventServerCacheScRsp': 7076,
+        'EnableRogueTalentCsReq': 1855,
+        'UnlockPhoneThemeScNotify': 5141,
+        'RogueTournGetSettleInfoScRsp': 6013,
+        'ClockParkStartScriptCsReq': 7228,
+        'NewAssistHistoryNotify': 2906,
+        'AlleyShipUsedCountScNotify': 4759,
+        'RecoverAllLineupCsReq': 1402,
+        'GetRelicFilterPlanCsReq': 545,
+        'HeliobusSnsPostScRsp': 5849,
+        'SetNicknameCsReq': 48,
+        'GetChessRogueBuffEnhanceInfoScRsp': 5421,
+        'AlleyPlacingGameCsReq': 4746,
+        'DailyFirstEnterMonopolyActivityCsReq': 7046,
+        'FinishChessRogueSubStoryScRsp': 5407,
+        'SwordTrainingStoryConfirmScRsp': 7494,
+        'GetFightActivityDataScRsp': 3674,
+        'QuitBattleCsReq': 129,
+        'FinishFirstTalkNpcScRsp': 2141,
+        'EvolveBuildQueryInfoScRsp': 7129,
+        'BattleLogReportScRsp': 189,
+        'ChessRogueEnterScRsp': 5590,
+        'SetMissionEventProgressCsReq': 1221,
+        'TreasureDungeonDataScNotify': 4418,
+        'QuestRecordScNotify': 919,
+        'MonopolyCheatDiceCsReq': 7092,
+        'UpdateServerPrefsDataCsReq': 6158,
+        'ClockParkGetInfoCsReq': 7218,
+        'GetFeverTimeActivityDataScRsp': 7156,
+        'GetStoryLineInfoCsReq': 6218,
+        'ChessRogueUpdateReviveInfoScNotify': 5420,
+        'ReturnLastTownScRsp': 1408,
+        'SubmitOfferingItemCsReq': 6933,
+        'FinishTutorialGuideCsReq': 1689,
+        'SpaceZooExchangeItemScRsp': 6746,
+        'MonopolyAcceptQuizCsReq': 7006,
+        'MonopolySocialEventEffectScNotify': 7032,
+        'SetSpringRecoverConfigScRsp': 1436,
+        'GetAlleyInfoCsReq': 4718,
+        'RogueTournClearArchiveNameScNotify': 6023,
+        'FightTreasureDungeonMonsterScRsp': 4462,
+        'FinishCosumeItemMissionCsReq': 1246,
+        'ChessRogueNousDiceSurfaceUnlockNotify': 5426,
+        'FinishChapterScNotify': 4929,
+        'GetTelevisionActivityDataCsReq': 6974,
+        'EnterSceneCsReq': 1425,
+        'SetClientPausedCsReq': 1423,
+        'PlayerLogoutCsReq': 29,
+        'SpaceZooMutateCsReq': 6758,
+        'ContentPackageSyncDataScNotify': 7506,
+        'StartFinishMainMissionScNotify': 1238,
+        'CancelMatchCsReq': 7306,
+        'FinishAeonDialogueGroupCsReq': 1844,
+        'HeliobusSnsUpdateScNotify': 5889,
+        'FightMatch3DataCsReq': 30118,
+        'MonopolyRollDiceScRsp': 7028,
+        'WolfBroGameActivateBulletScRsp': 6591,
+        'TrainVisitorBehaviorFinishScRsp': 3774,
+        'LockEquipmentCsReq': 558,
+        'MultiplayerFightGameFinishScNotify': 1041,
+        'AetherDivideTainerInfoScNotify': 4861,
+        'TextJoinBatchSaveCsReq': 3858,
+        'DeactivateFarmElementScRsp': 1475,
+        'HeliobusSnsReadCsReq': 5829,
+        'SwordTrainingGameSyncChangeScNotify': 7469,
+        'LeaveTrialActivityScRsp': 2632,
+        'SetGameplayBirthdayScRsp': 88,
+        'GroupStateChangeScNotify': 1435,
+        'SetSignatureCsReq': 2864,
+        'EquipAetherDividePassiveSkillCsReq': 4883,
+        'SetLanguageScRsp': 61,
+        'TravelBrochureSelectMessageCsReq': 6458,
+        'UpdateTrackMainMissionIdCsReq': 1206,
+        'SetGenderScRsp': 80,
+        'BoxingClubChallengeUpdateScNotify': 4264,
+        'GetBasicInfoScRsp': 45,
+        'TrainRefreshTimeNotify': 3758,
+        'GetFriendDevelopmentInfoScRsp': 2967,
+        'TakeCityShopRewardScRsp': 1549,
+        'ChessRogueUpdateUnlockLevelScNotify': 5472,
+        'SceneEntityMoveScNotify': 1489,
+        'LeaveMapRotationRegionCsReq': 6819,
+        'ExchangeHcoinScRsp': 511,
+        'DressAvatarSkinCsReq': 308,
+        'EvolveBuildGiveupScRsp': 7121,
+        'QueryProductInfoCsReq': 14,
+        'GetReplayTokenCsReq': 3518,
+        'ChessRogueNousEnableRogueTalentScRsp': 5449,
+        'EnhanceCommonRogueBuffCsReq': 5611,
+        'EnterStrongChallengeActivityStageScRsp': 6637,
+        'PromoteEquipmentScRsp': 537,
+        'RaidCollectionDataScNotify': 6953,
+        'RankUpAvatarScRsp': 383,
+        'GetMovieRacingDataScRsp': 4108,
+        'SceneEntityMoveScRsp': 1474,
+        'TriggerVoiceCsReq': 4146,
+        'GameplayCounterUpdateScNotify': 1493,
+        'ChessRogueUpdateDicePassiveAccumulateValueScNotify': 5548,
+        'RegionStopScNotify': 62,
+        'ClockParkFinishScriptScNotify': 7273,
+        'DailyTaskDataScNotify': 1241,
+        'GetMonopolyFriendRankingListScRsp': 7100,
+        'GetFriendApplyListInfoCsReq': 2958,
+        'GetUnlockTeleportCsReq': 1495,
+        'SwordTrainingUpdateRankScRsp': 7496,
+        'LeaveMapRotationRegionScNotify': 6883,
+        'SetGroupCustomSaveDataScRsp': 1467,
+        'SwitchLineupIndexCsReq': 722,
+        'PlayerGetTokenScRsp': 49,
+        'GetQuestRecordScRsp': 941,
+        'RogueModifierUpdateNotify': 5341,
+        'RestoreWolfBroGameArchiveCsReq': 6558,
+        'UnlockSpecialSkillTreeScNotify': 382,
+        'MultiplayerFightGiveUpCsReq': 1058,
+        'UnlockAvatarPathCsReq': 97,
+        'PlayerReturnTakeRewardScRsp': 4541,
+        'ComposeItemCsReq': 546,
+        'SyncRogueRewardInfoScNotify': 1827,
+        'RebattleByClientCsNotify': 198,
+        'UnlockHeadIconScNotify': 2819,
+        'SwordTrainingMarkEndingViewedScRsp': 7486,
+        'SyncHandleFriendScNotify': 2957,
+        'GetGachaInfoCsReq': 1918,
+        'TakeLoginActivityRewardScRsp': 2637,
+        'PVEBattleResultCsReq': 118,
+        'MonopolyGiveUpCurContentScRsp': 7024,
+        'TakeOffRelicCsReq': 362,
+        'GetTutorialGuideScRsp': 1637,
+        'SceneCastSkillCostMpScRsp': 1483,
+        'InteractChargerCsReq': 6829,
+        'EntityBindPropScRsp': 1480,
+        'GetExpeditionDataCsReq': 2518,
+        'MonopolyConfirmRandomScRsp': 7048,
+        'AlleyTakeEventRewardScRsp': 4756,
+        'QuitTrackPhotoStageCsReq': 7553,
+        'TravelBrochureSetCustomValueScRsp': 6422,
+        'ScenePlaneEventScNotify': 1417,
+        'CurAssistChangedNotify': 2923,
+        'PlayerReturnTakePointRewardCsReq': 4558,
+        'RogueTournEnterLayerCsReq': 6072,
+        'ChessRogueSelectBpCsReq': 5406,
+        'DeployRotaterCsReq': 6858,
+        'LobbyKickOutScRsp': 7400,
+        'TakeFightActivityRewardCsReq': 3649,
+        'MultipleDropInfoNotify': 4649,
+        'WaypointShowNewCsNotify': 428,
+        'AlleyShopLevelScNotify': 4721,
+        'RogueTournGetAllArchiveCsReq': 6058,
+        'GeneralVirtualItemDataNotify': 587,
+        'SetRogueCollectionCsReq': 5695,
+        'PlayerGetTokenCsReq': 58,
+        'SwitchAetherDivideLineUpSlotScRsp': 4848,
+        'HeliobusEnterBattleCsReq': 5848,
+        'TakeRogueScoreRewardScRsp': 1808,
+        'ClockParkHandleWaitOperationScRsp': 7257,
+        'GetFriendRecommendListInfoScRsp': 2948,
+        'PlayerReturnSignCsReq': 4574,
+        'RogueTournLevelInfoUpdateScNotify': 6055,
+        'SwordTrainingSetSkillTraceScRsp': 7472,
+        'BoxingClubRewardScNotify': 4219,
+        'RemoveRotaterCsReq': 6862,
+        'ChallengeLineupNotify': 1757,
+        'UpdateTrackMainMissionIdScRsp': 1270,
+        'GetAssistHistoryScRsp': 2956,
+        'PlayBackGroundMusicCsReq': 3129,
+        'SyncRogueExploreWinScNotify': 1809,
+        'GetMonopolyFriendRankingListCsReq': 7088,
+        'MonopolyGameBingoFlipCardCsReq': 7009,
+        'StartBattleCollegeScRsp': 5758,
+        'ChangeScriptEmotionScRsp': 6337,
+        'SyncRogueCommonPendingActionScNotify': 5653,
+        'MarkChatEmojiScRsp': 3957,
+        'GetSecretKeyInfoCsReq': 78,
+        'ChessRogueSelectCellScRsp': 5442,
+        'RogueTournGetPermanentTalentInfoCsReq': 6088,
+        'BuyBpLevelScRsp': 3028,
+        'AcceptMissionEventScRsp': 1240,
+        'GetMonopolyInfoCsReq': 7018,
+        'GetQuestRecordCsReq': 928,
+        'EnterRogueScRsp': 1849,
+        'LastSpringRefreshTimeNotify': 1448,
+        'LogisticsDetonateStarSkiffScRsp': 4770,
+        'AvatarPathChangedNotify': 60,
+        'DrinkMakerDayEndScNotify': 6992,
+        'TakeOffEquipmentCsReq': 389,
+        'GetRogueBuffEnhanceInfoScRsp': 1821,
+        'EnhanceChessRogueBuffCsReq': 5404,
+        'CancelCacheNotifyScRsp': 4164,
+        'SendMsgCsReq': 3918,
+        'SwitchLineupIndexScRsp': 791,
+        'SetRogueExhibitionScRsp': 5685,
+        'StoryLineInfoScNotify': 6229,
+        'TakeRogueScoreRewardCsReq': 1873,
+        'HeliobusEnterBattleScRsp': 5873,
+        'SetHeadIconScRsp': 2837,
+        'AcceptExpeditionCsReq': 2529,
+        'LogisticsInfoScNotify': 4747,
+        'DailyFirstMeetPamScRsp': 3437,
+        'RogueTournEnterRogueCocoonSceneScRsp': 6035,
+        'RechargeSuccNotify': 573,
+        'SyncRogueMapRoomScNotify': 1814,
+        'ChessRogueUpdateAllowedSelectCellScNotify': 5464,
+        'SwordTrainingStoryBattleScRsp': 7475,
+        'SceneEntityTeleportCsReq': 1484,
+        'TravelBrochureUpdatePasterPosScRsp': 6457,
+        'UnlockTutorialScRsp': 1649,
+        'UnlockTeleportNotify': 1427,
+        'SummonActivityBattleEndScNotify': 7566,
+        'MonopolyTakeRaffleTicketRewardScRsp': 7051,
+        'HeartDialScriptChangeScNotify': 6319,
+        'ExchangeHcoinCsReq': 508,
+        'ChessRogueQueryBpCsReq': 5564,
+        'SyncRoguePickAvatarInfoScNotify': 1872,
+        'FightMatch3DataScRsp': 30174,
+        'TakeRogueMiracleHandbookRewardScRsp': 5687,
+        'GetSaveLogisticsMapCsReq': 4738,
+        'GetRogueExhibitionScRsp': 5665,
+        'PVEBattleResultScRsp': 174,
+        'UpdateRedDotDataCsReq': 5929,
+        'SwordTrainingMarkEndingViewedCsReq': 7464,
+        'FinishPlotCsReq': 1118,
+        'SubmitOrigamiItemCsReq': 4183,
+        'RogueWorkbenchGetInfoScRsp': 5634,
+        'LobbyModifyPlayerInfoScRsp': 7371,
+        'MonopolyGameBingoFlipCardScRsp': 7056,
+        'ExpeditionDataChangeScNotify': 2519,
+        'GetTelevisionActivityDataScRsp': 6977,
+        'GroupStateChangeScRsp': 1452,
+        'SyncRogueReviveInfoScNotify': 1882,
+        'PlayerKickOutScNotify': 19,
+        'SyncClientResVersionCsReq': 128,
+        'TrainVisitorRewardSendNotify': 3749,
+        'RogueTournGetMiscRealTimeDataScRsp': 6042,
+        'GetMarkItemListCsReq': 502,
+        'AetherDivideRefreshEndlessScRsp': 4813,
+        'ServerSimulateBattleFinishScNotify': 157,
+        'EnterTrialActivityStageScRsp': 2620,
+        'GetSummonActivityDataCsReq': 7562,
+        'EntityBindPropCsReq': 1470,
+        'GetDailyActiveInfoCsReq': 3329,
+        'UpdateGunPlayDataScRsp': 4147,
+        'SpaceZooExchangeItemCsReq': 6757,
+        'RogueTournReEnterRogueCocoonStageCsReq': 6026,
+        'ChessRogueReRollDiceCsReq': 5424,
+        'SecurityReportScRsp': 4157,
+        'ExtraLineupDestroyNotify': 777,
+        'FightMatch3ForceUpdateNotify': 30157,
+        'GetPrivateChatHistoryCsReq': 3958,
+        'PlayerReturnTakeRewardCsReq': 4528,
+        'RankUpAvatarCsReq': 398,
+        'DeleteRelicFilterPlanCsReq': 520,
+        'GameplayCounterCountDownScRsp': 1485,
+        'GetRogueHandbookDataCsReq': 5606,
+        'SceneCastSkillScRsp': 1449,
+        'ChessRogueChangeyAeonDimensionNotify': 5512,
+        'ChessRogueNousGetRogueTalentInfoCsReq': 5539,
+        'AlleyTakeEventRewardCsReq': 4709,
+        'ChessRogueQuitCsReq': 5549,
+        'QueryProductInfoScRsp': 75,
+        'GetTrainVisitorRegisterCsReq': 3728,
+        'UseItemCsReq': 528,
+        'ShareScRsp': 4174,
+        'GetStrongChallengeActivityDataCsReq': 6618,
+        'TakeAllApRewardScRsp': 3328,
+        'GetTrialActivityDataScRsp': 2688,
+        'GetChessRogueBuffEnhanceInfoCsReq': 5534,
+        'GetFriendApplyListInfoScRsp': 2949,
+        'EvolveBuildTakeExpRewardCsReq': 7148,
+        'FightMatch3TurnEndScNotify': 30158,
+        'EvolveBuildStartLevelCsReq': 7106,
+        'UnlockSkilltreeCsReq': 358,
+        'NewMailScNotify': 819,
+        'TakePromotionRewardCsReq': 348,
+        'ShowNewSupplementVisitorCsReq': 3789,
+        'TravelBrochureSelectMessageScRsp': 6449,
+        'GetNpcStatusScRsp': 2737,
+        'RogueNpcDisappearScRsp': 5646,
+        'GetMonsterResearchActivityDataScRsp': 2662,
+        'ClockParkGetOngoingScriptInfoCsReq': 7219,
+        'RestartChallengePhaseScRsp': 1711,
+        'MatchThreeLevelEndCsReq': 7406,
+        'GetPlatformPlayerInfoScRsp': 2939,
+        'GetStarFightDataCsReq': 7162,
+        'SpaceZooTakeCsReq': 6798,
+        'AddAvatarScNotify': 346,
+        'SyncChessRogueNousValueScNotify': 5437,
+        'RelicRecommendCsReq': 575,
+        'GetChatFriendHistoryCsReq': 3928,
+        'ClockParkUseBuffScRsp': 7248,
+        'WolfBroGameActivateBulletCsReq': 6522,
+        'SettleTrackPhotoStageCsReq': 7557,
+        'PrivateMsgOfflineUsersScNotify': 3937,
+        'TakeActivityExpeditionRewardCsReq': 2598,
+        'UnlockBackGroundMusicCsReq': 3158,
+        'GetPlayerReplayInfoScRsp': 3537,
+        'ClientObjUploadCsReq': 85,
+        'SwordTrainingTakeEndingRewardScRsp': 7483,
+        'GetFirstTalkNpcCsReq': 2158,
+        'RogueTournDeleteArchiveScRsp': 6063,
+        'TakeChallengeRewardScRsp': 1722,
+        'DressRelicAvatarCsReq': 322,
+        'FightTreasureDungeonMonsterCsReq': 4491,
+        'GetFantasticStoryActivityDataScRsp': 4974,
+        'GetRogueEndlessActivityDataScRsp': 6005,
+        'SwordTrainingGetSkillInfoScRsp': 7465,
+        'TravelBrochureRemovePasterScRsp': 6464,
+        'GetBattleCollegeDataScRsp': 5774,
+        'SyncRogueAdventureRoomInfoScNotify': 5618,
+        'SwordTrainingStartGameScRsp': 7466,
+        'LockEquipmentScRsp': 549,
+        'SetLineupNameScRsp': 740,
+        'HeliobusStartRaidScRsp': 5811,
+        'ResetMapRotationRegionScRsp': 6898,
+        'HeliobusActivityDataScRsp': 5874,
+        'GetShareDataScRsp': 4137,
+        'SpringRefreshScRsp': 1440,
+        'HeliobusSnsCommentCsReq': 5819,
+        'RogueTournQueryCsReq': 6059,
+        'TelevisionActivityBattleEndScNotify': 6964,
+        'SetStuffToAreaCsReq': 4358,
+        'SubmitOfferingItemScRsp': 6925,
+        'SetMissionEventProgressScRsp': 1277,
+        'SubMissionRewardScNotify': 1224,
+        'TravelBrochureApplyPasterScRsp': 6441,
+        'MakeMissionDrinkCsReq': 6989,
+        'StartFinishSubMissionScNotify': 1261,
+        'TakeTalkRewardCsReq': 2129,
+        'ChessRogueUpdateMoneyInfoScNotify': 5594,
+        'TakeBpRewardScRsp': 3058,
+        'SwordTrainingDailyPhaseConfirmCsReq': 7470,
+        'MonopolyAcceptQuizScRsp': 7070,
+        'CityShopInfoScNotify': 1528,
+        'GetStoryLineInfoScRsp': 6274,
+        'HeartDialTraceScriptCsReq': 6364,
+        'SetLanguageCsReq': 47,
+        'DeactivateFarmElementCsReq': 1414,
+        'ReportPlayerCsReq': 2911,
+        'RogueTournLeaveCsReq': 6068,
+        'EnterSwordTrainingExamScRsp': 7460,
+        'DressAvatarCsReq': 319,
+        'TrainVisitorBehaviorFinishCsReq': 3718,
+        'SpaceZooDeleteCatScRsp': 6764,
+        'OpenTreasureDungeonGridScRsp': 4422,
+        'ModifyRelicFilterPlanCsReq': 600,
+        'GetMultiPathAvatarInfoCsReq': 69,
+        'SwordTrainingResumeGameScRsp': 7490,
+        'EnterFightActivityStageScRsp': 3658,
+        'MonopolyClickCellScRsp': 7069,
+        'SwordTrainingLearnSkillScRsp': 7481,
+        'RaidInfoNotify': 2258,
+        'UpgradeAreaScRsp': 4398,
+        'ChessRogueQueryScRsp': 5484,
+        'SwordTrainingSelectEndingCsReq': 7457,
+        'GmTalkScRsp': 89,
+        'CancelExpeditionCsReq': 2558,
+        'SyncApplyFriendScNotify': 2919,
+        'EnteredSceneChangeScNotify': 1460,
+        'TravelBrochurePageResetCsReq': 6440,
+        'MonopolySttUpdateScNotify': 7005,
+        'EnhanceRogueBuffScRsp': 1824,
+        'RogueTournConfirmSettleScRsp': 6094,
+        'SpaceZooCatUpdateNotify': 6789,
+        'RogueTournGetCurRogueCocoonInfoCsReq': 6090,
+        'HeliobusSnsPostCsReq': 5858,
+        'RogueModifierAddNotify': 5329,
+        'AcceptActivityExpeditionScRsp': 2589,
+        'PunkLordDataChangeNotify': 3282,
+        'SetClientRaidTargetCountScRsp': 2298,
+        'StartPunkLordRaidCsReq': 3229,
+        'RecoverAllLineupScRsp': 1413,
+        'DoGachaScRsp': 1937,
+        'RefreshTriggerByClientScNotify': 1455,
+        'ChessRogueLeaveScRsp': 5587,
+        'GetFirstTalkByPerformanceNpcCsReq': 2189,
+        'TravelBrochureApplyPasterListCsReq': 6473,
+        'GetFriendDevelopmentInfoCsReq': 2990,
+        'GetOfferingInfoCsReq': 6934,
+        'GetFriendChallengeLineupScRsp': 3000,
+        'LeaveMapRotationRegionScRsp': 6864,
+        'MarkRelicFilterPlanScRsp': 590,
+        'SyncRogueHandbookDataUpdateScNotify': 5680,
+        'StartTrackPhotoStageScRsp': 7558,
+        'StoryLineTrialAvatarChangeScNotify': 6228,
+        'GetAssistHistoryCsReq': 2909,
+        'TakeRogueAeonLevelRewardScRsp': 1871,
+        'GetSwordTrainingDataScRsp': 7456,
+        'RogueTournEnterCsReq': 6047,
+        'AetherDivideSpiritExpUpScRsp': 4821,
+        'MonopolyTakePhaseRewardCsReq': 7099,
+        'MissionEventRewardScNotify': 1291,
+        'RogueTournLeaveRogueCocoonSceneScRsp': 6022,
+        'UpdateMapRotationDataScNotify': 6891,
+        'FantasticStoryActivityBattleEndScNotify': 4949,
+        'SwordTrainingActionTurnSettleScNotify': 7485,
+        'RelicFilterPlanClearNameScNotify': 567,
+        'GetRogueTalentInfoCsReq': 1897,
+        'MonopolyScrachRaffleTicketScRsp': 7071,
+        'MonopolyGuessBuyInformationScRsp': 7014,
+        'ChangeScriptEmotionCsReq': 6329,
+        'GetRogueAdventureRoomInfoCsReq': 5698,
+        'TakeAssistRewardCsReq': 2970,
+        'GetLineupAvatarDataCsReq': 757,
+        'WolfBroGameExplodeMonsterScRsp': 6540,
+        'RogueTournEnterRoomScRsp': 6029,
+        'HeliobusUnlockSkillScNotify': 5883,
+        'TakeTrialActivityRewardCsReq': 2668,
+        'TakeRogueEndlessActivityPointRewardCsReq': 6008,
+        'GetGunPlayDataScRsp': 4124,
+        'SwitchAetherDivideLineUpSlotCsReq': 4840,
+        'RogueTournLeaveScRsp': 6098,
+        'GateServerScNotify': 67,
+        'MuseumTargetRewardNotify': 4392,
+        'StartRaidCsReq': 2218,
+        'GetPunkLordMonsterDataCsReq': 3218,
+        'EnterSceneScRsp': 1401,
+        'GetBasicInfoCsReq': 42,
+        'ClockParkBattleEndScNotify': 7291,
+        'EnterFantasticStoryActivityStageScRsp': 4958,
+        'SceneEnterStageScRsp': 1421,
+        'RogueEndlessActivityBattleEndScNotify': 6006,
+        'RogueTournQueryScRsp': 6018,
+        'UnlockAvatarPathScRsp': 66,
+        'GetExpeditionDataScRsp': 2574,
+        'SelectChessRogueNousSubStoryScRsp': 5535,
+        'UpdateMovieRacingDataCsReq': 4111,
+        'MonthCardRewardNotify': 20,
+        'FinishTutorialGuideScRsp': 1657,
+        'MonopolyTakeRaffleTicketRewardCsReq': 7017,
+        'PunkLordMonsterKilledNotify': 3247,
+        'TakeOffRelicScRsp': 340,
+        'RogueTournEnablePermanentTalentScRsp': 6012,
+        'GetMultipleDropInfoScRsp': 4674,
+        'QuitTrackPhotoStageScRsp': 7554,
+        'GetUnlockTeleportScRsp': 1454,
+        'SwordTrainingSetSkillTraceCsReq': 7482,
+        'ChessRogueReviveAvatarCsReq': 5518,
+        'LobbyGetInfoCsReq': 7381,
+        'DressRelicAvatarScRsp': 391,
+        'LeaveRaidCsReq': 2229,
+        'HeliobusStartRaidCsReq': 5808,
+        'MultiplayerFightGameStateCsReq': 1018,
+        'DailyFirstMeetPamCsReq': 3429,
+        'TakeMonsterResearchActivityRewardScRsp': 2608,
+        'SetFriendMarkScRsp': 2945,
+        'FeverTimeActivityBattleEndScNotify': 7157,
+        'MonopolyConditionUpdateScNotify': 7097,
+        'SetFriendRemarkNameCsReq': 2973,
+        'DeleteSocialEventServerCacheCsReq': 7084,
+        'EnterTreasureDungeonCsReq': 4446,
+        'EnterSwordTrainingExamCsReq': 7491,
+        'TravelBrochureGetPasterScNotify': 6446,
+        'RotateMapCsReq': 6828,
+        'MonopolyEventSelectFriendCsReq': 7067,
+        'HeartDialTraceScriptScRsp': 6389,
+        'SettleTrackPhotoStageScRsp': 7560,
+        'ChessRogueUpdateAeonModifierValueScNotify': 5475,
+        'ContentPackageTransferScNotify': 7520,
+        'MonopolyBuyGoodsCsReq': 7073,
+        'GetChatEmojiListScRsp': 3964,
+        'SetAssistAvatarScRsp': 2846,
+        'MonopolyClickMbtiReportScRsp': 7055,
+        'FightMatch3ChatScRsp': 30164,
+        'FinishEmotionDialoguePerformanceCsReq': 6328,
+        'SelectChatBubbleCsReq': 5129,
+        'MissionRewardScNotify': 1258,
+        'MatchThreeSyncDataScNotify': 7437,
+        'SyncRogueSeasonFinishScNotify': 1856,
+        'UnlockedAreaMapScNotify': 1479,
+        'CancelCacheNotifyCsReq': 4119,
+        'GetMuseumInfoScRsp': 4374,
+        'ChessRogueUpdateLevelBaseInfoScNotify': 5546,
+        'GetSaveLogisticsMapScRsp': 4782,
+        'SharePunkLordMonsterScRsp': 3249,
+        'RogueTournWeekChallengeUpdateScNotify': 6078,
+        'GetFriendRecommendListInfoCsReq': 2940,
+        'UpdatePsnSettingsInfoCsReq': 5,
+        'GetSceneMapInfoScRsp': 1481,
+        'UpdatePlayerSettingScRsp': 65,
+        'GetMailCsReq': 818,
+        'SaveLogisticsCsReq': 4724,
+        'SpaceZooBornScRsp': 6737,
+        'HandleFriendCsReq': 2964,
+        'RogueTournStartScRsp': 6093,
+        'GetPlayerDetailInfoScRsp': 2937,
+        'InterruptMissionEventCsReq': 1208,
+        'TakeQuestOptionalRewardScRsp': 946,
+        'LeaveTrialActivityCsReq': 2603,
+        'StaminaInfoScNotify': 54,
+        'RogueTournEnterLayerScRsp': 6038,
+        'ClearAetherDividePassiveSkillCsReq': 4891,
+        'FinishTalkMissionScRsp': 1237,
+        'RogueTournGetAllArchiveScRsp': 6034,
+        'SetClientPausedScRsp': 1487,
+        'AetherDivideTakeChallengeRewardCsReq': 4856,
+        'FinishSectionIdCsReq': 2728,
+        'TravelBrochureGetDataCsReq': 6418,
+        'VirtualLineupDestroyNotify': 708,
+        'TakeRollShopRewardScRsp': 6904,
+        'MonopolyRollDiceCsReq': 7049,
+        'MarkItemScRsp': 556,
+        'FinishTutorialScRsp': 1664,
+        'StartChallengeCsReq': 1729,
+        'GetMarkItemListScRsp': 513,
+        'SetGameplayBirthdayCsReq': 36,
+        'SyncRogueAreaUnlockScNotify': 1817,
+        'GetPunkLordDataScRsp': 3291,
+        'ContentPackageUnlockScRsp': 7537,
+        'SummonPunkLordMonsterCsReq': 3228,
+        'StartAetherDivideStageBattleScRsp': 4808,
+        'GetMonopolyMbtiReportRewardCsReq': 7026,
+        'RogueTournSettleCsReq': 6039,
+        'GetNpcTakenRewardCsReq': 2118,
+        'ExchangeGachaCeilingScRsp': 1941,
+        'GetGachaCeilingScRsp': 1949,
+        'TrialBackGroundMusicCsReq': 3128,
+        'GetRecyleTimeCsReq': 592,
+        'ChessRogueSelectBpScRsp': 5526,
+        'OpenRogueChestScRsp': 1868,
+        'GetPlayerReturnMultiDropInfoCsReq': 4637,
+        'GetAlleyInfoScRsp': 4774,
+        'TextJoinBatchSaveScRsp': 3849,
+        'ClearAetherDividePassiveSkillScRsp': 4862,
+        'GetStrongChallengeActivityDataScRsp': 6674,
+        'GetJukeboxDataCsReq': 3118,
+        'SyncTaskCsReq': 1249,
+        'SyncChessRogueNousMainStoryScNotify': 5419,
+        'UpdateRogueAdventureRoomScoreCsReq': 5612,
+        'FinishItemIdScRsp': 2749,
+        'RogueTournGetArchiveRepositoryScRsp': 6052,
+        'AddRelicFilterPlanScRsp': 588,
+        'UpdatePsnSettingsInfoScRsp': 26,
+        'SpaceZooMutateScRsp': 6749,
+        'EnterChessRogueAeonRoomScRsp': 5435,
+        'PlayerLoginScRsp': 74,
+        'MonopolyGameGachaScRsp': 7013,
+        'ChessRogueLayerAccountInfoNotify': 5565,
+        'GetStageLineupCsReq': 718,
+        'AlleyFundsScNotify': 4711,
+        'EnterStrongChallengeActivityStageCsReq': 6629,
+        'EnhanceCommonRogueBuffScRsp': 5621,
+        'TakeRogueEventHandbookRewardScRsp': 5614,
+        'ChessRogueUpdateActionPointScNotify': 5425,
+        'UpgradeAreaStatScRsp': 4322,
+        'AlleyEventChangeNotify': 4719,
+        'TakeQuestOptionalRewardCsReq': 957,
+        'GetWaypointScRsp': 474,
+        'GetMailScRsp': 874,
+        'StartBoxingClubBattleCsReq': 4258,
+        'UpdateServerPrefsDataScRsp': 6149,
+        'TakeChallengeRaidRewardCsReq': 2241,
+        'SceneEntityMoveCsReq': 1418,
+        'TakePunkLordPointRewardScRsp': 3298,
+        'ClockParkUseBuffCsReq': 7240,
+        'GetMonsterResearchActivityDataCsReq': 2691,
+        'SetGenderCsReq': 70,
+        'FightMatch3ChatCsReq': 30119,
+        'EnterMapRotationRegionScRsp': 6874,
+        'SwordTrainingTurnActionCsReq': 7495,
+        'GetMissionStatusCsReq': 1248,
+        'RogueNpcDisappearCsReq': 5657,
+        'GetNpcStatusCsReq': 2729,
+        'SyncServerSceneChangeNotify': 1471,
+        'SelectChessRogueSubStoryCsReq': 5427,
+        'UnlockChatBubbleScNotify': 5158,
+        'HealPoolInfoNotify': 1410,
+        'ReEnterLastElementStageScRsp': 1478,
+        'MatchThreeLevelEndScRsp': 7445,
+        'GetAetherDivideInfoCsReq': 4889,
+        'AvatarExpUpCsReq': 329,
+        'CancelExpeditionScRsp': 2549,
+        'LockRelicScRsp': 562,
+        'GetPrivateChatHistoryScRsp': 3949,
+        'MonopolyEventSelectFriendScRsp': 7003,
+        'StartPunkLordRaidScRsp': 3237,
+        'SceneCastSkillCsReq': 1458,
+        'ChessRogueStartCsReq': 5511,
+        'EnterRogueMapRoomScRsp': 1823,
+        'SyncRogueCommonActionResultScNotify': 5675,
+        'DiscardRelicCsReq': 539,
+        'AcceptedPamMissionExpireCsReq': 4018,
+        'StartMatchCsReq': 7319,
+        'GetNpcMessageGroupCsReq': 2718,
+        'HeliobusSnsReadScRsp': 5837,
+        'SpringRecoverSingleAvatarCsReq': 1420,
+        'RogueTournResetPermanentTalentScRsp': 6087,
+        'QuitTreasureDungeonCsReq': 4411,
+        'GetBagCsReq': 518,
+        'FinishChessRogueNousSubStoryCsReq': 5579,
+        'RaidCollectionDataCsReq': 6954,
+        'ChessRogueQueryCsReq': 5458,
+        'TeleportToMissionResetPointCsReq': 1292,
+        'ChessRogueNousEditDiceScRsp': 5463,
+        'FightHeartBeatScRsp': 30049,
+        'SceneCastSkillMpUpdateScNotify': 1422,
+        'SwordTrainingGiveUpGameScRsp': 7499,
+        'GetRollShopInfoScRsp': 6917,
+        'AetherDivideSkillItemScNotify': 4838,
+        'RaidKickByServerScNotify': 2248,
+        'GetFriendAssistListCsReq': 2916,
+        'TravelBrochureSetCustomValueCsReq': 6483,
+        'DelMailScRsp': 849,
+        'MonopolyUpgradeAssetScRsp': 7021,
+        'GetRogueCollectionCsReq': 5681,
+        'FinishFirstTalkByPerformanceNpcCsReq': 2146,
+        'StartCocoonStageCsReq': 1456,
+        'DeleteFriendCsReq': 2946,
+        'GetRogueExhibitionCsReq': 5631,
+        'ChessRogueEnterCellScRsp': 5516,
+        'MakeDrinkCsReq': 6993,
+        'TravelBrochureApplyPasterCsReq': 6428,
+        'MonopolyGuessChooseCsReq': 7023,
+        'AcceptMultipleExpeditionScRsp': 2591,
+        'MonopolySelectOptionScRsp': 7089,
+        'PlayerReturnInfoQueryCsReq': 4519,
+        'GetLevelRewardCsReq': 21,
+        'SwordTrainingDailyPhaseConfirmScRsp': 7462,
+        'GetChessRogueStoryAeonTalkInfoScRsp': 5500,
+        'TakeApRewardScRsp': 3374,
+        'GetRogueCommonDialogueDataCsReq': 5690,
+        'ChessRogueQueryBpScRsp': 5479,
+        'RogueWorkbenchHandleFuncCsReq': 5617,
+        'GetShareDataCsReq': 4129,
+        'SelectRogueCommonDialogueOptionCsReq': 5603,
+        'TakeMailAttachmentCsReq': 828,
+        'EnterTelevisionActivityStageCsReq': 6965,
+        'AetherDivideRefreshEndlessScNotify': 4809,
+        'MonopolyActionResultScNotify': 7029,
+        'HeliobusSelectSkillScRsp': 5891,
+        'MonopolyGuessBuyInformationCsReq': 7039,
+        'EnterSectionCsReq': 1492,
+        'DeleteBlacklistScRsp': 2924,
+        'TakeKilledPunkLordMonsterScoreScRsp': 3238,
+        'SwordTrainingSelectEndingScRsp': 7477,
+        'LevelUpSpecialSkillTreeCsReq': 361,
+        'ComposeLimitNumCompleteNotify': 561,
+        'SetNicknameScRsp': 73,
+        'GameplayCounterRecoverScRsp': 1486,
+        'GetSpringRecoverDataScRsp': 1445,
+        'TakeExpeditionRewardScRsp': 2541,
+        'GetVideoVersionKeyScRsp': 34,
+        'TakeRogueEndlessActivityAllBonusRewardCsReq': 6004,
+        'SyncTurnFoodNotify': 570,
+        'RefreshAlleyOrderCsReq': 4791,
+        'SetRogueCollectionScRsp': 5654,
+        'FightEnterCsReq': 30018,
+        'SpaceZooDeleteCatCsReq': 6719,
+        'GetFarmStageGachaInfoScRsp': 1337,
+        'DeployRotaterScRsp': 6849,
+        'GetKilledPunkLordMonsterDataScRsp': 3277,
+        'ChallengeRaidNotify': 2264,
+        'AddBlacklistCsReq': 2922,
+        'GetRogueAeonInfoCsReq': 1835,
+        'GetLineupAvatarDataScRsp': 746,
+        'PunkLordRaidTimeOutScNotify': 3240,
+        'TakeAssistRewardScRsp': 2980,
+        'GetChessRogueNousStoryInfoCsReq': 5480,
+        'DrinkMakerChallengeScRsp': 6981,
+        'MarkReadMailCsReq': 829,
+        'GetRogueShopMiracleInfoScRsp': 5658,
+        'SelectInclinationTextCsReq': 2119,
+        'GetOfferingInfoScRsp': 6937,
+        'PunkLordBattleResultScNotify': 3211,
+        'SetAssistScRsp': 2959,
+        'PlayerReturnPointChangeScNotify': 4537,
+        'FightMatch3SwapCsReq': 30149,
+        'UpdateEnergyScNotify': 6822,
+        'SetPlayerInfoScRsp': 87,
+        'StartTrackPhotoStageCsReq': 7556,
+        'EnterAetherDivideSceneScRsp': 4874,
+        'CommonRogueQueryCsReq': 5620,
+        'ChessRogueLeaveCsReq': 5507,
+        'SpringRecoverScRsp': 1500,
+        'ChessRogueConfirmRollScRsp': 5428,
+        'ReplaceLineupScRsp': 721,
+        'SubmitMonsterResearchActivityMaterialScRsp': 2648,
+        'BatchMarkChatEmojiScRsp': 3998,
+        'LogisticsDetonateStarSkiffCsReq': 4706,
+        'GetSaveRaidScRsp': 2222,
+        'RogueTournConfirmSettleCsReq': 6091,
+        'EvolveBuildStartStageCsReq': 7137,
+        'SyncChessRogueNousSubStoryScNotify': 5402,
+        'ClockParkQuitScriptCsReq': 7246,
+        'PlayerLoginFinishScRsp': 25,
+        'MonopolyGameRaiseRatioScRsp': 7082,
+        'SyncChessRogueMainStoryFinishScNotify': 5438,
+        'ExpUpEquipmentCsReq': 589,
+        'MonopolyRollRandomScRsp': 7022,
+        'TravelBrochureUpdatePasterPosCsReq': 6489,
+        'ChessRogueCheatRollCsReq': 5444,
+        'SwordTrainingGameSettleScNotify': 7473,
+        'SyncRogueGetItemScNotify': 1851,
+        'MonopolyClickCellCsReq': 7035,
+        'ChessRogueGoAheadCsReq': 5504,
+        'GetChessRogueStoryInfoScRsp': 5575,
+        'GmTalkCsReq': 64,
+        'MonopolyLikeCsReq': 7010,
+        'PlayerSyncScNotify': 618,
+        'SetBoxingClubResonanceLineupScRsp': 4298,
+        'LobbyInviteScNotify': 7363,
+        'SetHeadIconCsReq': 2829,
+        'GetTrackPhotoActivityDataScRsp': 7555,
+        'EnhanceChessRogueBuffScRsp': 5505,
+        'StartTrialActivityScRsp': 2667,
+        'ReportPlayerScRsp': 2921,
+        'MonopolyQuizDurationChangeScNotify': 7053,
+        'TakeTalkRewardScRsp': 2137,
+        'GetAllServerPrefsDataScRsp': 6174,
+        'GetMbtiReportScRsp': 7090,
+        'ApplyFriendScRsp': 2941,
+        'DeleteRelicFilterPlanScRsp': 568,
+        'SceneReviveAfterRebattleScRsp': 1424,
+        'StartRogueCsReq': 1829,
+        'GetAllSaveRaidCsReq': 2291,
+        'GetChallengeCsReq': 1718,
+        'TakeOfferingRewardScRsp': 6924,
+        'SyncDeleteFriendScNotify': 2983,
+        'GetCurLineupDataCsReq': 729,
+        'BattleLogReportCsReq': 164,
+        'BuyGoodsCsReq': 1529,
+        'BuyRogueShopBuffScRsp': 5689,
+        'StopRogueAdventureRoomCsReq': 5677,
+        'GetRaidInfoCsReq': 2289,
+        'TakeOffAvatarSkinCsReq': 321,
+        'MonopolyGetRafflePoolInfoCsReq': 7031,
+        'TakePrestigeRewardCsReq': 4789,
+        'PrepareRogueAdventureRoomScRsp': 5629,
+        'SwordTrainingStartGameCsReq': 7474,
+        'TakeBpRewardCsReq': 3037,
+        'AlleyPlacingGameScRsp': 4798,
+        'StartTimedFarmElementCsReq': 1463,
+        'GetExhibitScNotify': 4364,
+        'GetRogueShopBuffInfoScRsp': 5628,
+        'GroupStateChangeCsReq': 1430,
+        'UnlockBackGroundMusicScRsp': 3149,
+        'ExchangeRogueRewardKeyScRsp': 1890,
+        'TakeActivityExpeditionRewardScRsp': 2583,
+        'GetBoxingClubInfoCsReq': 4218,
+        'GetUpdatedArchiveDataCsReq': 2329,
+        'GetFriendChallengeDetailScRsp': 2920,
+        'EvolveBuildShopAbilityResetScRsp': 7149,
+        'AcceptMainMissionScRsp': 1259,
+        'TakeChapterRewardScRsp': 419,
+        'SetLineupNameCsReq': 762,
+        'SpringRefreshCsReq': 1462,
+        'TravelBrochureRemovePasterCsReq': 6419,
+        'GmTalkScNotify': 41,
+        'PlayerHeartBeatCsReq': 33,
+        'RogueTournAreaUpdateScNotify': 6021,
+        'SetCurInteractEntityCsReq': 1482,
+        'SwordTrainingRefreshPartnerAbilityCsReq': 7500,
+        'ChessRogueReRollDiceScRsp': 5555,
+        'SecurityReportCsReq': 4189,
+        'RogueTournReEnterRogueCocoonStageScRsp': 6074,
+        'RankUpEquipmentCsReq': 519,
+        'GetCrossInfoCsReq': 7320,
+        'SwordTrainingTakeEndingRewardCsReq': 7497,
+        'TextJoinSaveCsReq': 3818,
+    };
+
+    static Map<int, String> get CMD_ID_REVERSED {
+      final Map<int, String> reversed = {};
+      CMD_ID.forEach((name, id) {
+        reversed[id] = name;
+      });
+      return reversed;
+    }
+
+    static final Map<String, dynamic Function()> protobufFactories = {
+      'PlayerGetTokenCsReq': () => PlayerGetTokenCsReq(),
+      'PlayerGetTokenScRsp': () => PlayerGetTokenScRsp(),
+    };
 }

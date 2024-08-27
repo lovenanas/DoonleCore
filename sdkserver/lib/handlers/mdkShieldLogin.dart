@@ -1,6 +1,6 @@
 import 'package:shelf/shelf.dart';
 
-const mdkShieldLoginResponse = {
+const mdkShieldLoginResponse = r'''{
   "data": {
     "account": {
       "area_code": "**",
@@ -17,7 +17,7 @@ const mdkShieldLoginResponse = {
   },
   "message": "OK",
   "retcode": 0
-};
+}''';
 
 Response mdkShieldLogin(Request request) {
   return Response.ok(mdkShieldLoginResponse, headers: {'Content-Type': 'application/json'});
