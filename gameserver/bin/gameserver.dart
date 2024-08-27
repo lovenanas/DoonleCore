@@ -1,6 +1,6 @@
 import '../lib/network/gateway.dart';
 
-void main() {
+void main() async {
   const String host = '127.0.0.1';
   const int port = 23301;
 

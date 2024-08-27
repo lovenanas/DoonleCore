@@ -73,38 +73,42 @@ void onPlayerGetTokenCsReq(Socket socket, GeneratedMessage request) {
 
 Future<void> onData(Socket socket) async {
   try {
-    final Uint8List buffer = await socket.first;
-    final packet = decodePacket(buffer);
-    final cmdIdName = CmdId.CMD_ID_REVERSED[packet['cmdId']];
-    
-    if (cmdIdName != null) {
-      final proto = _createProtoInstance(cmdIdName);
+    await for (final buffer in socket) {
+      final packet = decodePacket(buffer);
+      final cmdIdName = CmdId.CMD_ID_REVERSED[packet['cmdId']];
 
-      if (proto != null) {
-        try {
-          proto.mergeFromBuffer(packet['body']);
+      if (cmdIdName != null) {
+        final proto = createProtoInstance(cmdIdName);
 
-          if (HANDLERS.containsKey(packet['cmdId'])) {
-            HANDLERS[packet['cmdId']]!(socket, proto);
-          } else {
-            print('No handler found for command: ${packet['cmdId']}');
+        if (proto != null) {
+          try {
+            proto.mergeFromBuffer(packet['body']);
+
+            if (HANDLERS.containsKey(packet['cmdId'])) {
+              HANDLERS[packet['cmdId']]!(socket, proto);
+            } else {
+              print('No handler found for command: ${packet['cmdId']}');
+            }
+          } catch (e) {
+            print('Error parsing protobuf message: $e');
           }
-          
-        } catch (e) {
-          print('Error parsing protobuf message: $e');
+        } else {
+          print('No protobuf factory found for command: $cmdIdName');
         }
       } else {
-        print('No protobuf factory found for command: $cmdIdName');
+        print('Command ID not found: ${packet['cmdId']}');
       }
-    } else {
-      print('Command ID not found: ${packet['cmdId']}');
     }
   } catch (e) {
     print('Error handling data from socket: $e');
+  } finally {
+    print('Closing socket connection...');
+    await socket.close();
+    print('Socket connection closed.');
   }
 }
 
-GeneratedMessage? _createProtoInstance(String cmdIdName) {
+GeneratedMessage? createProtoInstance(String cmdIdName) {
   switch (cmdIdName) {
     case 'PlayerGetTokenCsReq':
       return PlayerGetTokenCsReq();
