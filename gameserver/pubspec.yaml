@@ -12,6 +12,7 @@ dependencies:
   convert: ^3.0.0
   protocol:
     path: ../protocol
+  fixnum: ^1.1.0
   # path: ^1.8.0
 
 dev_dependencies:

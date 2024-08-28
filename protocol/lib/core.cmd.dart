@@ -1581,5 +1581,13 @@ class CmdId {
       'PlayerGetTokenCsReq': () => PlayerGetTokenCsReq(),
       'PlayerGetTokenScRsp': () => PlayerGetTokenScRsp(),
       'PlayerLoginScRsp': () => PlayerLoginScRsp(),
+      'GetAvatarDataCsReq': () => GetAvatarDataCsReq(),
+      'GetAvatarDataScRsp': () => GetAvatarDataScRsp(),
+      'GetCurLineupDataScRsp': () => GetCurLineupDataScRsp(),
+      'GetCurSceneInfoScRsp': () => GetCurSceneInfoScRsp(),
+      'GetMissionStatusCsReq': () => GetMissionStatusCsReq(),
+      'GetMissionStatusScRsp': () => GetMissionStatusScRsp(),
+      'PlayerHeartBeatScRsp': () => PlayerHeartbeatScRsp(),
+      'PlayerHeartBeatCsReq': () => PlayerHeartbeatCsReq(),
     };
 }

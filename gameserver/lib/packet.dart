@@ -4,6 +4,11 @@ import 'package:protocol/core.cmd.dart';
 import 'package:protobuf/protobuf.dart';
 import 'package:protocol/core.pb.dart';
 import 'handlers/login.dart';
+import 'handlers/avatar.dart';
+import 'handlers/lineup.dart';
+import 'handlers/scene.dart';
+import 'handlers/mission.dart';
+import 'handlers/player.dart';
 
 Map<String, dynamic> decodePacket(Uint8List buf) {
   final byteData = ByteData.sublistView(buf);
@@ -76,7 +81,7 @@ Future<void> onData(Socket socket) async {
         }
         
         if (HANDLERS.containsKey(packet['cmdId'])) {
-          HANDLERS[packet['cmdId']]!(socket, proto);
+          HANDLERS[packet['cmdId']]?.call(socket, proto);
         } else {
           print('No handler found for command: ${packet['cmdId']}');
         }
@@ -101,6 +106,22 @@ GeneratedMessage? createProtoInstance(String cmdIdName) {
       return PlayerGetTokenScRsp();
     case 'PlayerLoginScRsp':
         return PlayerLoginScRsp();
+    case 'GetAvatarDataCsReq':
+        return GetAvatarDataCsReq();
+    case 'GetAvatarDataScRsp':
+        return GetAvatarDataScRsp();
+    case 'GetCurLineupDataScRsp':
+        return GetCurLineupDataScRsp();
+    case 'GetCurSceneInfoScRsp':
+        return GetCurSceneInfoScRsp();
+    case 'GetMissionStatusCsReq':
+        return GetMissionStatusCsReq();
+    case 'GetMissionStatusScRsp':
+        return GetMissionStatusScRsp();
+    case 'PlayerHeartBeatCsReq':
+        return PlayerHeartbeatCsReq();
+    case 'PlayerHeartBeatScRsp':
+        return PlayerHeartbeatScRsp();
     default:
       return null;
   }
@@ -109,7 +130,14 @@ GeneratedMessage? createProtoInstance(String cmdIdName) {
 final Map<int, void Function(Socket, GeneratedMessage?)> HANDLERS = {
   CmdId.CMD_ID['PlayerGetTokenCsReq']!: onPlayerGetTokenCsReq,
   CmdId.CMD_ID['PlayerLoginCsReq']!: onPlayerLoginScRsp,
+  CmdId.CMD_ID['GetAvatarDataCsReq']!: onGetAvatarDataCsReq,
+  CmdId.CMD_ID['GetCurLineupDataCsReq']!: onGetCurLineupDataCsReq,
+  CmdId.CMD_ID['GetCurSceneInfoCsReq']!: onGetCurSceneInfoCsReq,
+  CmdId.CMD_ID['GetMissionStatusCsReq']!: onGetMissionStatusCsReq,
+  CmdId.CMD_ID['PlayerHeartBeatCsReq']!: onPlayerHeartbeatCsReq,
   CmdId.CMD_ID['GetBagCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetBagScRsp']!),
+  CmdId.CMD_ID['GetMultiPathAvatarInfoCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetMultiPathAvatarInfoScRsp']!),
+  CmdId.CMD_ID['GetBasicInfoCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetBasicInfoScRsp']!),
 };
 
 void onDummyResponse(Socket socket, int cmdId) {
