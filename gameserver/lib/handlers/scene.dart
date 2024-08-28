@@ -12,8 +12,8 @@ void onGetCurSceneInfoCsReq(Socket socket, GeneratedMessage? request) {
 
   final playerActor = SceneActorInfo()
     ..avatarType = AvatarType.AVATAR_FORMAL_TYPE
-    ..baseAvatarId = 1222
-    ..uid = 1337
+    ..baseAvatarId = 1001
+    ..uid = 1010
     ..mapLayer = 2;
 
   final playerXYZ = Vector()
