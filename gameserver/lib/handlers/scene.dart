@@ -5,6 +5,11 @@ import 'package:protocol/core.pb.dart';
 import '../packet.dart';
 
 void onGetCurSceneInfoCsReq(Socket socket, GeneratedMessage? request) {
+  final defaultXYZ = Vector()
+  ..x = 0
+  ..y = 0
+  ..z = 0;
+
   final playerActor = SceneActorInfo()
     ..avatarType = AvatarType.AVATAR_FORMAL_TYPE
     ..baseAvatarId = 1222
@@ -18,7 +23,7 @@ void onGetCurSceneInfoCsReq(Socket socket, GeneratedMessage? request) {
 
   final playerMotion = MotionInfo()
     ..pos = playerXYZ
-    ..rot = Vector();
+    ..rot = defaultXYZ;
 
   final playerInfo = SceneEntityInfo()
     ..entityId = 0
@@ -44,7 +49,7 @@ void onGetCurSceneInfoCsReq(Socket socket, GeneratedMessage? request) {
 
   final calyxMotion = MotionInfo()
     ..pos = calyxXYZ
-    ..rot = Vector();
+    ..rot = defaultXYZ;
 
   final calyxInfo = SceneEntityInfo()
     ..entityId = 1337
