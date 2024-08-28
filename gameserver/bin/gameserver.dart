@@ -1,4 +1,4 @@
-import '../lib/network/gateway.dart';
+import '../lib/gateway.dart';
 
 void main() async {
   const String host = '127.0.0.1';

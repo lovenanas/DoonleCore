@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:protocol/core.cmd.dart';
 import 'package:protobuf/protobuf.dart';
 import 'package:protocol/core.pb.dart';
+import 'handlers/login.dart';
 
 Map<String, dynamic> decodePacket(Uint8List buf) {
   final byteData = ByteData.sublistView(buf);
@@ -33,8 +34,8 @@ Uint8List encodePacket(int cmdId, Uint8List data) {
 
 void sendPacket(Socket socket, int cmdId, GeneratedMessage data) {
   final name = CmdId.CMD_ID_REVERSED[cmdId];
-  
-  print("sending packet to -> $name");
+  print("received cmd with id $cmdId");
+  print("sending $name to $cmdId");
 
   final protoFactory = CmdId.protobufFactories[name];
   
@@ -58,19 +59,6 @@ void sendPacket(Socket socket, int cmdId, GeneratedMessage data) {
   socket.add(buffer);
 }
 
-final Map<int, void Function(Socket, GeneratedMessage)> HANDLERS = {
-  CmdId.CMD_ID['PlayerGetTokenCsReq']!: onPlayerGetTokenCsReq,
-};
-
-void onPlayerGetTokenCsReq(Socket socket, GeneratedMessage request) {
-  final proto = PlayerGetTokenScRsp()
-    ..uid = 1010
-    ..msg = "OK"
-    ..retcode = 0;
-
-  sendPacket(socket, CmdId.CMD_ID['PlayerGetTokenScRsp']!, proto);
-}
-
 Future<void> onData(Socket socket) async {
   try {
     await for (final buffer in socket) {
@@ -79,21 +67,18 @@ Future<void> onData(Socket socket) async {
 
       if (cmdIdName != null) {
         final proto = createProtoInstance(cmdIdName);
-
         if (proto != null) {
           try {
             proto.mergeFromBuffer(packet['body']);
-
-            if (HANDLERS.containsKey(packet['cmdId'])) {
-              HANDLERS[packet['cmdId']]!(socket, proto);
-            } else {
-              print('No handler found for command: ${packet['cmdId']}');
-            }
           } catch (e) {
             print('Error parsing protobuf message: $e');
           }
+        }
+        
+        if (HANDLERS.containsKey(packet['cmdId'])) {
+          HANDLERS[packet['cmdId']]!(socket, proto);
         } else {
-          print('No protobuf factory found for command: $cmdIdName');
+          print('No handler found for command: ${packet['cmdId']}');
         }
       } else {
         print('Command ID not found: ${packet['cmdId']}');
@@ -114,7 +99,23 @@ GeneratedMessage? createProtoInstance(String cmdIdName) {
       return PlayerGetTokenCsReq();
     case 'PlayerGetTokenScRsp':
       return PlayerGetTokenScRsp();
+    case 'PlayerLoginScRsp':
+        return PlayerLoginScRsp();
     default:
       return null;
   }
+}
+
+final Map<int, void Function(Socket, GeneratedMessage?)> HANDLERS = {
+  CmdId.CMD_ID['PlayerGetTokenCsReq']!: onPlayerGetTokenCsReq,
+  CmdId.CMD_ID['PlayerLoginCsReq']!: onPlayerLoginScRsp,
+  CmdId.CMD_ID['GetBagCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetBagScRsp']!),
+};
+
+void onDummyResponse(Socket socket, int cmdId) {
+  print("Sending dummy response for cmdId: $cmdId");
+
+  final buffer = encodePacket(cmdId, Uint8List(0));
+
+  socket.add(buffer);
 }

@@ -1580,5 +1580,6 @@ class CmdId {
     static final Map<String, dynamic Function()> protobufFactories = {
       'PlayerGetTokenCsReq': () => PlayerGetTokenCsReq(),
       'PlayerGetTokenScRsp': () => PlayerGetTokenScRsp(),
+      'PlayerLoginScRsp': () => PlayerLoginScRsp(),
     };
 }
