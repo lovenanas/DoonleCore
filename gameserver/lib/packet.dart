@@ -39,8 +39,7 @@ Uint8List encodePacket(int cmdId, Uint8List data) {
 
 void sendPacket(Socket socket, int cmdId, GeneratedMessage data) {
   final name = CmdId.CMD_ID_REVERSED[cmdId];
-  print("received cmd with id $cmdId");
-  print("sending $name to $cmdId");
+  print("sending $name");
 
   final protoFactory = CmdId.protobufFactories[name];
   
@@ -54,9 +53,9 @@ void sendPacket(Socket socket, int cmdId, GeneratedMessage data) {
   final encoded = proto.writeToBuffer();
 
   if (encoded.isEmpty) {
-    print('Encoded data is empty');
+    print('Encoded data is empty\n');
   } else {
-    print('Encoded data length: ${encoded.length}');
+    print('Encoded data length: ${encoded.length}\n');
   }
 
   final buffer = encodePacket(cmdId, encoded);
@@ -69,6 +68,7 @@ Future<void> onData(Socket socket) async {
     await for (final buffer in socket) {
       final packet = decodePacket(buffer);
       final cmdIdName = CmdId.CMD_ID_REVERSED[packet['cmdId']];
+        print("received $cmdIdName");
 
       if (cmdIdName != null) {
         final proto = createProtoInstance(cmdIdName);
@@ -83,7 +83,7 @@ Future<void> onData(Socket socket) async {
         if (HANDLERS.containsKey(packet['cmdId'])) {
           HANDLERS[packet['cmdId']]?.call(socket, proto);
         } else {
-          print('No handler found for command: ${packet['cmdId']}');
+          print('No handler found for command: ${packet['cmdId']}\n');
         }
       } else {
         print('Command ID not found: ${packet['cmdId']}');
@@ -129,7 +129,7 @@ GeneratedMessage? createProtoInstance(String cmdIdName) {
 
 final Map<int, void Function(Socket, GeneratedMessage?)> HANDLERS = {
   CmdId.CMD_ID['PlayerGetTokenCsReq']!: onPlayerGetTokenCsReq,
-  CmdId.CMD_ID['PlayerLoginCsReq']!: onPlayerLoginScRsp,
+  CmdId.CMD_ID['PlayerLoginCsReq']!: onPlayerLoginCsReq,
   CmdId.CMD_ID['GetAvatarDataCsReq']!: onGetAvatarDataCsReq,
   CmdId.CMD_ID['GetCurLineupDataCsReq']!: onGetCurLineupDataCsReq,
   CmdId.CMD_ID['GetCurSceneInfoCsReq']!: onGetCurSceneInfoCsReq,
@@ -138,12 +138,12 @@ final Map<int, void Function(Socket, GeneratedMessage?)> HANDLERS = {
   CmdId.CMD_ID['GetBagCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetBagScRsp']!),
   CmdId.CMD_ID['GetMultiPathAvatarInfoCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetMultiPathAvatarInfoScRsp']!),
   CmdId.CMD_ID['GetBasicInfoCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['GetBasicInfoScRsp']!),
+  CmdId.CMD_ID['PlayerLoginFinishCsReq']!: (socket, _) => onDummyResponse(socket, CmdId.CMD_ID['PlayerLoginFinishScRsp']!),
 };
 
 void onDummyResponse(Socket socket, int cmdId) {
-  print("Sending dummy response for cmdId: $cmdId");
-
+final name = CmdId.CMD_ID_REVERSED[cmdId];
+  print("sending dummy $name\n");
   final buffer = encodePacket(cmdId, Uint8List(0));
-
   socket.add(buffer);
 }

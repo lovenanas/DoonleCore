@@ -14,7 +14,7 @@ void onPlayerHeartbeatCsReq(Socket socket, GeneratedMessage? request) {
       ..clientTimeMs = request.clientTimeMs
       ..serverTimeMs = Int64(currentTimeMs);
 
-    sendPacket(socket, CmdId.CMD_ID['onPlayerHeartbeatScRsp']!, response);
+    sendPacket(socket, CmdId.CMD_ID['PlayerHeartBeatScRsp']!, response);
   } else {
     print("Request is not of type onPlayerHeartbeatCsReq");
   }

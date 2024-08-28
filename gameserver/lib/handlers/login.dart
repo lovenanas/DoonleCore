@@ -13,7 +13,7 @@ void onPlayerGetTokenCsReq(Socket socket, GeneratedMessage? request) {
   sendPacket(socket, CmdId.CMD_ID['PlayerGetTokenScRsp']!, response);
 }
 
-void onPlayerLoginScRsp(Socket socket, GeneratedMessage? request) {
+void onPlayerLoginCsReq(Socket socket, GeneratedMessage? request) {
     final player = PlayerBasicInfo()
         ..nickname = "nanas"
         ..level = 5
