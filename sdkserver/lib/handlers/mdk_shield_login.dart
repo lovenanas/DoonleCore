@@ -1,13 +1,13 @@
 import 'package:shelf/shelf.dart';
 
-const mdkShieldLoginResponse = r'''{
+const String mdkShieldLoginResponse = r'''{
   "data": {
     "account": {
       "area_code": "**",
-      "email": "nanascore",
+      "email": "doonle",
       "country": "ID",
       "is_email_verify": "1",
-      "token": "nanascore",
+      "token": "doonle",
       "uid": "1010"
     },
     "device_grant_required": false,
@@ -19,6 +19,6 @@ const mdkShieldLoginResponse = r'''{
   "retcode": 0
 }''';
 
-Response mdkShieldLogin(Request request) {
+Response onMdkShieldLogin(Request request) {
   return Response.ok(mdkShieldLoginResponse, headers: {'Content-Type': 'application/json'});
 }

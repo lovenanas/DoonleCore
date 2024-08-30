@@ -1,25 +1,34 @@
 import 'package:shelf/shelf.dart';
-import 'package:shelf/shelf_io.dart' as shelf_io;
 import 'package:shelf_router/shelf_router.dart';
-import '../lib/handlers/queryDispatch.dart';
-import '../lib/handlers/queryGateway.dart';
-import '../lib/handlers/riskyApiCheck.dart';
-import '../lib/handlers/mdkShieldLogin.dart';
-import '../lib/handlers/granterLoginV2.dart';
+import 'package:shelf/shelf_io.dart' show 
+        serve;
+import 'package:sdkserver/handlers.dart' show 
+        onQueryDispatch, 
+        onQueryGateway, 
+        onRiskyApiCheck,
+        onMdkShieldLogin, 
+        onGranterLoginV2;
+
+const String sdkserverIp = '127.0.0.1';
+const int sdkserverPort = 21000;
 
 void main() async {
-  final router = Router()
-    ..get('/query_dispatch', queryDispatch)
-    ..get('/query_gateway', queryGateway)
-    ..post('/account/risky/api/check', riskyApiCheck)
-    ..post('/hkrpg_global/mdk/shield/api/login', mdkShieldLogin)
-    ..post('/hkrpg_global/mdk/shield/api/verify', mdkShieldLogin)
-    ..post('/hkrpg_global/combo/granter/login/v2/login', granterLoginV2);
+  final Router router = Router()
+    // dispatch routes
+    ..get('/query_dispatch', onQueryDispatch)
+    ..get('/query_gateway', onQueryGateway)
+    // authentication routes
+    ..post('/account/risky/api/check', onRiskyApiCheck)
+    ..post('/hkrpg_global/mdk/shield/api/login', onMdkShieldLogin)
+    ..post('/hkrpg_global/mdk/shield/api/verify', onMdkShieldLogin)
+    ..post('/hkrpg_global/combo/granter/login/v2/login', onGranterLoginV2);
+  
+  final routerCall = router.call;
 
   final handler = const Pipeline()
-      .addMiddleware(logRequests())
-      .addHandler(router);
+    .addMiddleware(logRequests())
+    .addHandler(routerCall);
 
-  final server = await shelf_io.serve(handler, '127.0.0.1', 21000);
-  print('sdkserver: ${server.address}:${server.port}');
+  await serve(handler, sdkserverIp, sdkserverPort);
+  print('[package:sdkserver] Listening at $sdkserverIp:$sdkserverPort');
 }

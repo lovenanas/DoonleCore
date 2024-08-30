@@ -1,19 +1,17 @@
 name: sdkserver
 description: A sample command-line application.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+publish_to: none
 
 environment:
   sdk: ^3.5.1
-publish_to: none
-# Add regular dependencies here.
+
 dependencies:
   shelf: ^1.4.2
   shelf_router: ^1.1.4
   protobuf: ^3.1.0
   protocol:
     path: ../protocol
-  # path: ^1.8.0
 
 dev_dependencies:
   lints: ^4.0.0

@@ -2,7 +2,7 @@
 //  Generated code. Do not modify.
 //  source: https://raw.githubusercontent.com/Melledy/LunarCore/development/src/main/java/emu/lunarcore/server/packet/CmdId.java
 //
-// @dart': 2.12
+// @dart' = 2.12
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
 // ignore_for_file: constant_identifier_names

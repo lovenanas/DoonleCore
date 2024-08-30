@@ -1,10 +1,10 @@
 import 'package:shelf/shelf.dart';
 
-const granterLoginV2Response = r'''{
+const String granterLoginV2Response = r'''{
   "data": {
     "account_type": 1,
     "combo_id": "1010",
-    "combo_token": "nanascore",
+    "combo_token": "doonle",
     "data": "{\"guest\":false}",
     "heartbeat": false,
     "open_id": "1010"
@@ -13,6 +13,6 @@ const granterLoginV2Response = r'''{
   "retcode": 0
 }''';
 
-Response granterLoginV2(Request request) {
+Response onGranterLoginV2(Request request) {
   return Response.ok(granterLoginV2Response, headers: {'Content-Type': 'application/json'});
 }
