@@ -1,8 +1,11 @@
 import 'dart:io';
-import 'package:protocol/core.cmd.dart';
+import 'package:gameserver/packet.dart';
 import 'package:protobuf/protobuf.dart';
-import 'package:protocol/core.pb.dart';
-import '../packet.dart';
+import 'package:protocol/core.cmd.dart';
+import 'package:protocol/core.pb.dart' show
+        GetAvatarDataCsReq,
+        Avatar,
+        GetAvatarDataScRsp;
 
 void onGetAvatarDataCsReq(Socket socket, GeneratedMessage? request) {
   if (request is GetAvatarDataCsReq) {
@@ -17,7 +20,7 @@ void onGetAvatarDataCsReq(Socket socket, GeneratedMessage? request) {
       ..avatarList.add(avatar)
       ..isGetAll = request.isGetAll;
 
-    sendPacket(socket, CmdId.CMD_ID['GetAvatarDataScRsp']!, response);
+    sendPacket(socket, Command.ID['GetAvatarDataScRsp']!, response);
   } else {
     print("Request is not of type GetAvatarDataCsReq");
   }

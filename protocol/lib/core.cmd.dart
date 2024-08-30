@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: https://raw.githubusercontent.com/Melledy/LunarCore/development/src/main/java/emu/lunarcore/server/packet/CmdId.java
+//  source: https://raw.githubusercontent.com/Melledy/LunarCore/development/src/main/java/emu/lunarcore/server/packet/Command.java
 //
 // @dart' = 2.12
 
@@ -12,8 +12,8 @@
 
 import 'core.pb.dart';
 
-class CmdId {
-    static const Map<String, int> CMD_ID = {
+class Command {
+    static const Map<String, int> ID = {
         'NONE': 0,
         'SpringRecoverCsReq': 1488,
         'FinishEmotionDialoguePerformanceScRsp': 6341,
@@ -1569,25 +1569,11 @@ class CmdId {
         'TextJoinSaveCsReq': 3818,
     };
 
-    static Map<int, String> get CMD_ID_REVERSED {
+    static Map<int, String> get ID_REVERSED {
       final Map<int, String> reversed = {};
-      CMD_ID.forEach((name, id) {
+      ID.forEach((name, id) {
         reversed[id] = name;
       });
       return reversed;
     }
-
-    static final Map<String, dynamic Function()> protobufFactories = {
-      'PlayerGetTokenCsReq': () => PlayerGetTokenCsReq(),
-      'PlayerGetTokenScRsp': () => PlayerGetTokenScRsp(),
-      'PlayerLoginScRsp': () => PlayerLoginScRsp(),
-      'GetAvatarDataCsReq': () => GetAvatarDataCsReq(),
-      'GetAvatarDataScRsp': () => GetAvatarDataScRsp(),
-      'GetCurLineupDataScRsp': () => GetCurLineupDataScRsp(),
-      'GetCurSceneInfoScRsp': () => GetCurSceneInfoScRsp(),
-      'GetMissionStatusCsReq': () => GetMissionStatusCsReq(),
-      'GetMissionStatusScRsp': () => GetMissionStatusScRsp(),
-      'PlayerHeartBeatScRsp': () => PlayerHeartbeatScRsp(),
-      'PlayerHeartBeatCsReq': () => PlayerHeartbeatCsReq(),
-    };
 }
