@@ -1,8 +1,12 @@
 import 'dart:io';
-import 'package:protocol/core.cmd.dart';
+import 'package:gameserver/packet.dart';
 import 'package:protobuf/protobuf.dart';
-import 'package:protocol/core.pb.dart';
-import '../packet.dart';
+import 'package:protocol/core.cmd.dart';
+import 'package:protocol/core.pb.dart' show
+        GetMissionStatusCsReq,
+        Mission,
+        MissionStatus,
+        GetMissionStatusScRsp;
 
 const List<int> missionIds = [
   1000101, 1000111, 1000112, 1000113, 1000114,
@@ -298,7 +302,7 @@ void onGetMissionStatusCsReq(Socket socket, GeneratedMessage? request) {
     ..subMissionStatusList.addAll(subMstatus)
     ..finishedMainMissionIdList.addAll(missionIds);
 
-    sendPacket(socket, CmdId.CMD_ID['GetMissionStatusScRsp']!, response);
+    sendPacket(socket, Command.ID['GetMissionStatusScRsp']!, response);
   } else {
     print("request is not type of getmissionstatuscsreq");
   }

@@ -5,7 +5,7 @@ const String granterLoginV2Response = r'''{
     "account_type": 1,
     "combo_id": "1010",
     "combo_token": "doonle",
-    "data": "{\"guest\":false}",
+    "data": "{"guest":false}",
     "heartbeat": false,
     "open_id": "1010"
   },

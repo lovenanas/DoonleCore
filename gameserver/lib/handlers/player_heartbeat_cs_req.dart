@@ -1,9 +1,12 @@
 import 'dart:io';
-import 'package:fixnum/fixnum.dart';
-import 'package:protocol/core.cmd.dart';
+import 'package:gameserver/packet.dart';
+import 'package:fixnum/fixnum.dart' show 
+        Int64;
 import 'package:protobuf/protobuf.dart';
-import 'package:protocol/core.pb.dart';
-import '../packet.dart';
+import 'package:protocol/core.cmd.dart';
+import 'package:protocol/core.pb.dart' show
+        PlayerHeartbeatCsReq,
+        PlayerHeartbeatScRsp;
 
 void onPlayerHeartbeatCsReq(Socket socket, GeneratedMessage? request) {
   final currentTimeMs = Int64(DateTime.now().millisecondsSinceEpoch);
@@ -14,7 +17,7 @@ void onPlayerHeartbeatCsReq(Socket socket, GeneratedMessage? request) {
       ..clientTimeMs = request.clientTimeMs
       ..serverTimeMs = currentTimeMs;
 
-    sendPacket(socket, CmdId.CMD_ID['PlayerHeartBeatScRsp']!, response);
+    sendPacket(socket, Command.ID['PlayerHeartBeatScRsp']!, response);
   } else {
     print("Request is not of type onPlayerHeartbeatCsReq");
   }

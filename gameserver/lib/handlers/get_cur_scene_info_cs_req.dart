@@ -1,14 +1,23 @@
 import 'dart:io';
-import 'package:protocol/core.cmd.dart';
+import 'package:gameserver/packet.dart';
 import 'package:protobuf/protobuf.dart';
-import 'package:protocol/core.pb.dart';
-import '../packet.dart';
+import 'package:protocol/core.cmd.dart';
+import 'package:protocol/core.pb.dart' show
+        Vector,
+        SceneActorInfo,
+        AvatarType,
+        MotionInfo,
+        SceneEntityInfo,
+        SceneEntityGroupInfo,
+        ScenePropInfo,
+        SceneInfo,
+        GetCurSceneInfoScRsp;
 
 void onGetCurSceneInfoCsReq(Socket socket, GeneratedMessage? request) {
   final defaultXYZ = Vector()
-  ..x = 0
-  ..y = 0
-  ..z = 0;
+    ..x = 0
+    ..y = 0
+    ..z = 0;
 
   final playerActor = SceneActorInfo()
     ..avatarType = AvatarType.AVATAR_FORMAL_TYPE
@@ -74,5 +83,5 @@ void onGetCurSceneInfoCsReq(Socket socket, GeneratedMessage? request) {
     ..retcode = 0
     ..scene = spawn;
 
-   sendPacket(socket, CmdId.CMD_ID['GetCurSceneInfoScRsp']!, response);
+   sendPacket(socket, Command.ID['GetCurSceneInfoScRsp']!, response);
 }
